@@ -719,9 +719,7 @@ display: inline-block;
 
 footer{
   background: url(images/footer-bg.png);
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
+  background-size: cover;
 }
 
 .footer-heading{
