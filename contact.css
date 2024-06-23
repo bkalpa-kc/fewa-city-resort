@@ -1,0 +1,193 @@
+*{
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+  list-style: none;
+}
+
+.navbar {
+  position: absolute;
+  z-index: 100000;
+  width: 100%;
+}
+
+.navbar .container{
+  border-bottom: 1px solid white;
+}
+
+.navbar-brand{
+  color: orangered;
+  font-weight: 700;
+}
+
+.navbar .enquiry-btn{
+  border: 1px solid orangered;
+  background-color: orangered;
+  color: white;
+  font-weight: 600;
+}
+
+.enquiry-btn:hover{
+  background-color: transparent;
+  color: orangered;
+}
+
+.offcanvas{
+  opacity: 80%;
+  height: 100vh !important;
+}
+
+.hero{
+  height: 100vh;
+  background: url(images/gh6.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.hero-txt{
+  letter-spacing: 5px;
+  font-size: 14px;
+  color: orangered;
+}
+
+.hero-title{
+  letter-spacing: 2px;
+  font-size: 64px;
+  font-weight: 900;
+}
+
+.contact-info{
+  background: url(images/m1.png);
+  background-size: cover;
+  height: 80vh;
+  position: relative;
+}
+
+.contact-heading{
+  position: relative;
+}
+
+.contact-info h5{
+  letter-spacing: 5px;
+}
+
+.contact-info h5 span{
+  color: orangered;
+}
+
+.contact-info p{
+  font-size: 18px;
+  letter-spacing: 2px;
+}
+
+.contact-heading h5::after{
+  content: '';
+  position: absolute;
+  width: 80px;
+  height: 3px;
+  left: 0;
+  top: 30px;
+  background-color: orangered;
+}
+
+.contact-info h6{
+  font-size: 20px;
+  letter-spacing: 4px;
+}
+
+.contact-info a{
+  text-decoration: none;
+  color: rgb(51, 51, 51);
+}
+
+.contact-info a:hover{
+  color: black;
+}
+
+.location-pin{
+  font-size: 48px;
+  position: absolute;
+  right: 42%;
+  top: 22%;
+}
+
+.location-pin a{
+  color: red;
+}
+
+.contact-form textarea{
+  height: 280px;
+  resize: none;
+}
+
+.contact-form p{
+  letter-spacing: 5px;
+  font-size: 32px;
+  color: orangered;
+  font-weight: 400;
+}
+
+.contact-form button{
+  background-color: orangered;
+  letter-spacing: 3px;
+  transition: 0.3s ease;
+  position: relative;
+}
+
+.contact-form button:active{
+  scale: 0.9;
+}
+
+.contact-form input, textarea, 
+.contact-form button{
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4);
+}
+
+/* footer */
+.footer-heading{
+  color: orangered;
+  font-size: 20px;
+  letter-spacing: 3px;
+}
+
+.footer-links{
+  margin-top: 10px;
+}
+
+.footer-links a{
+  text-decoration: none;
+  color: rgb(65, 65, 65);
+  line-height: 2;
+}
+
+.line{
+  height: 2px;
+  background-color: orangered;
+  margin-top: 50px;
+}
+
+.footer-logo{
+  position: relative;
+  margin-top: 60px;
+}
+
+.footer-logo p{
+  position: absolute;
+  top: -15px;
+  right: 38%;
+  background-color: white;
+  font-size: 20px;
+  letter-spacing: 5px;
+}
+
+.social-links a{
+  text-decoration: none;
+  color: orangered;
+  font-size: 26px;
+  letter-spacing: 35px;
+}
+
+.copyright{
+  font-size: 12px;
+}

@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="rooms.css">
+  <title>Deluxe Room</title>
+</head>
+<body>
+  
+  <header>
+    <nav class="navbar py-0" id="navbar">
+      <div class="container px-lg-0 py-3">
+        <button class="navbar-toggle bg-transparent fs-3" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+          <i class="bi bi-list"></i>
+        </button>
+        <span class="navbar-filler d-none"></span>
+        <a class="navbar-brand text-uppercase fs-4 text-black" href="../index.html">fewa city resort</a>
+        <button onclick="window.location.href = '../contact.html';" class="enquiry-btn px-lg-4 px-sm-2 px-md-2 py-lg-2  text-uppercase">
+          <span class="fs-4"><i class="bi bi-envelope d-lg-none"></i></span>
+          <span class="enquiry-txt d-sm-none d-md-none d-lg-block">Enquiry Now</span>
+        </button>
+        <div class="offcanvas offcanvas-top text-center" data-bs-scroll="true" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header d-flex justify-content-center position-relative">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
+            <button type="button" class="btn-close position-absolute end-0 me-3" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>        
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Dropdown
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li>
+                    <hr class="dropdown-divider">
+                  </li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <section class="room-links mt-5">
+    <div class="container w-75">
+      <div class="row bg-white text-center">
+        <a href="deluxe-room.html" class="col border-end py-3 text-decoration-none text-dark active">
+          Deluxe Room
+        </a>
+        <a href="standard-room.html" class="col border-end py-3 text-decoration-none text-dark">
+          Standard Room
+        </a>
+        <a href="double-room.html" class="col border-end py-3 text-decoration-none text-dark">
+          Double Room
+        </a>
+        <a href="deluxe-suite.html" class="col py-3 text-decoration-none text-dark">
+          Deluxe Suite
+        </a>
+      </div>      
+    </div>
+  </section>
+
+  <section class="room">
+
+    <div class="container bg-white">
+      <div class="room-details">
+        <div class="row">
+          <div class="room-txt col-sm-12 col-md-12 col-lg-5 px-0">
+            <div class="container">
+              <div class="row align-items-center pt-3">
+                <div class="col">
+                  <p class="room-title mb-0">
+                    Deluxe <span>Room</span>
+                  </p>
+                </div>
+                <div class="col text-center">
+                  <div class="price">
+                    $210 / <span>per night</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+             <hr>
+            <p class="room-para">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit vel beatae repellendus voluptas labore voluptatibus nobis, magnam error inventore cum omnis. Deserunt nesciunt, velit delectus itaque officiis inventore quidem amet.
+            </p>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos repudiandae tempore ut, commodi, repellat quidem nam delectus numquam esse deserunt eveniet ipsam incidunt. Magni optio blanditiis omnis minus nostrum commodi!</p>
+          </div>
+          <div class="col-sm-12 col-md-12 col-lg-7 px-lg-0">
+            <div class="room-img">
+              <img src="images/standard-room.jpg" alt="">
+              <div class="img-caption">
+                <a href="#">
+                  <button class="text-uppercase border-0 text-white">
+                    Book now
+                    <i class="bi bi-arrow-right"></i>
+                  </button>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="amenities">
+      <div class="container-fluid d-flex align-items-center justify-content-center" >
+        <div class="row text-capitalize text-white gy-5 px-sm-5">
+          <div class="col-sm-6 col-md-6 col-lg-3">
+            <p>
+              <img src="images/double-bed.png" class="text-white" alt="">
+              King sized bed
+            </p>
+          </div>
+          <div class="col-sm-6 col-md-6 col-lg-3">
+            <p>
+              <img src="images/closet.png" alt="">
+              open closet
+            </p>
+          </div>
+          <div class="col-sm-6 col-md-6 col-lg-3">
+            <p>
+              <img src="images/swimming-pool.png" alt="">  
+              poolview
+            </p>
+          </div>
+          <div class="col-sm-6 col-md-6 col-lg-3">
+            <p>
+              <img src="images/minibar.png" alt="">
+              mini bar
+            </p>
+          </div>
+          <div class="col-sm-6 col-md-6 col-lg-3">
+            <p>
+              <img src="images/bathtub.png" alt="">
+              bathtub
+            </p>
+          </div>
+          <div class="col-sm-6 col-md-6 col-lg-3">
+            <p>
+              <img src="images/landscape.png" alt="">
+              lakeview
+            </p>
+          </div>
+          <div class="col-sm-6 col-md-6 col-lg-3">
+            <p>
+              <img src="images/bathrobe.png" alt="">
+              bathrobes
+            </p>
+          </div>
+          <div class="col-sm-6 col-md-6 col-lg-3">
+            <p>
+              <img src="images/toilet-roll.png" alt="">
+              eco-friendly toiletries
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="facilities">
+      <div class="container bg-white px-0">
+        <div class="row">
+          <div class="col-sm-12 col-md-12 col-lg-7">
+            <img src="images/standard-room.jpg" alt="">
+          </div>
+          <div class="col-sm-12 col-md-12 col-lg-5">
+            <div class="facilities-heading text-capitalize p-3 px-sm-4">
+              <span class="facilities-txt text-uppercase">more</span>
+              <h5>Facilities</h5>
+              <hr>
+              <div class="row text-capitalize gy-4">
+                <div class="col-6">
+                  <i class="bi bi-check-lg"></i>
+                  Air Conditioner
+                </div>
+                <div class="col-6">
+                  <i class="bi bi-check-lg"></i>
+                  Flat-Screen tv
+                </div>
+                <div class="col-6">
+                  <i class="bi bi-check-lg"></i>
+                  fruit basket
+                </div>
+                <div class="col-6">
+                  <i class="bi bi-check-lg"></i>
+                  books
+                </div>
+                <div class="col-6">
+                  <i class="bi bi-check-lg"></i>
+                  telephone
+                </div>
+                <div class="col-6">
+                  <i class="bi bi-check-lg"></i>
+                  desk
+                </div>
+                <div class="col-6">
+                  <i class="bi bi-check-lg"></i>
+                  wi-fi
+                </div>
+                <div class="col-6">
+                  <i class="bi bi-check-lg"></i>
+                  safety deposit box
+                </div>
+                <div class="col-6">
+                  <i class="bi bi-check-lg"></i>
+                  wake-up service
+                </div>
+                <div class="col-6">
+                  <i class="bi bi-check-lg"></i>
+                  electric kettle
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact bg-white bg-opacity-50">
+    <div class="container py-4">
+      <div class="row mt-5 pt-5 pb-5 align-items-center">
+        <div class="col-sm-12 col-md-12 col-lg-6 py-5">
+          <div class="contact-heading text-black">
+            <h5 class="fs-2">For Queries and <span>Reservation</span></h5>
+            <p class="mt-3 fs-5">For any queries about room, reservations and any other activites please feel free to contact us.</p>
+          </div>
+          <hr>
+          <div class="contact-info text-black">
+            <p> <span class="fw-medium">Phone Number: </span> <a href="#">+977-1-0000000</a></p>
+            <p> <span class="fw-medium">Fax:</span> +977-2-0000000</p>
+            <p> <span class="fw-medium">Email:</span> <a href="#">info@fewacity.com</a></p>
+          </div>
+          <div class="contact-btn mt-4">
+            <a href="../contact.html">
+              <button class="px-3 py-2 text-white text-uppercase">Contact Us</button>
+            </a>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-12 col-lg-6">
+          <div class="map-container mt-sm-5 mt-md-5 mt-lg-0">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3515.5174339191467!2d83.95408678276495!3d28.22197046079177!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399594dd0ea931e1%3A0xd8e6cffef4d4e498!2sWaterfront%20Resort%20by%20KGH%20Group!5e0!3m2!1sen!2snp!4v1717662604243!5m2!1sen!2snp" style="border-radius: 18px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+ 
+  <footer class="pt-sm-5">
+    <div class="container py-sm-5">
+      <div class="row text-capitalize">
+        <div class="col-lg-3 col-md-6 col-sm-12">
+          <div class="footer-heading text-uppercase">
+            fewa city resort
+          </div>
+          <div class="footer-links">
+            <li><a href="#">Comfort</a></li>
+            <li><a href="#">Taste</a></li>
+            <li><a href="#">Rejuvinate</a></li>
+            <li><a href="#">Resort</a></li>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12 mt-lg-0 mt-md-0 mt-sm-3">
+          <div class="footer-heading text-uppercase">
+            rooms & suites
+          </div>
+          <div class="footer-links">
+            <li><a href="#">Deluxe room</a></li>
+            <li><a href="#">standard room</a></li>
+            <li><a href="#">double room</a></li>
+            <li><a href="#">deluxe suite</a></li>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12 mt-lg-0 mt-md-3 mt-sm-3">
+          <div class="footer-heading text-uppercase">
+            quick links
+          </div>
+          <div class="footer-links">
+            <li><a href="#">fewa city</a></li>
+            <li><a href="#">sustainablity</a></li>
+            <li><a href="gallery.html">media gallery</a></li>
+            <li><a href="contact.html">contact</a></li>
+            <li><a href="#">blogs</a></li>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12 mt-lg-0 mt-md-3 mt-sm-3">
+          <div class="footer-heading text-uppercase">
+            meeting & events
+          </div>
+          <div class="footer-links">
+            <li><a href="#">meeting& special events </a></li>
+            <li><a href="#">corporate retreat & team building</a></li>
+            <li><a href="#">venues and floor plan</a></li>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-logo">
+        <div class="line">
+        </div>
+        <p class="px-5">FEWA CITY RESORT</p>
+      </div>
+
+      <div class="social-links text-center mt-5">
+        <a href="#"><i class="bi bi-instagram"></i></a>
+        <a href="#"><i class="bi bi-facebook"></i></a>
+        <a href="#"><i class="bi bi-twitter-x"></i></a>
+        <a href="#"><i class="bi bi-youtube"></i></a>
+        <p class="copyright mt-2">© 2024 Fewa City Resort. All rights reserved.</p>
+      </div>
+
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+</body>
+</html>

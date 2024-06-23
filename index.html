@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fewa City Resort</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+</head>
+<body>
+  <!-- Navbar -->
+
+  <header>
+    <nav class="navbar py-0" id="navbar">
+      <div class="container px-lg-0 py-3">
+        <button class="navbar-toggle bg-transparent fs-3" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+          <i class="bi bi-list text-white"></i>
+        </button>
+        <a class="navbar-brand text-uppercase fs-4 text-white mx-0" href="#">fewa city resort</a>
+        <button onclick="window.location.href = 'contact.html';" class="enquiry-btn px-lg-4 px-sm-2 px-md-2 py-lg-2  text-uppercase">
+          <span class="fs-4"><i class="bi bi-envelope d-lg-none"></i></span>
+          <span class="enquiry-txt fw-bold d-sm-none d-md-none d-lg-block">Enquiry Now</span>
+        </button>
+        <div class="offcanvas offcanvas-top text-center" data-bs-scroll="true" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header d-flex justify-content-center position-relative">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
+            <button type="button" class="btn-close position-absolute end-0 me-3" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>        
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Dropdown
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li>
+                    <hr class="dropdown-divider">
+                  </li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+  
+  <!-- Reservation -->
+
+  <section id="reservation" class="reservation reservation-hidden fixed-top d-sm-none d-md-block py-2">
+    <div class="container text-center">
+      <div class="row align-items-center">
+        <div class="col-1">
+          <button class="navbar-toggle bg-transparent fs-3" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+            <i class="bi bi-list text-white"></i>
+          </button>
+        </div>
+        <div class="col text-end fs-6 text-uppercase text-white">
+          <div class="txt fw-bold">
+            For reservation
+          </div>
+        </div>
+        <div class="col">
+          <div class="btn-group">
+            <button class="dropdown-toggle border-end">Check in</button>
+            <button class="dropdown-toggle border-end">Check out</button>
+            <!-- <input class="border-end px-5" type="date" name="" id="">
+            <input class="border-end px-5" type="date" name="" id=""> -->
+            <button class="dropdown-toggle">Guests</button>
+          </div>
+        </div>
+        <div class="col check-btn text-start">
+          <button class="py-2 px-2 bg-white mx-1 rounded-2">Check Availability</button>
+        </div>
+        </div>
+      </div>
+  </section>
+
+  <!-- Image SLider -->
+
+  <section class="image-slider">
+    <div id="carouselExampleSlidesOnly" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-touch="false" data-bs-pause="false" data-bs-interval="9001">
+      <div class="carousel-inner">
+        <div class="f-carousel carousel-item active">
+          <div class="carousel-gradient"></div>
+          <img src="images/c1-min.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption">
+            <h1 class="display-5 text-uppercase fw-semibold text-white animate__animated animate__slideInDown">A  modern <span>himalayan experience</span></h1>
+            <p class="text-uppercase fs-3 text-white animate__animated animate__slideInDown">Overlooking ancient kingdoms</p>
+            <button class="splide-btn bg-transparent text-uppercase px-3 py-2 animate__animated animate__zoomIn animate__delay-1s">Virtual tour</button>
+          </div>
+        </div>
+        <div class="f-carousel carousel-item">
+          <div class="carousel-gradient"></div>
+          <img src="images/c2-min.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption">
+            <h1 class="display-5 text-uppercase fw-semibold text-white animate__animated animate__slideInDown">A  modern <span>himalayan experience</span></h1>
+            <p class="text-uppercase fs-3 text-white animate__animated animate__slideInDown">Overlooking ancient kingdoms</p>
+            <button class="splide-btn bg-transparent text-uppercase px-3 py-2 animate__animated animate__zoomIn animate__delay-1s">Virtual tour</button>
+          </div>
+        </div>
+        <div class="f-carousel carousel-item">
+          <div class="carousel-gradient"></div>
+          <img src="images/c3-min.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption">
+            <h1 class="display-5 text-uppercase fw-semibold text-white animate__animated animate__slideInDown">A  modern <span>himalayan experience</span></h1>
+            <p class="text-uppercase fs-3 text-white animate__animated animate__slideInDown">Overlooking ancient kingdoms</p>
+            <button class="splide-btn bg-transparent text-uppercase px-3 py-2 animate__animated animate__zoomIn animate__delay-1s">Virtual tour</button>
+          </div>
+        </div>
+        <div class="f-carousel carousel-item">
+          <div class="carousel-gradient"></div>
+          <img src="images/c4-min.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption">
+            <h1 class="display-5 text-uppercase fw-semibold text-white animate__animated animate__slideInDown">A  modern <span>himalayan experience</span></h1>
+            <p class="text-uppercase fs-3 text-white animate__animated animate__slideInDown">Overlooking ancient kingdoms</p>
+            <button class="tour-btn bg-transparent text-uppercase px-3 py-2 animate__animated animate__zoomIn animate__delay-1s">Virtual tour</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Welcome -->
+
+  <section class="welcome py-5">
+    <div class="container">
+      <p class="welcome-heading text-uppercase text-center mt-5">
+        <span class="welcome-txt fw-bold">welcome to</span> <br>
+        <span class="welcome-title display-4">Fewa City Resort</span>
+      </p>
+      <p class="wf-para fs-5 text-center my-5">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi magnam dicta numquam illum consectetur quam quis inventore accusantium nemo necessitatibus eaque dolor possimus, ducimus provident omnis, accusamus a sequi! Illum? Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus sed velit error reprehenderit sunt laborum omnis, officia, quam dolore eligendi, consequuntur molestias ipsam quos vel enim nihil impedit tempore incidunt?
+      </p>
+      <p class="ws-para text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur illo temporibus minus! Accusamus, earum! In explicabo ducimus eos maiores, labore provident, eius nulla expedita assumenda sed aperiam quisquam aut optio.</p>
+
+      <video class="mt-5" width="100%" muted controls poster="images/thumbnail.png">
+        <source src="videos/ad.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+      </video>
+    </div>
+  </section>
+
+  <!-- Rooms -->
+  
+  <section class="rooms mt-5">
+    <div class="container py-5">
+
+      <p class="rooms-heading text-center">
+        <span class="room-txt fw-bold text-uppercase">luxury experience</span> <br>
+        <span class="room-title display-4 text-capitalize"> Hand-Crafted Rustic Exteriors With Minimalist Interiors</span>
+      </p>
+
+      <div class="splide mt-5">
+        <div class="splide__track">
+          <ul class="splide__list">
+            <li class="splide__slide">
+              <a href="rooms/deluxe-room.html"><img src="images/r1.jpg"></a>
+              <div class="splide__caption">
+                <a href="book.html"><button class="room-btn">Deluxe Room</button></a>
+              </div>
+            </li>
+            <li class="splide__slide">
+              <a href="rooms/standard-room.html"><img src="images/r2.jpg"></a>
+              <div class="splide__caption">
+                <a href="book.html"><button class="room-btn">Standard Room</button></a>
+              </div>
+            </li>
+            <li class="splide__slide">
+              <a href="rooms/double-room.html"><img src="images/r3.jpg"></a>
+              <div class="splide__caption">
+                <a href="book.html"><button class="room-btn">Double Room</button></a>
+              </div>
+            </li>
+            <li class="splide__slide">
+              <a href="rooms/deluxe-suite.html"><img src="images/r2.jpg"></a>
+              <div class="splide__caption">
+                <a href="book.html"><button class="room-btn">Deluxe Suite</button></a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Facilities -->
+
+  <section class="why-us mt-5">
+    <div class="container">
+      <p class="why-us-heading text-uppercase text-center pt-5">
+        <span class="why-us-txt fw-bold">fewa city resort</span><br>
+        <span class="why-us-title text-capitalize display-4">Experience</span>
+      </p>
+    </div>
+  </section>
+
+
+  <section class="hmmm mt-5">
+    <div class="container">
+
+      <div class="con1 mt-5 pt-5">
+        <div class="row">
+          <div class="col d-flex justify-content-start">
+            <div class="hmmm-img">
+              <div id="carouselExampleIndicators" class="carousel slide">
+                <div class="s-caraousel-inner carousel-inner">
+                  <div class="s-carousel carousel-item active">
+                    <img src="images/p6.jpg" class="img-fluid" alt="...">
+                  </div>
+                  <div class="s-carousel carousel-item">
+                    <img src="images/p7.jpg" class="img-fluid" alt="...">
+                  </div>
+                  <div class="s-carousel carousel-item">
+                    <img src="images/p8.jpg" class="img-fluid" alt="...">
+                  </div>
+                </div>
+                <div class="con1-btn d-none">
+                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                    <i class="bi bi-chevron-left fs-1 text-white px-3 py-1"></i>
+                    <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                    <i class="bi bi-chevron-right fs-1 text-white px-3 py-1"></i>
+                    <span class="visually-hidden">Next</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="hmmm-caption bg-light px-5 py-5 text-black d-sm-none d-md-none d-lg-block">
+          <h4 class="mb-2 text-uppercase">Meeting & <span>Events</span></h4> <hr>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni tenetur illum modi autem perferendis! Quisquam veritatis dicta sed magnam fuga at blanditiis natus exercitationem commodi consequatur, libero aspernatur, laudantium nemo.</p>
+          <small>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aperiam obcaecati voluptas vitae deserunt aliquam modi eveniet et earum asperiores dicta laborum voluptatem id nulla repudiandae neque tempora, fuga ipsa est.</small>
+        </div>
+      </div>
+
+      <div class="con2 mt-5 pt-5">
+        <div class="row">
+          <div class="col d-flex justify-content-end">
+            <div class="hmmm-img2">
+              <div id="carouselExampleIndicators2" class="carousel slide">
+                <div class="s-caraousel-inner carousel-inner">
+                  <div class="s-carousel carousel-item active">
+                    <img src="images/p6.jpg" class="img-fluid" alt="...">
+                  </div>
+                  <div class="s-carousel carousel-item">
+                    <img src="images/p7.jpg" class="img-fluid" alt="...">
+                  </div>
+                  <div class="s-carousel carousel-item">
+                    <img src="images/p8.jpg" class="img-fluid" alt="...">
+                  </div>
+                </div>
+                <div class="con2-btn d-none">
+                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide="prev">
+                    <i class="bi bi-chevron-left fs-1 text-white px-3 py-1"></i>
+                    <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide="next">
+                    <i class="bi bi-chevron-right fs-1 text-white px-3 py-1"></i>
+                    <span class="visually-hidden">Next</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="hmmm-caption2 bg-light px-5 py-5 text-black d-sm-none d-md-none d-lg-block">
+          <h4 class="mb-2 text-uppercase">restaurant <span>experience</span></h4> <hr>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni tenetur illum modi autem perferendis! Quisquam veritatis dicta sed magnam fuga at blanditiis natus exercitationem commodi consequatur, libero aspernatur, laudantium nemo.</p>
+          <small>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aperiam obcaecati voluptas vitae deserunt aliquam modi eveniet et earum asperiores dicta laborum voluptatem id nulla repudiandae neque tempora, fuga ipsa est.</small>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="services mt-5 py-5">
+    <div class="container">
+      <p class="services-heading text-uppercase text-center pt-5">
+        <span class="services-txt fw-bold">fewa city resort</span><br>
+        <span class="services-title text-capitalize display-4">our services</span>
+      </p>
+    </div>
+
+    <div class="container mt-5">
+      <div class="row">
+        <div class="col-md-3" data-aos="zoom-in" data-aos-duration="2000" data-aos-once="true">
+          <div class="services-content">
+            <img class="img-fluid" src="images/s1.jpg" alt="">
+            <div class="img-caption d-flex flex-column align-items-center justify-content-center text-uppercase fs-4 text-white fw-bold"> 
+              <p>bars &&nbsp;<span> restaurant</span></p>
+              <p class="services-link d-none"><a href="#"><i class="bi bi-plus-lg fs-1 text-white"></i></a></p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3" data-aos="zoom-in" data-aos-duration="2000" data-aos-delay="1000" data-aos-once="true">
+          <div class="services-content mt-sm-5 mt-md-0">
+            <img class="img-fluid" src="images/s2.jpg" alt="">
+            <div class="img-caption d-flex flex-column align-items-center justify-content-center text-uppercase fs-4 text-white fw-bold"> 
+              <p>swimming&nbsp;<span> pool</span></p>
+              <p class="services-link d-none"><a href="#"><i class="bi bi-plus-lg fs-1 text-white"></i></a></p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3" data-aos="zoom-in" data-aos-duration="2000" data-aos-delay="2000" data-aos-once="true">
+          <div class="services-content mt-sm-5 mt-md-0">
+            <img class="img-fluid" src="images/s3.jpg" alt="">
+            <div class="img-caption d-flex flex-column align-items-center justify-content-center text-uppercase fs-4 text-white fw-bold"> 
+              <p>local&nbsp;<span> excursion</span></p>
+              <p class="services-link d-none"><a href="#"><i class="bi bi-plus-lg fs-1 text-white"></i></a></p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3" data-aos="zoom-in" data-aos-duration="2000" data-aos-delay="3000" data-aos-once="true">
+          <div class="services-content mt-sm-5 mt-md-0">
+            <img class="img-fluid" src="images/s4.jpg" alt="">
+            <div class="img-caption d-flex flex-column align-items-center justify-content-center text-uppercase fs-4 text-white fw-bold"> 
+              <p>yoga &&nbsp;<span> meditation</span></p>
+              <p class="services-link d-none"><a href="#"><i class="bi bi-plus-lg fs-1 text-white"></i></a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="services-more text-uppercase mt-5 d-flex justify-content-center">
+        <a href="#">learn more <i class="bi bi-arrow-right text-black fs-5"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Image -->
+   <!-- <section class="filler-img d-flex justify-content-center align-items-center text-uppercase">
+    fewa city resort
+   </section> -->
+
+  <!-- Testimonial -->
+   
+  <section class="testimonials mt-5">
+
+    <div class="container">
+      <p class="testimonial-heading text-uppercase text-center pt-5">
+        <span class="testimonial-txt fw-bold">reviews</span> <br>
+        <span class="testimonial-title display-4 text-capitalize">Our guest impressions</span>
+      </p>
+    </div>
+
+	  <div class="container mt-5">
+      <div class="row">
+        <div class="col-sm-12">
+          <div id="customers-testimonials" class="owl-carousel">
+
+            <!--TESTIMONIAL 1 -->
+            <div class="item">
+              <div class="shadow-effect">
+                <img src="images/x1.jpg" alt="">
+                <p>Dramatically maintain clicks-and-mortar solutions without functional solutions. Completely synergize resource taxing relationships via premier niche markets. Professionally cultivate.</p>
+              </div>
+              <div class="testimonial-name">EMILIANO AQUILANI</div>
+            </div>
+            <!--END OF TESTIMONIAL 1 -->
+            <!--TESTIMONIAL 2 -->
+            <div class="item">
+              <div class="shadow-effect">
+                <img src="images/x2.jpg" alt="">
+                <p>Dramatically maintain clicks-and-mortar solutions without functional solutions. Completely synergize resource taxing relationships via premier niche markets. Professionally cultivate.</p>
+              </div>
+              <div class="testimonial-name">ANNA ITURBE</div>
+            </div>
+            <!--END OF TESTIMONIAL 2 -->
+            <!--TESTIMONIAL 3 -->
+            <div class="item">
+              <div class="shadow-effect">
+                <img src="images/x3.jpg" alt="">
+                <p>Dramatically maintain clicks-and-mortar solutions without functional solutions. Completely synergize resource taxing relationships via premier niche markets. Professionally cultivate.</p>
+              </div>
+              <div class="testimonial-name">LARA ATKINSON</div>
+            </div>
+            <!--END OF TESTIMONIAL 3 -->
+            <!--TESTIMONIAL 4 -->
+            <div class="item">
+              <div class="shadow-effect">
+                <img src="images/x4.jpg" alt="">
+                <p>Dramatically maintain clicks-and-mortar solutions without functional solutions. Completely synergize resource taxing relationships via premier niche markets. Professionally cultivate.</p>
+              </div>
+              <div class="testimonial-name">IAN OWEN</div>
+            </div>
+            <!--END OF TESTIMONIAL 4 -->
+            <!--TESTIMONIAL 5 -->
+            <div class="item">
+              <div class="shadow-effect">
+                <img src="images/x5.jpg" alt="">
+                <p>Dramatically maintain clicks-and-mortar solutions without functional solutions. Completely synergize resource taxing relationships via premier niche markets. Professionally cultivate.</p>
+              </div>
+              <div class="testimonial-name">MICHAEL TEDDY</div>
+            </div>
+            <!--END OF TESTIMONIAL 5 -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+ 
+  <!-- Contact -->
+
+  <section class="contact mt-5">
+    <div class="container pt-5 pb-5">
+      <div class="row mt-5 pt-5 pb-5 align-items-center">
+        <div class="col-sm-12 col-md-12 col-lg-6 bg-dark bg-opacity-25 py-5">
+          <div class="contact-heading text-white">
+            <h5 class="fs-2">For Queries and <span>Reservation</span></h5>
+            <p class="mt-3 fs-5">For any queries about room, reservations and any other activites please feel free to contact us.</p>
+          </div>
+          <hr>
+          <div class="contact-info text-white">
+            <p> <span class="fw-medium">Phone Number: </span> <a href="#">+977-1-0000000</a></p>
+            <p> <span class="fw-medium">Fax:</span> +977-2-0000000</p>
+            <p> <span class="fw-medium">Email:</span> <a href="#">info@fewacity.com</a></p>
+          </div>
+          <div class="contact-btn mt-4">
+            <a href="contact.html">
+              <button class="px-3 py-2 text-white text-uppercase">Contact Us</button>
+            </a>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-12 col-lg-6">
+          <div class="map-container mt-sm-5 mt-md-5 mt-lg-0">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3515.5174339191467!2d83.95408678276495!3d28.22197046079177!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399594dd0ea931e1%3A0xd8e6cffef4d4e498!2sWaterfront%20Resort%20by%20KGH%20Group!5e0!3m2!1sen!2snp!4v1717662604243!5m2!1sen!2snp" style="border-radius: 18px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Book Now  -->
+
+  <section class="book-btn">
+    <a href="book.html" target="_blank">
+      <button type="button" class="book-now-btn fs-5 text-uppercase px-3 pb-4 d-flex flex-column align-items-center">
+        <i class="bi bi-chevron-up"></i>
+        book now
+      </button>
+    </a>
+  </section>
+
+  <!-- Whatsapp -->
+
+  <section class="whatsapp">
+    <a href="#">
+      <i class="bi bi-whatsapp"></i>
+    </a>
+  </section>
+
+  <!-- Footer -->
+
+  <footer class="pt-sm-5">
+    <div class="container py-sm-5">
+      <div class="row text-capitalize">
+        <div class="col-lg-3 col-md-6 col-sm-12">
+          <div class="footer-heading text-uppercase">
+            fewa city resort
+          </div>
+          <div class="footer-links">
+            <li><a href="about-us.html">About Us</a></li>
+            <li><a href="restaurant.html">Bar & restaurant</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="gallery.html">Media Gallery</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12 mt-lg-0 mt-md-0 mt-sm-3">
+          <div class="footer-heading text-uppercase">
+            rooms & suites
+          </div>
+          <div class="footer-links">
+            <li><a href="rooms/deluxe-room.html">Deluxe room</a></li>
+            <li><a href="rooms/standard-room.html">standard room</a></li>
+            <li><a href="rooms/double-room.html">double room</a></li>
+            <li><a href="rooms/deluxe-suite.html">deluxe suite</a></li>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12 mt-lg-0 mt-md-3 mt-sm-3">
+          <div class="footer-heading text-uppercase">
+            experiences
+          </div>
+          <div class="footer-links">
+            <li><a href="#">local excursion</a></li>
+            <li><a href="#">swimming pool</a></li>
+            <li><a href="#">yoga & meditation</a></li>
+            <li><a href="#">gym & sauna</a></li>
+            <li><a href="#">cycling</a></li>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12 mt-lg-0 mt-md-3 mt-sm-3">
+          <div class="footer-heading text-uppercase">
+            meeting & events
+          </div>
+          <div class="footer-links">
+            <li><a href="#">meeting & special events </a></li>
+            <li><a href="#">weddings</a></li>
+            <li><a href="#">festivals & gatherings</a></li>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-logo">
+        <div class="line">
+        </div>
+        <p class="px-5 mb-0">FEWA CITY RESORT</p>
+      </div>
+
+      <div class="social-links text-center mt-5">
+        <a href="#"><i class="bi bi-instagram"></i></a>
+        <a href="#"><i class="bi bi-facebook"></i></a>
+        <a href="#"><i class="bi bi-twitter-x"></i></a>
+        <a href="#"><i class="bi bi-youtube"></i></a>
+        <p class="copyright mt-2">© 2024 Fewa City Resort. All rights reserved.</p>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS and dependencies -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-auto-scroll@latest/dist/js/splide-extension-auto-scroll.min.js"></script>
+
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+  <script>
+    AOS.init({
+      disable: 'phone',
+    });
+  </script>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
+
+
+\\contact
+\\rooms
+\\gallery
+\\About us
+
+\/booking
+
+//Bar & restaurant
+//Blogs
+//Events - weddings, meetings, festivals
+//Experience - local excursion, yoga & meditaion, swimming pool, gym & sauna

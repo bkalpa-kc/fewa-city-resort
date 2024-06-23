@@ -1,0 +1,411 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sofia&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sofia&family=Ultra&display=swap');
+
+*{
+  padding: 0;
+  margin: 0;
+  border: none;
+  outline: none;
+  font-family: 'Poppins', sans-serif;
+  list-style: none;
+}
+
+body{
+  background-color: white;
+}
+
+.navbar {
+  position: absolute;
+  z-index: 100000;
+  width: 100%;
+}
+
+.navbar-brand{
+  color: orangered;
+  font-weight: 700;
+}
+
+.navbar .enquiry-btn{
+  border: 1px solid orangered;
+  background-color: orangered;
+  color: white;
+  font-weight: 600;
+}
+
+.enquiry-btn:hover{
+  background-color: transparent;
+  color: orangered;
+}
+
+.offcanvas{
+  opacity: 80%;
+  height: 100vh !important;
+}
+
+.fade-in-offcanvas {
+  opacity: 0;
+  transition: opacity 0.1s;
+}
+
+.fade-in-offcanvas.show {
+  opacity: 1;
+}
+
+.hero{
+  height: 100vh;
+  background: url(images/c4-min.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.hero-txt{
+  letter-spacing: 5px;
+  font-size: 14px;
+  color: orangered;
+}
+
+.hero-title{
+  letter-spacing: 2px;
+  font-size: 64px;
+  font-weight: 900;
+}
+
+.intro{
+  padding: 150px 0;
+}
+
+.intro p{
+  font-size: 16px;
+}
+
+.intro p span{
+  color: orangered;
+  font-size: 18px;
+}
+
+.intro img{
+  width: 100%;
+}
+
+.history{
+  background-color: #e9edc9;
+}
+
+.history-heading span{
+  color: orangered;
+  letter-spacing: 5px;
+  font-size: 14px;
+}
+
+.history-heading h6{
+  font-size: 32px;
+  font-weight: normal;
+  letter-spacing: 3px;
+}
+
+.history-para{
+  text-align: justify;
+}
+
+.history{
+  padding: 150px 0;
+}
+
+.history-content{
+  width: 50%;
+  position: relative;
+}
+
+.history-images img{
+  width: 40%;
+  border: 15px solid white;
+}
+
+.f-img{
+  position: absolute;
+  top: -80px;
+  left: -320px;
+  rotate: -30deg;
+  transition: .8s ease;
+}
+
+.f-img:hover,
+.s-img:hover,
+.t-img:hover,
+.fo-img:hover{
+  transform: scale(1.1);
+  z-index: 2;
+  rotate: 0deg;
+  width: 60%;
+}
+
+.s-img{
+  position: absolute;
+  bottom: -30px;
+  left: -320px;
+  rotate: 30deg;
+  transition: .8s ease;
+}
+
+.t-img{
+  position: absolute;
+  bottom: -30px;
+  right: -320px;
+  rotate: 20deg;
+  transition: .8s ease;
+}
+
+.fo-img{
+  position: absolute;
+  top: -80px;
+  right: -320px;
+  rotate: 50deg;
+  transition: .8s ease;
+}
+
+.image{
+  margin-top: 120px;
+}
+
+.image img{
+  width: 100%;
+}
+
+.rooms{
+  background-color: #e9edc9;
+}
+
+.splide {
+  padding: 20px 0;
+}
+
+.splide__slide img {
+  display: block;
+  width: 100%;
+  transform: scale(0.9);
+  transform-origin: center center;
+  transition: 0.3s ease;
+}
+
+.splide__slide img:hover{
+  filter: brightness(.6);
+}
+
+.splide .splide__arrow {
+  background: transparent ;
+}
+
+.splide__arrow--next{
+  position: absolute;
+  right: -50px !important;
+}
+
+.splide__arrow--prev{
+  position: absolute;
+  left: -50px !important;
+}
+
+.rooms-heading{
+  letter-spacing: 1px;
+  position: relative;
+}
+
+.room-txt{
+  letter-spacing: 5px;
+  color: orangered;
+}
+
+.splide__slide{
+  position: relative;
+}
+
+.room-title::after{
+  content: "";
+  position: absolute;
+  border-bottom: 5px solid orangered;
+  width: 120px;
+  left: .7%;
+}
+
+.splide__caption{
+  position: absolute;
+  color: white;
+  bottom: 1.5%;
+  left: 24%;
+}
+
+.room-btn {
+  position: relative;
+  background-color: orangered;
+  color: white;
+  font-size: 17px;
+  font-weight: 600;
+  width: 180px;
+  height: 60px;
+  padding: 0;
+  text-transform: uppercase;
+  cursor: pointer;
+  overflow: hidden;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
+  transition: all 0.3s cubic-bezier(0.23, 1, 0.320, 1);
+}
+
+.room-btn::before {
+  content: "Book now";
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  background-color: white;
+  border: 3px solid orangered;
+  color: orangered;
+  transform: translate(100%, 0);
+  z-index: 99;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform-origin: bottom;
+  transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+}
+
+.room-btn:hover::before {
+  transform: translate(0%, 0%);
+}
+
+.room-btn:focus {
+  outline: none;
+}
+
+.room-btn:active {
+  transform: scale(0.95);
+}
+
+
+.contact{
+  background-size: cover;
+}
+
+.contact-heading{
+  position: relative;
+}
+
+.contact-heading h5{
+  letter-spacing: 5px;
+}
+
+.contact-heading h5::after{
+  content: "";
+  position: absolute;
+  border-bottom: 5px solid orangered;
+  width: 60px;
+  left: 0;
+  top: 40px;
+}
+
+.contact-heading span{
+  color: orangered;
+}
+
+.contact-info{
+  line-height: 5px;
+}
+
+.contact-info a{
+  text-decoration: none;
+  color: black;
+}
+
+.contact-info a:hover{
+  color: gray;
+}
+
+.contact-btn button{ 
+  background-color: orangered;
+  border: 1px solid orangered;
+  letter-spacing: 2px;
+  font-size: 14px;
+  transition: 0.3s ease;
+}
+
+.contact-btn button:hover{
+  background-color: white;
+  color: orangered !important;
+}
+
+.contact-btn button:active{
+  scale: 0.9;
+}
+
+.map-container {
+  position: relative;
+  overflow: hidden;
+  padding-top: 56.25%;
+}
+
+.map-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+footer{
+  background: url(images/footer-bg.png);
+  background-size: cover;
+}
+
+.footer-heading{
+  color: orangered;
+  font-size: 20px;
+  letter-spacing: 3px;
+}
+
+.footer-links{
+  margin-top: 10px;
+}
+
+.footer-links a{
+  text-decoration: none;
+  color: rgb(65, 65, 65);
+  line-height: 2;
+}
+
+.footer-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 60px;
+  position: relative;
+}
+
+.line {
+  width: 100%;
+  height: 2px;
+  background-color: orangered;
+  margin-top: 20px;
+}
+
+.footer-logo p {
+  background-color: white;
+  font-size: 20px;
+  letter-spacing: 5px;
+  text-align: center;
+  padding: 0 20px;
+  margin-top: -15px;
+}
+
+.social-links a{
+  text-decoration: none;
+  color: orangered;
+  font-size: 26px;
+  letter-spacing: 35px;
+}
+
+.copyright{
+  font-size: 12px;
+}
