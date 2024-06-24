@@ -905,7 +905,49 @@ footer{
   }
 }
 
+@media (max-width:1025px) {
+ .hidden{
+  right: -480px;
+ } 
+
+ .hidden-left{
+  left: -480px;
+ }
+}
+
 @media (max-width: 1024px) {
+  .carousel-caption::before{
+    bottom: 35%;
+  }
+
+  .welcome-title::after{
+    left: 31.5%;
+  }
+
+  .room-title::after{
+    left: 3.5%;
+  }
+
+  .splide__caption{
+    left: 14%;
+  }
+
+  .why-us-title::after{
+    left: 39%;
+  }
+
+  .services-title::after{
+    left: 37.5%;
+  }
+
+  .testimonial-title::after{
+    left: 27.5%;
+  }
+
+  .contact-heading h5::after{
+    top: 30%;
+  }
+
   .hmmm-caption,
   .hmmm-caption2 {
     display: block !important;
