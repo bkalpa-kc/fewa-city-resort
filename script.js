@@ -63,18 +63,49 @@ document.addEventListener("DOMContentLoaded", function () {
 
 // hmmmm
 
+// $(document).ready(function () {
+//   $(".hmmm-img img, .hmmm-img .con1-btn").hover(
+//     function () {
+//       $(".hmmm-caption").addClass("hidden");
+//       $(".con1-btn").removeClass("d-none");
+//     },
+//     function () {
+//       $(".hmmm-caption").removeClass("hidden");
+//       $(".con1-btn").addClass("d-none");
+//     }
+//   );
+// });
+
 $(document).ready(function () {
-  $(".hmmm-img img, .hmmm-img .con1-btn").hover(
-    function () {
-      $(".hmmm-caption").addClass("hidden");
-      $(".con1-btn").removeClass("d-none");
-    },
-    function () {
+  function applyHoverEffect() {
+    if ($(window).width() > 1024) {
+      $(".hmmm-img img, .hmmm-img .con1-btn").hover(
+        function () {
+          $(".hmmm-caption").addClass("hidden");
+          $(".con1-btn").removeClass("d-none");
+        },
+        function () {
+          $(".hmmm-caption").removeClass("hidden");
+          $(".con1-btn").addClass("d-none");
+        }
+      );
+    } else {
+      // Remove hover event if screen width is 1024px or below
+      $(".hmmm-img img, .hmmm-img .con1-btn").off('mouseenter mouseleave');
       $(".hmmm-caption").removeClass("hidden");
       $(".con1-btn").addClass("d-none");
     }
-  );
+  }
+
+  // Initial check
+  applyHoverEffect();
+
+  // Reapply on window resize
+  $(window).resize(function () {
+    applyHoverEffect();
+  });
 });
+
 
 $(document).ready(function () {
   // Check if the screen size is large enough
@@ -92,6 +123,10 @@ $(document).ready(function () {
     );
   }
 });
+
+
+
+
 
 
 

@@ -391,10 +391,6 @@ hr{
   left: -120px;
 }
 
-.hidd{
-  left: -520px;
-}
-
 .hidden {
   right: -120px;
 }
@@ -850,6 +846,14 @@ footer{
 
 @media (max-width:1200px) {
 
+  .hidden{
+    right: -320px;
+  }
+
+  .hidden-left{
+    left: -320px;
+  }
+
   .carousel-caption::before{
     bottom: 48%;
   }
@@ -900,6 +904,32 @@ footer{
     left: 19.8%;
   }
 }
+
+@media (max-width: 1024px) {
+  .hmmm-caption,
+  .hmmm-caption2 {
+    display: block !important;
+    position: relative;
+    left: 0;
+    width: 100%;
+    box-shadow: none;
+    border: none;
+  }
+
+  .hmmm-img,
+  .hmmm-img2{
+    width: 100%;
+  }
+  .con1-btn,
+  .con2-btn {
+    display: block !important;
+  }
+
+  .services-content .img-caption p{
+    font-size: 16px;
+  }
+}
+
 
 @media (max-width:991px) {
 
@@ -953,7 +983,7 @@ footer{
 
   .navbar{
     position: fixed;
-    background-color: white;
+    background-color: #fcfcfc;
     box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.4);
   } 
 
@@ -1027,7 +1057,6 @@ footer{
     left: 28.2%;
   }
 
-  .swimming-pool,
   .local-excursion,
   .yoga-meditation{
     margin-top: 1.5rem;
