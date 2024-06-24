@@ -1028,6 +1028,12 @@ footer{
   .splide__caption{
     left: 28.2%;
   }
+
+  .swimming-pool,
+  .local-excursion,
+  .yoga-meditation{
+    margin-top: 1.5rem;
+  }
 }
 
 @media (max-width:430px) {
