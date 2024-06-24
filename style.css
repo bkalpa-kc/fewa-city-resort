@@ -417,9 +417,6 @@ hr{
 /* services */
 
 .services{
-  /* background: url(images/p2.jpg);
-  background-repeat: no-repeat;
-  background-size: cover; */
   background-color: #90e0ef;
 }
 
@@ -768,6 +765,7 @@ display: inline-block;
 footer{
   background: url(images/footer-bg.png);
   background-size: cover;
+  background-position: center;
 }
 
 .footer-heading{
