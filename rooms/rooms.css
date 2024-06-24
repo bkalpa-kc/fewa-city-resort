@@ -251,3 +251,51 @@ hr{
 .copyright{
   font-size: 12px;
 }
+
+@media (max-width:576px) {
+  .enquiry-txt{
+    display: none;
+  }
+
+  .enquiry-btn i{
+    padding: 0 6px;
+  }
+
+  .room-links a{
+    font-size: 14px;
+  }
+
+  .room-title{
+    font-size: 24px;
+  }
+
+  .room-details .price{
+    font-size: 16px;
+  }
+
+  .room-para{
+    font-size: 14px;
+  }
+
+  .amenities p{
+    font-size: 16px;
+  }
+
+  .amenities img{
+    padding: 0 4px;
+  }
+
+  .facilities-heading h5{
+    font-size: 24px;
+  }
+
+  .facilities-heading span{
+    font-size: 12px;
+  }
+}
+
+@media (max-width:430px) {
+  .room-links a{
+    font-size: 12px;
+  }
+}
