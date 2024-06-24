@@ -74,13 +74,13 @@
       <p class="text-secondary">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique, aliquam accusantium vel minima corporis, beatae quibusdam rem maxime omnis voluptate quam, aspernatur ipsa alias aperiam modi eaque illum ratione sint.</p>
 
       <div class="row">
-        <div class="col px-0 mx-2">
+        <div class="col-sm-12 col-md-6">
           <a href="#restaurant">
             <img src="images/res1.jpg" alt="" class="img-fluid">
             <div class="img-caption">Restaurant</div>
           </a>
         </div>
-        <div class="col px-0 py-sm-5 py-lg-0 mx-2">
+        <div class="col-sm-12 col-md-6 mt-4 mt-md-0">
           <a href="#bar">
             <img src="images/res1.jpg" alt="" class="img-fluid">
             <div class="img-caption">Fewa City Bar</div>
@@ -109,7 +109,7 @@
 
   <section class="restaurant-experience">
     <div class="container">
-      <div class="row gx-5 gy-5">
+      <div class="row gx-sm-5 gy-5">
         <div class="col-sm-12 col-lg-4">
           <div class="experience-title" data-aos="zoom-in" data-aos-once="true" data-aos-duration="1000">
             <h4 class="text-uppercase display-4">experience</h4>
@@ -158,7 +158,7 @@
 
   <section class="bar-experience">
     <div class="container">
-      <div class="row gx-5 gy-5">
+      <div class="row gx-sm-5 gy-5">
         <div class="col-sm-12 col-lg-4">
           <div class="experience-title" data-aos="zoom-in" data-aos-once="true" data-aos-duration="1000">
             <h4 class="text-uppercase display-4">experience</h4>
@@ -287,7 +287,9 @@
 
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script>
-    AOS.init();
+    AOS.init({
+      disable: 'phone'
+    });
   </script>
 
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>

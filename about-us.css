@@ -409,3 +409,132 @@ footer{
 .copyright{
   font-size: 12px;
 }
+
+@media (max-width:1200px) {
+  .f-img{
+    left: -48%;
+    top: 0;
+  }
+  .s-img{
+    left: -48%;
+    bottom: 0;
+  }
+  .t-img{
+    right: -48%;
+    bottom: 0;
+  }
+  .fo-img{
+    right: -48%;
+    top: 0;
+  }
+}
+
+@media (max-width:1024px) {
+
+  .intro,
+  .history,
+  .image{
+    padding: 100px 0;
+  }
+
+  .intro p{
+    font-size: 14px;
+  }
+
+  .history-heading h6{
+    font-size: 28px;
+  }
+
+  .history-heading span{
+    font-size: 12px;
+  }
+
+  .history-para{
+    font-size: 14px;
+  }
+
+  .f-img{
+    left: -48%;
+    top: 10%;
+  }
+  .s-img{
+    left: -48%;
+    bottom: 10%;
+  }
+  .t-img{
+    right: -48%;
+    bottom: 10%;
+  }
+  .fo-img{
+    right: -48%;
+    top: 10%;
+  }
+
+}
+
+@media (max-width:991px) {
+
+  .intro p{
+    text-align: justify;
+    font-size: 16px;
+  }
+
+  .history-content{
+    width: 68%;
+  }
+
+}
+
+@media (max-width:900px) {
+
+  .intro,
+  .history,
+  .image{
+    padding: 50px 0;
+  }
+
+  .image{
+    margin-top: 0;
+  }
+  
+  .history-content{
+    width: 100%;
+  }
+
+  .history-images{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 22px;
+  }
+
+  .history-images img{
+    border: none;
+    width: 48%;
+  }
+
+  .f-img,
+  .s-img{
+    position: relative;
+    left: 0;
+    rotate: 0deg;
+  }
+  .t-img{
+    position: relative;
+    left: 0;
+    rotate: 0deg;
+  }
+  .fo-img{
+    position: relative;
+    right: 0;
+    rotate: 0deg;
+  }
+
+  .f-img:hover,
+  .s-img:hover,
+  .t-img:hover,
+  .fo-img:hover{
+    transform: none;
+    width: 48%;
+  }
+}

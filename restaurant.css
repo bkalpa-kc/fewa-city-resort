@@ -68,7 +68,7 @@ body{
 }
 
 .intro{
-  height: 100vh;
+  height: auto;
   display: flex;
   align-items: center;
 }
@@ -81,7 +81,7 @@ body{
   margin-top: 80px;
 }
 
-.intro .col{
+.intro .col-sm-12{
   position: relative;
   overflow: hidden;
 }
@@ -289,4 +289,46 @@ footer{
 
 .copyright{
   font-size: 12px;
+}
+
+@media (max-width:1200px) {
+
+  .intro .container{
+    width: 75% !important;
+  }
+
+  .restaurant,
+  .restaurant-experience,
+  .bar,
+  .bar-experience{
+    padding: 120px 0;
+  }
+}
+
+@media (max-width:767px) {
+  .intro .container{
+    width: 100% !important;
+  }
+
+  .restaurant,
+  .restaurant-experience,
+  .bar,
+  .bar-experience{
+    padding: 80px 0 !important;
+  }
+}
+
+@media (max-width:576px) {
+  .restaurant,
+  .restaurant-experience,
+  .bar,
+  .bar-experience{
+    padding: 40px 0 !important;
+  }
+}
+
+@media (max-width:400px) {
+  .hero-title{
+    letter-spacing: normal;
+  }
 }
