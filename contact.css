@@ -81,16 +81,6 @@
   letter-spacing: 2px;
 }
 
-.contact-heading h5::after{
-  content: '';
-  position: absolute;
-  width: 80px;
-  height: 3px;
-  left: 0;
-  top: 30px;
-  background-color: orangered;
-}
-
 .contact-info h6{
   font-size: 20px;
   letter-spacing: 4px;
@@ -190,4 +180,42 @@
 
 .copyright{
   font-size: 12px;
+}
+
+@media (max-width:1200px) {
+  .contact-form .container{
+    width: 75% !important;
+  }
+}
+
+@media (max-width:991px) {
+
+  .contact-info h5,
+  .contact-info h6{
+    font-size: 18px;
+  }
+
+  .contact-info p{
+    font-size: 14px;
+  }
+
+  .contact-form .container{
+    width: 100% !important;
+  }
+
+  .contact-form p{
+    font-size: 24px;
+  }
+}
+
+@media (max-width:576px) {
+  .contact-info{
+    background: skyblue;
+  }
+
+  .contact-info h6{
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+  }
 }
