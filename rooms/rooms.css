@@ -93,10 +93,27 @@ hr{
   right: 0;
 }
 
-.img-caption button{
+.img-caption .book-btn{
   background-color: orangered;
   border-top-left-radius: 50px;
   padding: 10px 10px 5px 22px;
+}
+
+.img-caption .book-btn2{
+  background-color: orangered;
+}
+
+form textarea{
+  resize: none;
+  height: 120px !important;
+}
+
+.modal-header span{
+  color: orangered;
+}
+
+.modal-body span{
+  color: red;
 }
 
 .amenities{

@@ -29,7 +29,7 @@ body{
 
 .navbar {
   position: absolute;
-  z-index: 100000;
+  z-index: 5;
   width: 100%;
 }
 
@@ -61,7 +61,7 @@ body{
 /* reservation */
 
 .reservation  {
-  z-index: 100;
+  z-index: 5;
   background-color: rgba(255, 69, 0, 0.95);
   transition: 0.3s ease;
   box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
@@ -304,7 +304,7 @@ hr{
   border: 3px solid var(--highlight);
   color: var(--highlight);
   transform: translate(100%, 0);
-  z-index: 99;
+  z-index: 5;
   position: absolute;
   top: 0;
   left: 0;
@@ -695,9 +695,30 @@ display: inline-block;
   transition-duration: .3s;
   overflow: hidden;
   position: fixed;
-  z-index: 100;
+  z-index: 5;
   bottom: 2%;
   right: 2%;
+}
+
+.modal-footer button{
+  background-color: var(--highlight);
+}
+
+.modal{
+  z-index: 10000;
+}
+
+.modal-body span{
+  color: red;
+}
+
+.modal-header span{
+  color: var(--highlight);
+}
+
+.book-btn form textarea{
+  resize: none;
+  height: 120px !important;
 }
 
 .svgIcon {
@@ -741,7 +762,7 @@ display: inline-block;
 
 .whatsapp a{
   position: fixed;
-  z-index: 1000;
+  z-index: 5;
   bottom: 2%;
   left: 2%;
   font-size: 30px;
