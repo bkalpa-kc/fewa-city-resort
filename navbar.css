@@ -1,0 +1,68 @@
+:root{
+  --highlight: #ff4500;
+  --highlight-txt: "Caveat", cursive;
+  --hero-font: "DM Serif Text", serif;
+  --title-font: "Saira Condensed", sans-serif;
+}
+
+*{
+  padding: 0;
+  margin: 0;
+  border: none;
+  outline: none;
+  font-family: 'Poppins', sans-serif;
+  list-style: none;
+}
+
+.navbar {
+  background-color: black;
+}
+
+.navbar .container{
+  border-bottom: 1px solid white;
+}
+
+.navbar-brand{
+  font-weight: 700;
+  color: white !important;
+}
+
+.navbar .enquiry-btn{
+  border: 1px solid var(--highlight);
+  background-color: var(--highlight);
+  color: white;
+  font-weight: 600;
+}
+
+.enquiry-btn:hover{
+  background-color: transparent;
+  color: var(--highlight);
+}
+
+.offcanvas{
+  height: 100vh !important;
+}
+
+
+@media (max-width:767px) {
+
+  .navbar{
+    position: fixed;
+    background-color: #fcfcfc;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.4);
+  } 
+
+  .navbar-brand{
+    color: var(--highlight) !important;
+  }
+
+  header .navbar-toggle i{
+    color: var(--highlight) !important;
+  }
+}
+
+@media (max-width:576px) {
+  .enquiry-btn i{
+    padding: 0 6px;
+  }
+}
