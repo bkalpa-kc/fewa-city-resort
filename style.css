@@ -29,7 +29,7 @@ body{
 
 .navbar {
   position: absolute;
-  z-index: 5;
+  z-index: 100;
   width: 100%;
 }
 
@@ -702,10 +702,6 @@ display: inline-block;
 
 .modal-footer button{
   background-color: var(--highlight);
-}
-
-.modal{
-  z-index: 10000;
 }
 
 .modal-body span{
