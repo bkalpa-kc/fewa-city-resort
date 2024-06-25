@@ -1,6 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Sofia&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Sofia&family=Ultra&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Playwrite+NG+Modern:wght@100..400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Permanent+Marker&family=Playwrite+NG+Modern:wght@100..400&family=Saira+Condensed:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Serif+Text:ital@0;1&display=swap');
+
+
+:root{
+  --highlight: #ff4500;
+  --highlight-txt: "Caveat", cursive;
+  --hero-font: "DM Serif Text", serif;
+  --title-font: "Saira Condensed", sans-serif;
+}
 
 *{
   padding: 0;
@@ -17,39 +26,32 @@ body{
 
 .navbar {
   position: absolute;
-  z-index: 100000;
+  z-index: 100;
   width: 100%;
 }
 
+.navbar .container{
+  border-bottom: 1px solid white;
+}
+
 .navbar-brand{
-  color: orangered;
   font-weight: 700;
 }
 
 .navbar .enquiry-btn{
-  border: 1px solid orangered;
-  background-color: orangered;
+  border: 1px solid var(--highlight);
+  background-color: var(--highlight);
   color: white;
   font-weight: 600;
 }
 
 .enquiry-btn:hover{
   background-color: transparent;
-  color: orangered;
+  color: var(--highlight);
 }
 
 .offcanvas{
-  opacity: 80%;
   height: 100vh !important;
-}
-
-.fade-in-offcanvas {
-  opacity: 0;
-  transition: opacity 0.1s;
-}
-
-.fade-in-offcanvas.show {
-  opacity: 1;
 }
 
 .hero{
@@ -63,12 +65,14 @@ body{
   letter-spacing: 5px;
   font-size: 14px;
   color: orangered;
+  font-family: var(--hero-font);
 }
 
 .hero-title{
   letter-spacing: 2px;
   font-size: 64px;
   font-weight: 900;
+  font-family: var(--hero-font);
 }
 
 .intro{
@@ -96,12 +100,15 @@ body{
   color: orangered;
   letter-spacing: 5px;
   font-size: 14px;
+  font-weight: 600;
+  font-family: var(--highlight-txt);
 }
 
 .history-heading h6{
   font-size: 32px;
   font-weight: normal;
   letter-spacing: 3px;
+  font-family: var(--title-font);
 }
 
 .history-para{
@@ -213,19 +220,17 @@ body{
 
 .room-txt{
   letter-spacing: 5px;
-  color: orangered;
+  color: var(--highlight);
+  font-family: var(--highlight-txt);
+}
+
+.room-title{
+  font-family: var(--title-font);
+  font-weight: 500;
 }
 
 .splide__slide{
   position: relative;
-}
-
-.room-title::after{
-  content: "";
-  position: absolute;
-  border-bottom: 5px solid orangered;
-  width: 120px;
-  left: .7%;
 }
 
 .splide__caption{
@@ -237,7 +242,7 @@ body{
 
 .room-btn {
   position: relative;
-  background-color: orangered;
+  background-color: var(--highlight);
   color: white;
   font-size: 17px;
   font-weight: 600;
@@ -260,10 +265,10 @@ body{
   height: 100%;
   pointer-events: none;
   background-color: white;
-  border: 3px solid orangered;
-  color: orangered;
+  border: 3px solid var(--highlight);
+  color: var(--highlight);
   transform: translate(100%, 0);
-  z-index: 99;
+  z-index: 5;
   position: absolute;
   top: 0;
   left: 0;
@@ -282,8 +287,6 @@ body{
 .room-btn:active {
   transform: scale(0.95);
 }
-
-
 .contact{
   background-size: cover;
 }
@@ -431,6 +434,14 @@ footer{
 
 @media (max-width:1024px) {
 
+  .hero-txt{
+    font-size: 12px;
+  }
+
+  .hero-title{
+    font-size: 54px;
+  }
+
   .intro,
   .history,
   .image{
@@ -493,6 +504,12 @@ footer{
     padding: 50px 0;
   }
 
+  .history-heading h6,
+  .history-heading span{
+    display: flex;
+    justify-content: center;
+  }
+
   .image{
     margin-top: 0;
   }
@@ -536,5 +553,55 @@ footer{
   .fo-img:hover{
     transform: none;
     width: 48%;
+  }
+}
+
+@media (max-width:767px) {
+
+  .navbar{
+    position: fixed;
+    background-color: #fcfcfc;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.4);
+  } 
+
+  .navbar-brand{
+    color: var(--highlight) !important;
+  }
+
+  header .navbar-toggle i{
+    color: var(--highlight) !important;
+  }
+
+  .hero-txt{
+    font-size: 10px;
+  }
+
+  .hero-title{
+    font-size: 44px ;
+  }
+}
+
+@media (max-width:575px) {
+
+  .enquiry-btn .enquiry-txt{
+    display: none;
+  }
+
+  .enquiry-btn i{
+    padding: 0 8px;
+  }
+
+  .hero-txt{
+    font-size: 8px;
+  }
+
+  .room-txt{
+    font-size: 14px;
+    letter-spacing: 3px;
+  }
+
+  .room-title{
+    font-size: 28px;
+    letter-spacing: 3px;
   }
 }

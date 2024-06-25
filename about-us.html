@@ -21,21 +21,29 @@
         <button class="navbar-toggle bg-transparent fs-3" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
           <i class="bi bi-list text-white"></i>
         </button>
-        <span class="navbar-filler d-none"></span>
-        <a class="navbar-brand text-uppercase fs-4 text-white" href="index.html">fewa city resort</a>
+        <a class="navbar-brand text-uppercase fs-4 text-white mx-0" href="index.html">fewa city resort</a>
         <button onclick="window.location.href = 'contact.html';" class="enquiry-btn px-lg-4 px-sm-2 px-md-2 py-lg-2  text-uppercase">
           <span class="fs-4"><i class="bi bi-envelope d-lg-none"></i></span>
-          <span class="enquiry-txt d-sm-none d-md-none d-lg-block">Enquiry Now</span>
+          <span class="enquiry-txt fw-bold d-sm-none d-md-none d-lg-block">Enquiry Now</span>
         </button>
-        <div class="offcanvas offcanvas-top text-center fade-in-offcanvas" data-bs-scroll="true" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas offcanvas-top text-center" data-bs-scroll="true" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
           <div class="offcanvas-header d-flex justify-content-center position-relative">
             <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
             <button type="button" class="btn-close position-absolute end-0 me-3" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-          </div>        
+        </div>        
           <div class="offcanvas-body">
             <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                <a class="nav-link" href="about-us.html">About us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="restaurant.html">Bar & Restaurant</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Blog</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="gallery.html">Media Gallery</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">Link</a>
@@ -55,12 +63,12 @@
               </li>
             </ul>
           </div>
-        </div>        
+        </div>
       </div>
     </nav>
   </header>
 
-  <section class="hero d-flex align-items-center justify-content-center text-white flex-column">
+  <section class="hero d-flex align-items-center justify-content-center text-center text-white flex-column">
     <p class="hero-txt text-uppercase mb-0 animate__animated animate__fadeInUp">EXPERIENCE TIMELESS ELEGANCE AND UNFORGETTABLE MOMENTS</p>
     <p class="hero-title display-1 text-capitalize animate__animated animate__fadeIn animate__delay-1s">About fewa city resort</p>
   </section>
@@ -107,11 +115,11 @@
     </div>
   </section>
 
-  <section class="rooms my-5">
+  <section class="rooms">
     <div class="container py-5">
 
       <p class="rooms-heading text-center">
-        <span class="room-txt text-uppercase">luxury experience</span> <br>
+        <span class="room-txt fw-bold text-uppercase">luxury experience</span> <br>
         <span class="room-title display-4 text-capitalize"> Hand-Crafted Rustic Exteriors With Minimalist Interiors</span>
       </p>
 
@@ -246,7 +254,6 @@
   </footer>
 
   <script src="script.js"></script>
-
 
   <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-auto-scroll@latest/dist/js/splide-extension-auto-scroll.min.js"></script>
