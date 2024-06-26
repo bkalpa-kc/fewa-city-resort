@@ -1,0 +1,378 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Playwrite+NG+Modern:wght@100..400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Permanent+Marker&family=Playwrite+NG+Modern:wght@100..400&family=Saira+Condensed:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Serif+Text:ital@0;1&display=swap');
+
+
+:root{
+  --highlight: #ff4500;
+  --highlight-txt: "Caveat", cursive;
+  --hero-font: "DM Serif Text", serif;
+  --title-font: "Saira Condensed", sans-serif;
+}
+
+*{
+  padding: 0;
+  margin: 0;
+  border: none;
+  outline: none;
+  font-family: 'Poppins', sans-serif;
+  list-style: none;
+}
+
+.navbar {
+  position: absolute;
+  z-index: 100;
+  width: 100%;
+}
+
+.navbar .container{
+  border-bottom: 1px solid white;
+}
+
+.navbar-brand{
+  font-weight: 700;
+}
+
+.navbar .enquiry-btn{
+  border: 1px solid var(--highlight);
+  background-color: var(--highlight);
+  color: white;
+  font-weight: 600;
+}
+
+.enquiry-btn:hover{
+  background-color: transparent;
+  color: var(--highlight);
+}
+
+.offcanvas{
+  height: 100vh !important;
+}
+
+.hero{
+  height: 100vh;
+  background: url(images/ex3.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.hero-txt{
+  letter-spacing: 5px;
+  font-size: 14px;
+  color: orangered;
+  font-family: var(--hero-font);
+}
+
+.hero-title{
+  letter-spacing: 2px;
+  font-size: 64px;
+  font-weight: 900;
+  font-family: var(--hero-font);
+}
+
+.intro{
+  padding: 120px 0;
+}
+
+.intro .container{
+  width: 50%;
+}
+
+.intro-heading{
+  font-size: 38px;
+  font-family: var(--title-font);
+}
+
+.intro-heading span{
+  color: var(--highlight);
+  font-family: var(--title-font);
+}
+
+.intro-para{
+  margin-top: 16px;
+  font-size: 18px;
+}
+
+.book-now a{
+  text-decoration: none;
+}
+
+.book-now-btn {
+  border: none;
+  display: block;
+  position: relative;
+  font-size: 16px;
+  background: transparent;
+  cursor: pointer;
+  user-select: none;
+  overflow: hidden;
+  color: var(--highlight);
+  z-index: 1;
+  font-family: inherit;
+}
+
+.book-now-btn span {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  z-index: -1;
+  border: 2px solid var(--highlight);
+}
+
+.book-now-btn span::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 6%;
+  height: 500%;
+  background: white;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(-60deg);
+  transition: all 0.3s;
+}
+
+.book-now-btn:hover span::before {
+  transform: translate(-50%, -50%) rotate(-90deg);
+  width: 100%;
+  background: var(--highlight);
+}
+
+.book-now-btn:hover {
+  color: white;
+}
+
+.contact-heading h5,
+.contact-heading span{
+  letter-spacing: 5px;
+  font-weight: 600;
+  font-family: var(--title-font);
+}
+
+.contact-heading span{
+  color: var(--highlight);
+}
+
+.contact-info{
+  line-height: 5px;
+}
+
+.contact-info a{
+  text-decoration: none;
+  color: black;
+}
+
+.contact-info a:hover{
+  color: gray;
+}
+
+.contact-btn button{ 
+  background-color: var(--highlight);
+  border: 1px solid var(--highlight);
+  letter-spacing: 2px;
+  font-size: 14px;
+  transition: 0.3s ease;
+}
+
+.contact-btn button:hover{
+  background-color: white;
+  color: var(--highlight) !important;
+}
+
+.contact-btn button:active{
+  scale: 0.9;
+}
+
+.map-container {
+  position: relative;
+  overflow: hidden;
+  padding-top: 56.25%;
+}
+
+.map-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+
+footer{
+  background: url(images/footer-bg.png);
+  background-size: cover;
+  background-position: center;
+}
+
+.footer-heading{
+  color: var(--highlight);
+  font-size: 20px;
+  font-family: var(--title-font);
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+
+.footer-links{
+  margin-top: 10px;
+}
+
+.footer-links a{
+  text-decoration: none;
+  color: rgb(65, 65, 65);
+  line-height: 2;
+}
+
+.footer-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 60px;
+  position: relative;
+}
+
+.line {
+  width: 100%;
+  height: 2px;
+  background-color: var(--highlight);
+  margin-top: 20px;
+}
+
+.footer-logo p {
+  background-color: white;
+  font-size: 20px;
+  letter-spacing: 5px;
+  text-align: center;
+  margin-top: -15px;
+}
+
+.social-links a{
+  text-decoration: none;
+  color: var(--highlight);
+  font-size: 26px;
+  letter-spacing: 35px;
+}
+
+.copyright{
+  font-size: 12px;
+}
+
+@media (max-width:1200px) {
+  .intro .container{
+    width: 75%;
+  }
+
+  .intro-heading{
+    font-size: 26px;
+  }
+
+  .intro-para p{
+    font-size: 16px;
+  }
+}
+
+@media (max-width:1024px) {
+  .intro{
+    padding: 80px 0;
+  }
+
+  .hero-txt{
+    font-size: 12px;
+  }
+
+  .hero-title{
+    font-size: 54px;
+  }
+}
+
+@media (max-width:767px) {
+  .navbar{
+    position: fixed;
+    background-color: #fcfcfc;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.4);
+  } 
+
+  .navbar-brand{
+    color: var(--highlight) !important;
+  }
+
+  header .navbar-toggle i{
+    color: var(--highlight) !important;
+  }
+
+  .hero-txt{
+    font-size: 10px;
+  }
+
+  .hero-title{
+    font-size: 44px ;
+  }
+}
+
+@media (max-width:576px) {
+  .hero-txt{
+    font-size: 8px;
+  }
+
+  .intro{
+    padding: 60px 0;
+  }
+
+  .intro .container{
+    width: 100%;
+  }
+
+ .intro-heading {
+  font-size: 20px;
+ }
+ 
+ .intro-para p{
+  font-size: 14px;
+ }
+
+ .book-now button{
+  font-size: 14px;
+ }
+
+ .contact-heading h5{
+  font-size: 18px !important;
+  font-weight: 600;
+  letter-spacing: 3px;
+  }
+
+  .contact-heading p{
+    font-size: 14px !important;
+  }
+
+  .contact-info p{
+    font-size: 14px;
+  }
+
+  .footer-heading{
+    margin-top: 24px;
+  }
+}
+
+@media (max-width:430px) {
+  .footer-heading{
+    font-size: 16px;
+  }
+
+  .footer-links a{
+    font-size: 14px;
+  }
+
+  .social-links a{
+    font-size: 20px;
+  }
+
+  .footer-logo p{
+    font-size: 16px;
+  }
+}
+
+
