@@ -1095,10 +1095,6 @@ footer{
     display: none;
   }
 
-  .enquiry-btn{
-    padding: 0 6px;
-  }
-
   .services .col-lg-3{
     margin-top: 16px;
   }
@@ -1118,6 +1114,20 @@ footer{
   .local-excursion,
   .yoga-meditation{
     margin-top: 1.5rem;
+  }
+
+  .contact-heading h5{
+    font-size: 18px !important;
+    font-weight: 600;
+    letter-spacing: 3px;
+  }
+  
+  .contact-heading p{
+    font-size: 14px !important;
+  }
+
+  .contact-info p{
+    font-size: 14px;
   }
 }
 
@@ -1165,7 +1175,6 @@ footer{
     border: 2px solid var(--highlight);
   }
 
-  
   .services-more a{
     font-size: 12px;
   }
@@ -1214,29 +1223,11 @@ footer{
     font-size: 14px !important;
   }
 
-  .footer-heading{
-    font-size: 16px;
-  }
-
   .carousel-caption::before{
     bottom: 43% !important;
   }
 
   .footer-links a{
-    font-size: 14px;
-  }
-
-  .contact-heading h5{
-    font-size: 18px !important;
-    font-weight: normal;
-    letter-spacing: 3px;
-  }
-
-  .contact-heading p{
-    font-size: 14px !important;
-  }
-
-  .contact-info p{
     font-size: 14px;
   }
 
