@@ -1,41 +1,21 @@
-// // navbar
+//navbar
 
-// const navbar = document.getElementById('navbar');
-// let lastScrollTop = 0;
+const navbar = document.getElementById('navbar');
+let lastScrollTop = 0;
 
-// window.addEventListener('scroll', () => {
-//   const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+window.addEventListener('scroll', function() {
+  let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
 
-//   if (scrollTop === 0) { // At the top
-//     navbar.classList.remove('navbar-black');
-//   } else if (scrollTop < lastScrollTop) { // Scrolling up
-//     navbar.classList.remove('navbar-hidden');
-//     navbar.classList.add('navbar-fixed', 'navbar-black');
-//   } else { // Scrolling down
-//     navbar.classList.add('navbar-hidden');
-//     navbar.classList.remove('navbar-fixed', 'navbar-black');
-//   }
+  if (scrollTop > lastScrollTop && scrollTop > navbar.offsetHeight) {
+    // Downscroll and past navbar height
+    navbar.classList.add('navbar-hidden'); // Apply hidden class to hide navbar
+  } else {
+    // Upscroll or at the top
+    navbar.classList.remove('navbar-hidden'); // Remove hidden class to show navbar
+  }
 
-//   lastScrollTop = scrollTop;
-// });
-
-
-// document.addEventListener('DOMContentLoaded', function () {
-//   let lastScrollTop = 0;
-//   const navbar = document.getElementById('navbar');
-//   let isHidden = false;
-
-//   window.addEventListener('scroll', function () {
-//       let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-//       if (scrollTop > lastScrollTop && !isHidden) {
-//           // Scroll down
-//           navbar.style.transform = 'translateY(-100%)';
-//           isHidden = true;
-//       }
-//       lastScrollTop = scrollTop <= 0 ? 0 : scrollTop; // For Mobile or negative scrolling
-//   }, false);
-// });
-
+  lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
+});
 
 // rooms splide
 
@@ -163,24 +143,24 @@ $(document).ready(function () {
 
 //reservation
 
-const navbar = document.getElementById("reservation");
-const showOnScrollPosition = 800; // Adjust this value based on when you want the navbar to appear
-let isNavbarVisible = false;
+// const navbar = document.getElementById("reservation");
+// const showOnScrollPosition = 800; // Adjust this value based on when you want the navbar to appear
+// let isNavbarVisible = false;
 
-window.addEventListener("scroll", () => {
-  const scrollTop =
-    window.pageYOffset || document.documentElement.scrollTop;
+// window.addEventListener("scroll", () => {
+//   const scrollTop =
+//     window.pageYOffset || document.documentElement.scrollTop;
 
-  if (scrollTop > showOnScrollPosition && !isNavbarVisible) {
-    navbar.classList.remove("reservation-hidden");
-    navbar.classList.add("reservation-fixed");
-    isNavbarVisible = true;
-  } else if (scrollTop <= showOnScrollPosition && isNavbarVisible) {
-    navbar.classList.add("reservation-hidden");
-    navbar.classList.remove("reservation-fixed");
-    isNavbarVisible = false;
-  }
-});
+//   if (scrollTop > showOnScrollPosition && !isNavbarVisible) {
+//     navbar.classList.remove("reservation-hidden");
+//     navbar.classList.add("reservation-fixed");
+//     isNavbarVisible = true;
+//   } else if (scrollTop <= showOnScrollPosition && isNavbarVisible) {
+//     navbar.classList.add("reservation-hidden");
+//     navbar.classList.remove("reservation-fixed");
+//     isNavbarVisible = false;
+//   }
+// });
 
 
 
