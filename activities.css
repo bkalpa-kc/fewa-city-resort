@@ -469,9 +469,17 @@ footer{
 @media (max-width:767px) {
   .navbar{
     position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
     background-color: #fcfcfc;
     box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.4);
+    transition: top .3s ease;
   } 
+
+  .navbar-hidden {
+    top: -86px; /* Adjust based on your navbar height */
+  }
 
   .navbar-brand{
     color: var(--highlight) !important;
