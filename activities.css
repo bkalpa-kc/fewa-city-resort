@@ -50,11 +50,36 @@
   height: 100vh !important;
 }
 
-.hero{
+.excursion-hero{
   height: 100vh;
   background: url(images/ex3.jpg);
   background-size: cover;
+  background-position: center;
   background-attachment: fixed;
+}
+
+.yoga-hero{
+  height: 100vh;
+  background: url(images/e2.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.swimming-hero{
+  height: 100vh;
+  background: url(images/e3.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.cycling-hero{
+  height: 100vh;
+  background: url(images/cy1.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; 
 }
 
 .hero-txt{
@@ -144,6 +169,113 @@
 
 .book-now-btn:hover {
   color: white;
+}
+
+.activities .col-6{
+  position: relative;
+  overflow: hidden;
+}
+
+.img-caption{
+  font-size: 20px;
+  text-transform: capitalize;
+  color: white;
+  position: absolute;
+  bottom: 1%;
+  margin-left: 3%;
+  padding: 2px 6px;
+  border-top: 5px solid orangered;
+}
+
+.activities img{
+  transition: 0.5s ease;
+  filter: brightness(.6);
+}
+
+.activities img:hover{
+  transform: scale(1.1);
+  filter: blur(3px);
+}
+
+.local-excursion,
+.yoga,
+.swimming,
+.cycling{
+  padding: 120px 0;
+}
+
+.activity-img img{
+  height: 620px;
+  object-fit: cover;
+}
+
+.activity-heading{
+  font-size: 52px;
+  font-family: var(--title-font);
+  color: var(--highlight);
+  font-weight: 500;
+}
+
+.activity-para{
+  font-size: 18px;
+}
+
+.excursion-content,
+.yoga-content,
+.swimming-content,
+.cycling-content{
+  margin-top: 180px;
+}
+
+.content-heading p{
+  font-size: 42px;
+  font-weight: 500;
+  color: var(--highlight);
+  font-family: var(--title-font);
+}
+
+.content-para{
+  font-size: 18px;
+}
+
+.content-para span{
+  color: var(--highlight);
+  font-weight: 600;
+}
+
+.content-img img{
+  border-radius: 18px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+}
+
+.excursion-splide,
+.yoga-splide,
+.swimming-splide,
+.cycling-splide{
+  padding: 0 3%;
+}
+
+.splide__slide img{
+  padding: 0 2%;
+}
+
+.splide__pagination__page{
+  width: 16px;
+  height: 16px;
+  background-color: white;
+  opacity: 100%;
+}
+
+.splide__pagination__page.is-active {
+  background: var(--highlight);
+}
+
+.splide__arrow{
+  background-color: var(--highlight);
+}
+
+.splide__arrow svg{
+  fill: white;
 }
 
 .contact-heading h5,
@@ -273,6 +405,26 @@ footer{
   .intro-para p{
     font-size: 16px;
   }
+
+  .img-caption{
+    font-size: 18px;
+  }
+
+  .activity-heading{
+    font-size: 42px;
+  }
+
+  .activity-para{
+    font-size: 16px;
+  }
+
+  .content-heading p{
+    font-size: 32px;
+  }
+
+  .content-para{
+    font-size: 16px;
+  }
 }
 
 @media (max-width:1024px) {
@@ -286,6 +438,31 @@ footer{
 
   .hero-title{
     font-size: 54px;
+  }
+
+  .splide__pagination__page{
+    width: 12px;
+    height: 12px;
+  }
+}
+
+@media (max-width:991px) {
+  .local-excursion,
+  .yoga,
+  .swimming,
+  .cycling{
+    padding: 80px 0;
+  }
+
+  .activity-heading{
+    font-size: 38px;
+  }
+
+  .excursion-content,
+  .yoga-content,
+  .swimming-content,
+  .cycling-content{
+    margin-top: 80px;
   }
 }
 
@@ -338,6 +515,36 @@ footer{
   font-size: 14px;
  }
 
+ .splide__pagination__page{
+  width: 10px;
+  height: 10px;
+ }
+
+ .splide__arrow{
+  display: none;
+  }
+
+ .img-caption{
+  font-size: 16px;
+  border-top: 2px solid var(--highlight);
+ }
+
+ .activity-heading{
+  font-size: 32px;
+ }
+
+ .activity-para{
+  font-size: 14px;
+ }
+
+ .content-heading p{
+  font-size: 26px;
+ }
+
+ .content-para{
+  font-size: 14px;
+ }
+
  .contact-heading h5{
   font-size: 18px !important;
   font-weight: 600;
@@ -358,6 +565,10 @@ footer{
 }
 
 @media (max-width:430px) {
+  .img-caption{
+    font-size: 12px;
+  }
+
   .footer-heading{
     font-size: 16px;
   }

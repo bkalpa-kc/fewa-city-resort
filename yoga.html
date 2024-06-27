@@ -10,8 +10,9 @@
   />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <link rel="stylesheet" href="activities.css">
-  <title>Activities</title>
+  <title>Yoga & Meditation</title>
 </head>
 <body>
 
@@ -68,9 +69,9 @@
     </nav>
   </header>
 
-  <section class="hero d-flex align-items-center justify-content-center text-center text-white flex-column">
+  <section class="hero yoga-hero d-flex align-items-center justify-content-center text-center text-white flex-column">
     <p class="hero-txt text-uppercase mb-0 animate__animated animate__fadeInUp">EXPERIENCE TIMELESS ELEGANCE AND UNFORGETTABLE MOMENTS</p>
-    <p class="hero-title display-1 text-capitalize animate__animated animate__fadeIn animate__delay-1s">activites</p>
+    <p class="hero-title display-1 text-capitalize animate__animated animate__fadeIn animate__delay-1s">yoga & meditation</p>
   </section>
 
   <section class="intro">
@@ -96,18 +97,98 @@
   <section class="activities">
     <div class="container text-center">
       <div class="row">
-        <div class="col-12 col-md-6 col-lg-3">
-          local excursion
+        <div class="col-6 col-lg-3">
+          <a href="local-excursion.html">
+            <img src="images/ex1.jpg" class="w-100" alt="">
+            <div class="img-caption">local excursion</div>
+          </a>
         </div>
-        <div class="col-12 col-md-6 col-lg-3">
-          cycling
+        <div class="col-6 col-lg-3">
+          <a href="#yoga">
+            <img src="images/e2.jpg" class="w-100" alt="">
+            <div class="img-caption">yoga & meditation</div>
+          </a>
         </div>
-        <div class="col-12 col-md-6 col-lg-3">
-          yoga & meditation
+        <div class="col-6 col-lg-3 mt-3 mt-lg-0">
+          <a href="swimming-pool.html">
+            <img src="images/e3.jpg" class="w-100" alt="">
+            <div class="img-caption">swimming pool & gym</div>
+          </a>
         </div>
-        <div class="col-12 col-md-6 col-lg-3">
-          swimming pool & gym
+        <div class="col-6 col-lg-3 mt-3 mt-lg-0">
+          <a href="cycling.html">
+            <img src="images/e4.jpg" class="w-100" alt="">
+            <div class="img-caption">cycling</div>
+          </a>
         </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="yoga" id="yoga">
+    <div class="container">
+      <div class="yoga-intro">
+        <div class="row align-items-center">
+          <div class="col-12 col-lg-6">
+            <div class="activity-img">
+            <img src="images/y1.jpg" class="w-100" alt="">
+            </div>
+          </div>
+          <div class="col-12 col-lg-5 ms-0 ms-lg-5 order-first order-lg-last">
+            <div class="activity-heading text-uppercase">
+              yoga & meditation
+            </div>
+            <div class="activity-para mt-3">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt laudantium quo dolorem eligendi reiciendis modi illum expedita obcaecati possimus, inventore voluptatum quia blanditiis quam aut perferendis id temporibus qui ut. Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae nostrum totam fugiat voluptatum deserunt unde iste nesciunt iure. Officiis quisquam amet et eaque esse accusamus tempore incidunt iusto alias. Ad?</p>
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab rem nam minima, ipsa omnis dolor dolore quis rerum necessitatibus illum unde consectetur, quidem nostrum perspiciatis expedita! Explicabo voluptatem veritatis officiis!</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="yoga-content">
+        <div class="row">
+          <div class="col-12 col-lg-4" data-aos="zoom-in" data-aos-once="true" data-aos-duration="1000">
+            <div class="content-heading">
+              <p>Experience</p>
+            </div>
+            <div class="content-para">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui aliquam adipisci laborum consequuntur possimus maiores cumque, dolorem distinctio nemo accusamus voluptas suscipit ipsum voluptates, nihil fugiat esse soluta blanditiis a.</p>
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione, accusamus dicta asperiores ab veniam nam porro corrupti quia saepe, aliquam error quisquam! Ab ea, adipisci maxime obcaecati omnis facere doloremque!</p>
+            </div>
+          </div>
+          <div class="col-12 col-lg-4">
+            <div class="content-img" data-aos="zoom-in" data-aos-once="true" data-aos-duration="1000" data-aos-delay="300">
+              <img src="images/y2.jpg" class="w-100" alt="">
+            </div>
+          </div>
+          <div class="col-12 col-lg-4 mt-4 mt-lg-0" data-aos="zoom-in" data-aos-once="true" data-aos-duration="1000" data-aos-delay="600">
+            <div class="content-para">
+              <p><span>Lorem ipsum</span> dolor sit amet consectetur adipisicing elit. Minus quam reprehenderit, ullam laborum a tenetur tempora quisquam accusamus! Quaerat debitis voluptate porro labore iure tempora tempore similique eligendi, cupiditate in.</p>
+            </div>
+            <div class="content-img">
+              <img src="images/y3.jpg" class="w-100" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="yoga-splide">
+    <div class="splide" id="yoga-slider">
+      <div class="splide__track">
+        <ul class="splide__list">
+          <li class="splide__slide">
+            <img src="images/y4.jpg" class="w-100" alt="">
+          </li>
+          <li class="splide__slide">
+            <img src="images/y5.jpg" class="w-100"  alt="">
+          </li>
+          <li class="splide__slide">
+            <img src="images/y6.jpg" class="w-100"  alt="">
+          </li>
+        </ul>
       </div>
     </div>
   </section>
@@ -206,6 +287,33 @@
 
     </div>
   </footer>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      var splide = new Splide( '.splide', {
+        type   : 'loop',
+        padding: '20rem',
+        autoplay: 'true',
+        breakpoints: {
+          1024: {
+            padding: '5rem',
+          },
+          576: {
+            padding: 0,
+          },
+        },
+      });
+
+      splide.mount();
+    });
+  </script>
+
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      disable: 'phone'
+    });
+  </script>
 
   <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
 
