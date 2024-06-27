@@ -515,6 +515,20 @@ footer{
   font-size: 14px;
  }
 
+ .local-excursion,
+  .yoga,
+  .swimming,
+  .cycling{
+    padding: 30px 0;
+  }
+
+  .excursion-content,
+  .yoga-content,
+  .swimming-content,
+  .cycling-content{
+    margin-top: 30px;
+  }
+
  .splide__pagination__page{
   width: 10px;
   height: 10px;
