@@ -1,7 +1,16 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Sofia&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Sofia&family=Ultra&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Playwrite+NG+Modern:wght@100..400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Permanent+Marker&family=Playwrite+NG+Modern:wght@100..400&family=Saira+Condensed:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Serif+Text:ital@0;1&display=swap');
+
+
+:root{
+  --highlight: #ff4500;
+  --highlight-txt: "Caveat", cursive;
+  --hero-font: "DM Serif Text", serif;
+  --title-font: "Saira Condensed", sans-serif;
+}
 
 *{
   padding: 0;
@@ -13,12 +22,12 @@
 }
 
 body{
-  background-color: #fefae0;
+  background-color: #fcfcfc;
 }
 
 .navbar {
   position: absolute;
-  z-index: 100000;
+  z-index: 100;
   width: 100%;
 }
 
@@ -27,24 +36,22 @@ body{
 }
 
 .navbar-brand{
-  color: orangered;
   font-weight: 700;
 }
 
 .navbar .enquiry-btn{
-  border: 1px solid orangered;
-  background-color: orangered;
+  border: 1px solid var(--highlight);
+  background-color: var(--highlight);
   color: white;
   font-weight: 600;
 }
 
 .enquiry-btn:hover{
   background-color: transparent;
-  color: orangered;
+  color: var(--highlight);
 }
 
 .offcanvas{
-  opacity: 80%;
   height: 100vh !important;
 }
 
@@ -52,6 +59,7 @@ body{
   height: 100vh;
   background: url(images/res1.jpg);
   background-size: cover;
+  background-position: center;
   background-attachment: fixed;
 }
 
@@ -59,12 +67,14 @@ body{
   letter-spacing: 5px;
   font-size: 14px;
   color: orangered;
+  font-family: var(--hero-font);
 }
 
 .hero-title{
   letter-spacing: 2px;
   font-size: 64px;
   font-weight: 900;
+  font-family: var(--hero-font);
 }
 
 .intro{
@@ -73,8 +83,20 @@ body{
   align-items: center;
 }
 
+.intro-title{
+  font-family: var(--title-font);
+}
+
 .intro-title span{
   color: orangered;
+}
+
+.intro-title{
+  font-size: 42px;
+}
+
+.intro p{
+  font-size: 18px;
 }
 
 .intro .row{
@@ -106,11 +128,24 @@ body{
 
 .restaurant{
   padding: 180px 0; 
-  background-color: #faedcd;
+  background-color: #caf0f8;
 }
 
-.restaurant-title span{
+.restaurant-title h4,
+.bar-title h4{
+  font-family: var(--title-font);
+  font-size: 48px;
+}
+
+.restaurant-title p,
+.bar-title p{
+  font-size: 18px;
+}
+
+.restaurant-title span,
+.bar-title span{
   color: orangered;
+  font-family: var(--title-font);
 }
 
 .restaurant-experience{
@@ -122,11 +157,21 @@ body{
 .restaurant-experience h4,
 .restaurant-experience h5{ 
   color: orangered;
+  font-family: var(--title-font);
+}
+
+.restaurant-experience h5,
+.bar-experience h5{
+  font-size: 42px;
+}
+
+.restaurant-experience p,
+.bar-experience p{
+  font-size: 18px;
 }
 
 .restaurant-experience span{
   color: orangered;
-  font-size: 18px;
 }
 
 .restaurant-experience img{
@@ -144,11 +189,7 @@ body{
 
 .bar{
   padding: 180px 0;
-  background-color: #faedcd;
-}
-
-.bar span{
-  color: orangered;
+  background-color: #caf0f8;
 }
 
 .bar-experience{
@@ -160,11 +201,11 @@ body{
 .bar-experience h4,
 .bar-experience h5{ 
   color: orangered;
+  font-family: var(--title-font);
 }
 
 .bar-experience span{
   color: orangered;
-  font-size: 18px;
 }
 
 .bar-experience img{
@@ -175,25 +216,16 @@ body{
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
 }
 
-.contact-heading{
-  position: relative;
-}
 
-.contact-heading h5{
+.contact-heading h5,
+.contact-heading span{
   letter-spacing: 5px;
-}
-
-.contact-heading h5::after{
-  content: "";
-  position: absolute;
-  border-bottom: 5px solid orangered;
-  width: 60px;
-  left: 0;
-  top: 40px;
+  font-weight: 600;
+  font-family: var(--title-font);
 }
 
 .contact-heading span{
-  color: orangered;
+  color: var(--highlight);
 }
 
 .contact-info{
@@ -210,8 +242,8 @@ body{
 }
 
 .contact-btn button{ 
-  background-color: orangered;
-  border: 1px solid orangered;
+  background-color: var(--highlight);
+  border: 1px solid var(--highlight);
   letter-spacing: 2px;
   font-size: 14px;
   transition: 0.3s ease;
@@ -219,7 +251,7 @@ body{
 
 .contact-btn button:hover{
   background-color: white;
-  color: orangered !important;
+  color: var(--highlight) !important;
 }
 
 .contact-btn button:active{
@@ -241,13 +273,17 @@ body{
 }
 
 footer{
-  background-color: #faedcd;
+  background: url(images/footer-bg.png);
+  background-size: cover;
+  background-position: center;
 }
 
 .footer-heading{
-  color: orangered;
+  color: var(--highlight);
   font-size: 20px;
-  letter-spacing: 3px;
+  font-family: var(--title-font);
+  font-weight: 600;
+  letter-spacing: 2px;
 }
 
 .footer-links{
@@ -260,29 +296,33 @@ footer{
   line-height: 2;
 }
 
-.line{
-  height: 2px;
-  background-color: orangered;
-  margin-top: 50px;
-}
-
-.footer-logo{
-  position: relative;
+.footer-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   margin-top: 60px;
+  position: relative;
 }
 
-.footer-logo p{
-  position: absolute;
-  top: -15px;
-  right: 38%;
-  background-color: #faedcd;
+.line {
+  width: 100%;
+  height: 2px;
+  background-color: var(--highlight);
+  margin-top: 20px;
+}
+
+.footer-logo p {
+  background-color: white;
   font-size: 20px;
   letter-spacing: 5px;
+  text-align: center;
+  margin-top: -15px;
 }
 
 .social-links a{
   text-decoration: none;
-  color: orangered;
+  color: var(--highlight);
   font-size: 26px;
   letter-spacing: 35px;
 }
@@ -297,6 +337,43 @@ footer{
     width: 75% !important;
   }
 
+  .intro p{
+    font-size: 16px;
+  }
+
+  .intro-title{
+    font-size: 36px;
+  }
+
+  .img-caption{
+    font-size: 22px !important;
+  }
+
+  .restaurant-title h4,
+  .bar-title h4{
+    font-size: 42px;
+  }
+
+  .restaurant-title p,
+  .bar-title p{
+    font-size: 16px;
+  }
+
+  .restaurant-experience h4,
+  .bar-experience h4{
+    font-size: 38px;
+  }
+
+  .restaurant-experience p,
+  .bar-experience p{
+    font-size: 16px;
+  }
+
+  .restaurant-experience h5,
+  .bar-experience h5{
+    font-size: 32px;
+  }
+
   .restaurant,
   .restaurant-experience,
   .bar,
@@ -305,7 +382,47 @@ footer{
   }
 }
 
+@media (max-width:1024px) {
+  .hero-txt{
+    font-size: 12px;
+  }
+
+  .hero-title{
+    font-size: 54px;
+  }
+}
+
 @media (max-width:767px) {
+  .navbar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #fcfcfc;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.4);
+    transition: top .3s ease;
+  } 
+
+  .navbar-hidden {
+    top: -86px; /* Adjust based on your navbar height */
+  }
+
+  .navbar-brand{
+    color: var(--highlight) !important;
+  }
+
+  header .navbar-toggle i{
+    color: var(--highlight) !important;
+  }
+
+  .hero-txt{
+    font-size: 10px;
+  }
+
+  .hero-title{
+    font-size: 44px ;
+  }
+
   .intro .container{
     width: 100% !important;
   }
@@ -319,16 +436,90 @@ footer{
 }
 
 @media (max-width:576px) {
+  .hero-txt{
+    font-size: 8px;
+  }
+
   .restaurant,
   .restaurant-experience,
   .bar,
   .bar-experience{
     padding: 40px 0 !important;
   }
+
+  .intro p{
+    font-size: 14px;
+  }
+
+  .intro-title{
+    font-size: 30px;
+  }
+  
+  .restaurant-title h4,
+  .bar-title h4{
+    font-size: 32px;
+  }
+
+  .restaurant-title p,
+  .bar-title p{
+    font-size: 14px;
+  }
+
+  .restaurant-experience h4,
+  .bar-experience h4{
+    font-size: 30px;
+  }
+
+  .restaurant-experience p,
+  .bar-experience p{
+    font-size: 14px;
+  }
+
+  .restaurant-experience h5,
+  .bar-experience h5{
+    font-size: 28px;
+  }
+
+  .restaurant,
+  .restaurant-experience,
+  .bar,
+  .bar-experience{
+    padding: 120px 0;
+  }
+
+  .contact-heading h5{
+    font-size: 18px !important;
+    font-weight: 600;
+    letter-spacing: 3px;
+    }
+  
+    .contact-heading p{
+      font-size: 14px !important;
+    }
+  
+    .contact-info p{
+      font-size: 14px;
+    }
+  
+    .footer-heading{
+      margin-top: 24px;
+    }
 }
 
-@media (max-width:400px) {
-  .hero-title{
-    letter-spacing: normal;
+@media (max-width:430px) {
+  .footer-heading{
+    font-size: 16px;
+  }
+
+  .footer-links a{
+    font-size: 14px;
+  }
+
+  .social-links a{
+    font-size: 20px;
+  }
+
+  .footer-logo p{
+    font-size: 16px;
   }
 }

@@ -40,6 +40,10 @@ body{
   color: var(--highlight);
 }
 
+.navbar-brand:hover{
+  color: var(--highlight);
+}
+
 .navbar-toggle i{
   color: var(--highlight);
 }

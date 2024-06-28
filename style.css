@@ -1060,6 +1060,10 @@ footer{
   header .navbar-toggle i{
     color: var(--highlight) !important;
   }
+
+  .splide__caption{
+    left: 28.2%;
+  }
 }
 
 @media (max-width:576px) {

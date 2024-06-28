@@ -24,6 +24,36 @@ body{
   background-color: white;
 }
 
+.navbar {
+  position: absolute;
+  z-index: 100;
+  width: 100%;
+}
+
+.navbar .container{
+  border-bottom: 1px solid white;
+}
+
+.navbar-brand{
+  font-weight: 700;
+}
+
+.navbar .enquiry-btn{
+  border: 1px solid var(--highlight);
+  background-color: var(--highlight);
+  color: white;
+  font-weight: 600;
+}
+
+.enquiry-btn:hover{
+  background-color: transparent;
+  color: var(--highlight);
+}
+
+.offcanvas{
+  height: 100vh !important;
+}
+
 .hero{
   height: 100vh;
   background: url(images/c4-min.jpg);
@@ -34,7 +64,7 @@ body{
 .hero-txt{
   letter-spacing: 5px;
   font-size: 14px;
-  color: orangered;
+  color: var(--highlight);
   font-family: var(--hero-font);
 }
 
@@ -50,11 +80,11 @@ body{
 }
 
 .intro p{
-  font-size: 16px;
+  font-size: 18px;
 }
 
 .intro p span{
-  color: orangered;
+  color: var(--highlight);
   font-size: 18px;
 }
 
@@ -63,11 +93,11 @@ body{
 }
 
 .history{
-  background-color: #e9edc9;
+  background-color: #caf0f8;
 }
 
 .history-heading span{
-  color: orangered;
+  color: var(--highlight);
   letter-spacing: 5px;
   font-size: 14px;
   font-weight: 600;
@@ -75,14 +105,15 @@ body{
 }
 
 .history-heading h6{
-  font-size: 32px;
-  font-weight: normal;
-  letter-spacing: 3px;
+  font-size: 42px;
+  font-weight: 500;
+  letter-spacing: 2px;
   font-family: var(--title-font);
 }
 
 .history-para{
   text-align: justify;
+  font-size: 18px;
 }
 
 .history{
@@ -101,7 +132,7 @@ body{
 
 .f-img{
   position: absolute;
-  top: -80px;
+  top: -50px;
   left: -320px;
   rotate: -30deg;
   transition: .8s ease;
@@ -119,7 +150,7 @@ body{
 
 .s-img{
   position: absolute;
-  bottom: -30px;
+  bottom: -10px;
   left: -320px;
   rotate: 30deg;
   transition: .8s ease;
@@ -127,7 +158,7 @@ body{
 
 .t-img{
   position: absolute;
-  bottom: -30px;
+  bottom: -10px;
   right: -320px;
   rotate: 20deg;
   transition: .8s ease;
@@ -135,7 +166,7 @@ body{
 
 .fo-img{
   position: absolute;
-  top: -80px;
+  top: -50px;
   right: -320px;
   rotate: 50deg;
   transition: .8s ease;
@@ -149,8 +180,9 @@ body{
   width: 100%;
 }
 
+
 .rooms{
-  background-color: #e9edc9;
+  background-color: #caf0f8;
 }
 
 .splide {
@@ -257,29 +289,16 @@ body{
 .room-btn:active {
   transform: scale(0.95);
 }
-.contact{
-  background-size: cover;
-}
 
-.contact-heading{
-  position: relative;
-}
-
-.contact-heading h5{
+.contact-heading h5,
+.contact-heading span{
   letter-spacing: 5px;
-}
-
-.contact-heading h5::after{
-  content: "";
-  position: absolute;
-  border-bottom: 5px solid orangered;
-  width: 60px;
-  left: 0;
-  top: 40px;
+  font-weight: 600;
+  font-family: var(--title-font);
 }
 
 .contact-heading span{
-  color: orangered;
+  color: var(--highlight);
 }
 
 .contact-info{
@@ -296,8 +315,8 @@ body{
 }
 
 .contact-btn button{ 
-  background-color: orangered;
-  border: 1px solid orangered;
+  background-color: var(--highlight);
+  border: 1px solid var(--highlight);
   letter-spacing: 2px;
   font-size: 14px;
   transition: 0.3s ease;
@@ -305,7 +324,7 @@ body{
 
 .contact-btn button:hover{
   background-color: white;
-  color: orangered !important;
+  color: var(--highlight) !important;
 }
 
 .contact-btn button:active{
@@ -326,7 +345,81 @@ body{
   height: 100%;
 }
 
+
+footer{
+  background: url(images/footer-bg.png);
+  background-size: cover;
+  background-position: center;
+}
+
+.footer-heading{
+  color: var(--highlight);
+  font-size: 20px;
+  font-family: var(--title-font);
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+
+.footer-links{
+  margin-top: 10px;
+}
+
+.footer-links a{
+  text-decoration: none;
+  color: rgb(65, 65, 65);
+  line-height: 2;
+}
+
+.footer-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 60px;
+  position: relative;
+}
+
+.line {
+  width: 100%;
+  height: 2px;
+  background-color: var(--highlight);
+  margin-top: 20px;
+}
+
+.footer-logo p {
+  background-color: white;
+  font-size: 20px;
+  letter-spacing: 5px;
+  text-align: center;
+  margin-top: -15px;
+}
+
+.social-links a{
+  text-decoration: none;
+  color: var(--highlight);
+  font-size: 26px;
+  letter-spacing: 35px;
+}
+
+.copyright{
+  font-size: 12px;
+}
+
+@media (max-width:1400px) {
+  .splide__caption{
+    left: 24%;
+  }
+}
+
 @media (max-width:1200px) {
+  .intro p{
+    font-size: 16px;
+  }
+
+  .history-para{
+    font-size: 16px;
+  }
+
   .f-img{
     left: -48%;
     top: 0;
@@ -342,6 +435,10 @@ body{
   .fo-img{
     right: -48%;
     top: 0;
+  }
+
+  .splide__caption{
+    left: 19.8%;
   }
 }
 
@@ -394,6 +491,9 @@ body{
     top: 10%;
   }
 
+  .splide__caption{
+    left: 14%;
+  }
 }
 
 @media (max-width:991px) {
@@ -407,6 +507,9 @@ body{
     width: 68%;
   }
 
+  .splide__caption{
+    left: 33.8%;
+  }
 }
 
 @media (max-width:900px) {
@@ -424,7 +527,7 @@ body{
   }
 
   .image{
-    margin-top: 0;
+    margin: 0;
   }
   
   .history-content{
@@ -473,9 +576,17 @@ body{
 
   .navbar{
     position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
     background-color: #fcfcfc;
     box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.4);
+    transition: top .3s ease;
   } 
+
+  .navbar-hidden {
+    top: -86px; /* Adjust based on your navbar height */
+  }
 
   .navbar-brand{
     color: var(--highlight) !important;
@@ -492,18 +603,13 @@ body{
   .hero-title{
     font-size: 44px ;
   }
+
+  .splide__caption{
+    left: 28.2%;
+  }
 }
 
-@media (max-width:575px) {
-
-  .enquiry-btn .enquiry-txt{
-    display: none;
-  }
-
-  .enquiry-btn i{
-    padding: 0 8px;
-  }
-
+@media (max-width:576px) {
   .hero-txt{
     font-size: 8px;
   }
@@ -516,5 +622,74 @@ body{
   .room-title{
     font-size: 28px;
     letter-spacing: 3px;
+  }
+
+  .intro p{
+    font-size: 14px;
+  }
+
+  .history p{
+    font-size: 14px;
+  }
+
+  .room-txt{
+    font-size: 14px;
+    letter-spacing: 3px;
+  }
+  
+  .room-title{
+    font-size: 28px;
+    letter-spacing: 3px;
+  }
+
+  .splide__caption{
+    left: 28.2%;
+  }
+
+  .contact-heading h5{
+    font-size: 18px !important;
+    font-weight: 600;
+    letter-spacing: 3px;
+    }
+  
+    .contact-heading p{
+      font-size: 14px !important;
+    }
+  
+    .contact-info p{
+      font-size: 14px;
+    }
+  
+    .footer-heading{
+      margin-top: 24px;
+    }
+}
+
+@media (max-width:430px) {
+
+  .splide__caption{
+    left: 22.3%;
+  }
+
+  .footer-heading{
+    font-size: 16px;
+  }
+
+  .footer-links a{
+    font-size: 14px;
+  }
+
+  .social-links a{
+    font-size: 20px;
+  }
+
+  .footer-logo p{
+    font-size: 16px;
+  }
+}
+
+@media (max-width:394px) {
+  .splide__caption{
+    left: 19.65%;
   }
 }

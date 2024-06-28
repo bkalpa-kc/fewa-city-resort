@@ -16,7 +16,58 @@
 </head>
 <body>
 
-  <section id="navbar"></section>
+  <header>
+    <nav class="navbar py-0" id="navbar">
+      <div class="container px-lg-0 py-3">
+        <button class="navbar-toggle bg-transparent fs-3" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+          <i class="bi bi-list text-white"></i>
+        </button>
+        <a class="navbar-brand text-uppercase fs-4 text-white mx-0" href="index.html">fewa city resort</a>
+        <button onclick="window.location.href = 'contact.html';" class="enquiry-btn px-lg-4 px-2 py-lg-2 text-uppercase">
+          <span class="fs-4"><i class="bi bi-envelope d-lg-none"></i></span>
+          <span class="enquiry-txt fw-bold d-none d-lg-block">Enquiry Now</span>
+        </button>
+        <div class="offcanvas offcanvas-top text-center" data-bs-scroll="true" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header d-flex justify-content-center position-relative">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
+            <button type="button" class="btn-close position-absolute end-0 me-3" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>        
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link" href="about-us.html">About us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="restaurant.html">Bar & Restaurant</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Blog</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="gallery.html">Media Gallery</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Dropdown
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li>
+                    <hr class="dropdown-divider">
+                  </li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
 
   <section class="hero d-flex align-items-center justify-content-center text-center text-white flex-column">
     <p class="hero-txt text-uppercase mb-0 animate__animated animate__fadeInUp">EXPERIENCE TIMELESS ELEGANCE AND UNFORGETTABLE MOMENTS</p>
@@ -79,7 +130,7 @@
             <li class="splide__slide">
               <a href="rooms/deluxe-room.html"><img src="images/r1.jpg"></a>
               <div class="splide__caption">
-                <a href="book.html"><button class="room-btn">Deluxe Room</button></a>
+                <button class="room-btn">Deluxe Room</button>
               </div>
             </li>
             <li class="splide__slide">
@@ -107,16 +158,16 @@
     </div>
   </section>
 
-  <section class="contact mt-5">
-    <div class="container pt-5 pb-5">
-      <div class="row mt-5 pt-5 pb-5 align-items-center">
-        <div class="col-sm-12 col-md-12 col-lg-6 py-5">
-          <div class="contact-heading">
+  <section class="contact">
+    <div class="container py-5">
+      <div class="row mt-0 mt-md-2 mt-lg-5 pt-0 pt-md-2 pt-lg-5 pb-5 align-items-center">
+        <div class="col-sm-12 col-md-12 col-lg-6 py-md-5">
+          <div class="contact-heading text-black">
             <h5 class="fs-2">For Queries and <span>Reservation</span></h5>
             <p class="mt-3 fs-5">For any queries about room, reservations and any other activites please feel free to contact us.</p>
           </div>
           <hr>
-          <div class="contact-info">
+          <div class="contact-info text-black">
             <p> <span class="fw-medium">Phone Number: </span> <a href="#">+977-1-0000000</a></p>
             <p> <span class="fw-medium">Fax:</span> +977-2-0000000</p>
             <p> <span class="fw-medium">Email:</span> <a href="#">info@fewacity.com</a></p>
@@ -128,7 +179,7 @@
           </div>
         </div>
         <div class="col-sm-12 col-md-12 col-lg-6">
-          <div class="map-container mt-sm-5 mt-md-5 mt-lg-0">
+          <div class="map-container mt-5 mt-lg-0">
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3515.5174339191467!2d83.95408678276495!3d28.22197046079177!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399594dd0ea931e1%3A0xd8e6cffef4d4e498!2sWaterfront%20Resort%20by%20KGH%20Group!5e0!3m2!1sen!2snp!4v1717662604243!5m2!1sen!2snp" style="border-radius: 18px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
           </div>
         </div>
@@ -136,15 +187,72 @@
     </div>
   </section>
 
-  <section id="footer"></section>
+  <footer>
+    <div class="container py-3 py-md-5">
+      <div class="row text-capitalize">
+        <div class="col-lg-3 col-md-6 col-sm-12">
+          <div class="footer-heading text-uppercase">
+            fewa city resort
+          </div>
+          <div class="footer-links">
+            <li><a href="about-us.html">About Us</a></li>
+            <li><a href="restaurant.html">Bar & restaurant</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="gallery.html">Media Gallery</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12 mt-lg-0 mt-md-0 mt-sm-3">
+          <div class="footer-heading text-uppercase">
+            rooms & suites
+          </div>
+          <div class="footer-links">
+            <li><a href="rooms/deluxe-room.html">Deluxe room</a></li>
+            <li><a href="rooms/standard-room.html">standard room</a></li>
+            <li><a href="rooms/double-room.html">double room</a></li>
+            <li><a href="rooms/deluxe-suite.html">deluxe suite</a></li>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12 mt-lg-0 mt-md-3 mt-sm-3">
+          <div class="footer-heading text-uppercase">
+            activites
+          </div>
+          <div class="footer-links">
+            <li><a href="local-excursion.html">local excursion</a></li>
+            <li><a href="swimming-pool.html">swimming pool & gym</a></li>
+            <li><a href="yoga.html">yoga & meditation</a></li>
+            <li><a href="cycling.html">cycling</a></li>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12 mt-lg-0 mt-md-3 mt-sm-3">
+          <div class="footer-heading text-uppercase">
+            meeting & events
+          </div>
+          <div class="footer-links">
+            <li><a href="conference.html">conferences</a></li>
+            <li><a href="wedding.html">wedding & special events </a></li>
+          </div>
+        </div>
+      </div>
 
+      <div class="footer-logo">
+        <div class="line">
+        </div>
+        <p class="px-5 mb-0">FEWA CITY RESORT</p>
+      </div>
+
+      <div class="social-links text-center mt-3 mt-lg-4">
+        <a href="#"><i class="bi bi-instagram"></i></a>
+        <a href="#"><i class="bi bi-facebook"></i></a>
+        <a href="#"><i class="bi bi-twitter-x"></i></a>
+        <a href="#"><i class="bi bi-youtube"></i></a>
+        <p class="copyright mt-2">© 2024 Fewa City Resort. All rights reserved.</p>
+      </div>
+
+    </div>
+  </footer>
 
   <script src="script.js"></script>
-
-  <script>
-    $("#navbar").load("navbar.html");
-    $("#footer").load("footer.html");
-  </script>
 
   <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-auto-scroll@latest/dist/js/splide-extension-auto-scroll.min.js"></script>
