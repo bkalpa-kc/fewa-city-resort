@@ -1,14 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Playwrite+NG+Modern:wght@100..400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Permanent+Marker&family=Playwrite+NG+Modern:wght@100..400&family=Saira+Condensed:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Serif+Text:ital@0;1&display=swap');
+
+
+:root{
+  --highlight: #ff4500;
+  --highlight-txt: "Caveat", cursive;
+  --hero-font: "DM Serif Text", serif;
+  --title-font: "Saira Condensed", sans-serif;
+}
+
 *{
-  margin: 0;
   padding: 0;
+  margin: 0;
   border: none;
   outline: none;
+  font-family: 'Poppins', sans-serif;
   list-style: none;
 }
 
 .navbar {
   position: absolute;
-  z-index: 100000;
+  z-index: 100;
   width: 100%;
 }
 
@@ -17,24 +31,22 @@
 }
 
 .navbar-brand{
-  color: orangered;
   font-weight: 700;
 }
 
 .navbar .enquiry-btn{
-  border: 1px solid orangered;
-  background-color: orangered;
+  border: 1px solid var(--highlight);
+  background-color: var(--highlight);
   color: white;
   font-weight: 600;
 }
 
 .enquiry-btn:hover{
   background-color: transparent;
-  color: orangered;
+  color: var(--highlight);
 }
 
 .offcanvas{
-  opacity: 80%;
   height: 100vh !important;
 }
 
@@ -59,12 +71,14 @@
   letter-spacing: 5px;
   font-size: 14px;
   color: orangered;
+  font-family: var(--hero-font);
 }
 
 .hero-title{
   letter-spacing: 2px;
   font-size: 64px;
   font-weight: 900;
+  font-family: var(--hero-font);
 }
 
 .contact-info{
@@ -80,9 +94,12 @@
 
 .contact-info h5{
   letter-spacing: 5px;
+  font-family: var(--title-font);
+  font-size: 32px;
 }
 
 .contact-info h5 span{
+  font-family: var(--title-font);
   color: orangered;
 }
 
@@ -124,6 +141,8 @@
 .contact-form p{
   letter-spacing: 5px;
   font-size: 32px;
+  font-weight: 500 !important;
+  font-family: var(--title-font);
   color: orangered;
   font-weight: 400;
 }
@@ -145,10 +164,20 @@
 }
 
 /* footer */
+
+
+footer{
+  background: url(images/footer-bg.png);
+  background-size: cover;
+  background-position: center;
+}
+
 .footer-heading{
-  color: orangered;
+  color: var(--highlight);
   font-size: 20px;
-  letter-spacing: 3px;
+  font-family: var(--title-font);
+  font-weight: 600;
+  letter-spacing: 2px;
 }
 
 .footer-links{
@@ -161,29 +190,33 @@
   line-height: 2;
 }
 
-.line{
-  height: 2px;
-  background-color: orangered;
-  margin-top: 50px;
-}
-
-.footer-logo{
-  position: relative;
+.footer-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   margin-top: 60px;
+  position: relative;
 }
 
-.footer-logo p{
-  position: absolute;
-  top: -15px;
-  right: 38%;
+.line {
+  width: 100%;
+  height: 2px;
+  background-color: var(--highlight);
+  margin-top: 20px;
+}
+
+.footer-logo p {
   background-color: white;
   font-size: 20px;
   letter-spacing: 5px;
+  text-align: center;
+  margin-top: -15px;
 }
 
 .social-links a{
   text-decoration: none;
-  color: orangered;
+  color: var(--highlight);
   font-size: 26px;
   letter-spacing: 35px;
 }
@@ -198,9 +231,22 @@
   }
 }
 
+@media (max-width:1024px) {
+  .hero-txt{
+    font-size: 12px;
+  }
+
+  .hero-title{
+    font-size: 54px;
+  }
+}
+
 @media (max-width:991px) {
 
-  .contact-info h5,
+  .contact-info h5{
+    font-size: 24px;
+  }
+
   .contact-info h6{
     font-size: 18px;
   }
@@ -218,14 +264,73 @@
   }
 }
 
+@media (max-width:767px) {
+  .navbar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #fcfcfc;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.4);
+    transition: top .3s ease;
+  } 
+
+  .navbar-hidden {
+    top: -86px; /* Adjust based on your navbar height */
+  }
+
+  .navbar-brand{
+    color: var(--highlight) !important;
+  }
+
+  header .navbar-toggle i{
+    color: var(--highlight) !important;
+  }
+
+  .hero-txt{
+    font-size: 10px;
+  }
+
+  .hero-title{
+    font-size: 44px ;
+  }
+}
+
 @media (max-width:576px) {
+  .hero-txt{
+    font-size: 8px;
+  }
+
   .contact-info{
     background: skyblue;
+    height: 60vh;
   }
 
   .contact-info h6{
     display: flex !important;
     align-items: center;
     justify-content: center;
+  }
+
+  .footer-heading{
+    margin-top: 24px;
+  }
+}
+
+@media (max-width:430px) {
+  .footer-heading{
+    font-size: 16px;
+  }
+
+  .footer-links a{
+    font-size: 14px;
+  }
+
+  .social-links a{
+    font-size: 20px;
+  }
+
+  .footer-logo p{
+    font-size: 16px;
   }
 }
