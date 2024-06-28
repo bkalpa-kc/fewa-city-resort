@@ -51,6 +51,7 @@
 }
 
 .hero{
+  position: relative;
   height: 100vh;
   background: url(images/gh6.jpg);
   background-size: cover;

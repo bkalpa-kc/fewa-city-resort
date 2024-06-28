@@ -51,6 +51,7 @@
 }
 
 .excursion-hero{
+  position: relative;
   height: 100vh;
   background: url(images/ex3.jpg);
   background-size: cover;
@@ -59,6 +60,7 @@
 }
 
 .yoga-hero{
+  position: relative;
   height: 100vh;
   background: url(images/e2.jpg);
   background-size: cover;
@@ -67,6 +69,7 @@
 }
 
 .swimming-hero{
+  position: relative;
   height: 100vh;
   background: url(images/e3.jpg);
   background-size: cover;
@@ -75,6 +78,7 @@
 }
 
 .cycling-hero{
+  position: relative;
   height: 100vh;
   background: url(images/cy1.jpg);
   background-size: cover;

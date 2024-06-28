@@ -51,6 +51,7 @@
 }
 
 .conference-hero{
+  position: relative;
   height: 100vh;
   background: url(images/m1.jpg);
   background-size: cover;
@@ -58,6 +59,7 @@
 }
 
 .wedding-hero{
+  position: relative;
   height: 100vh;
   background: url(images/w1.jpg);
   background-size: cover;

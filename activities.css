@@ -53,7 +53,7 @@
 .hero{
   position: relative;
   height: 100vh;
-  background: url(images/e1.jpg);
+  background: url(images/cy5.jpg);
   background-size: cover;
   background-attachment: fixed;
 }
@@ -104,32 +104,42 @@
   font-size: 18px;
 }
 
-.conference img,
-.events img{
+.excursion img,
+.swimming img,
+.yoga img,
+.cycling img{
   height: 620px;
   object-fit: cover;
   transition: 0.5s ease;
 }
 
-.conference .col-12,
-.events .col-12{
+.excursion .col-12,
+.swimming .col-12,
+.yoga .col-12,
+.cycling .col-12{
   overflow: hidden;
 }
 
-.conference img:hover,
-.events img:hover{
+.excursion img:hover,
+.swimming img:hover,
+.yoga img:hover,
+.cycling img:hover{
   transform: scale(1.1);
 }
 
-.conference-title,
-.events-title{
+.excursion-title,
+.swimming-title,
+.yoga-title,
+.cycling-title{
   font-family: var(--title-font);
   font-size: 48px;
   color: var(--highlight);
 }
 
-.conference-para,
-.events-para{
+.excursion-para,
+.swimming-para,
+.yoga-para,
+.cycling-para{
   font-size: 18px;
 }
 
@@ -185,7 +195,9 @@
   color: white;
 }
 
-.events{
+.swimming,
+.yoga,
+.cycling{
   margin-top: 220px;
 }
 
@@ -324,17 +336,23 @@ footer{
     font-size: 16px;
   }
 
-  .conference-title,
-  .events-title{
+  .excursion-title,
+  .swimming-title,
+  .yoga-title,
+  .cycling-title{
     font-size: 38px;
   }
 
-  .conference-para,
-  .events-para{
+  .excursion-para,
+  .swimming-para,
+  .yoga-para,
+  .cycling-para{
     font-size: 16px;
   }
 
-  .events{
+  .swimming,
+  .yoga,
+  .cycling{
     margin-top: 180px;
   }
 }
@@ -354,12 +372,16 @@ footer{
     font-size: 56px;
   }
 
-  .events{
+  .swimming,
+  .yoga,
+  .cycling{
     margin-top: 120px;
   }
 
-  .conference-title,
-  .events-title{
+  .excursion-title,
+  .swimming-title,
+  .yoga-title,
+  .cycling-title{
     font-size: 32px;
   }    
 }
@@ -399,8 +421,10 @@ footer{
   font-size: 46px;
  }
 
-  .conference-title,
-  .events-title{
+  .excursion-title,
+  .swimming-title
+  .yoga-title,
+  .cycling-title{
     font-size: 30px;
   }
 }
@@ -414,12 +438,20 @@ footer{
     width: 100%;
   }
 
- .intro-heading p{
-  font-size: 36px;
- } 
+  .intro-heading p{
+    font-size: 36px;
+  }   
 
- .conference img,
- .events img{
+  .swimming,
+  .yoga,
+  .cycling{
+    margin-top: 60px;
+  }
+
+ .excursion img,
+ .swimming img,
+ .yoga img,
+ .cycling img{
   padding: 0 8px;
  }
 
@@ -456,13 +488,17 @@ footer{
     font-size: 14px;
   }
 
-  .conference-title,
-  .events-title{
+  .excursion-title,
+  .swimming-title,
+  .yoga-title,
+  .cycling-title{
     font-size: 30px;
   }
 
-  .conference-para,
-  .events-para{
+  .excursion-para,
+  .swimming-para,
+  .yoga-para,
+  .cycling-para{
     font-size: 14px;
   }
 
