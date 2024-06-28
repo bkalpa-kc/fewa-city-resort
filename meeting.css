@@ -57,6 +57,15 @@
   background-attachment: fixed;
 }
 
+.hero-filter{
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
 .hero-txt{
   letter-spacing: 5px;
   font-size: 14px;
@@ -82,6 +91,7 @@
 .intro-heading p{
   font-family: var(--title-font);
   font-weight: 500;
+  font-size: 68px;
 }
 
 .intro-heading p span{
