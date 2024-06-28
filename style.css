@@ -242,12 +242,12 @@ hr{
 
 .splide__arrow--next{
   position: absolute;
-  right: -50px !important;
+  right: -40px !important;
 }
 
 .splide__arrow--prev{
   position: absolute;
-  left: -50px !important;
+  left: -40px !important;
 }
 
 .rooms-heading{
