@@ -143,24 +143,24 @@ $(document).ready(function () {
 
 //reservation
 
-// const navbar = document.getElementById("reservation");
-// const showOnScrollPosition = 800; // Adjust this value based on when you want the navbar to appear
-// let isNavbarVisible = false;
+const reservation = document.getElementById("reservation");
+const showOnScrollPosition = 800; // Adjust this value based on when you want the navbar to appear
+let isNavbarVisible = false;
 
-// window.addEventListener("scroll", () => {
-//   const scrollTop =
-//     window.pageYOffset || document.documentElement.scrollTop;
+window.addEventListener("scroll", () => {
+  const scrollTop =
+    window.pageYOffset || document.documentElement.scrollTop;
 
-//   if (scrollTop > showOnScrollPosition && !isNavbarVisible) {
-//     navbar.classList.remove("reservation-hidden");
-//     navbar.classList.add("reservation-fixed");
-//     isNavbarVisible = true;
-//   } else if (scrollTop <= showOnScrollPosition && isNavbarVisible) {
-//     navbar.classList.add("reservation-hidden");
-//     navbar.classList.remove("reservation-fixed");
-//     isNavbarVisible = false;
-//   }
-// });
+  if (scrollTop > showOnScrollPosition && !isNavbarVisible) {
+    reservation.classList.remove("reservation-hidden");
+    reservation.classList.add("reservation-fixed");
+    isNavbarVisible = true;
+  } else if (scrollTop <= showOnScrollPosition && isNavbarVisible) {
+    reservation.classList.add("reservation-hidden");
+    reservation.classList.remove("reservation-fixed");
+    isNavbarVisible = false;
+  }
+});
 
 
 

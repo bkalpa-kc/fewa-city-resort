@@ -1,6 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Sofia&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Sofia&family=Ultra&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Playwrite+NG+Modern:wght@100..400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Permanent+Marker&family=Playwrite+NG+Modern:wght@100..400&family=Saira+Condensed:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Serif+Text:ital@0;1&display=swap');
+
+
+:root{
+  --highlight: #ff4500;
+  --highlight-txt: "Caveat", cursive;
+  --hero-font: "DM Serif Text", serif;
+  --title-font: "Saira Condensed", sans-serif;
+}
 
 *{
   padding: 0;
@@ -15,26 +24,44 @@ body{
   background-color: rgb(250, 242, 233);
 }
 
+.navbar {
+  position: absolute;
+  top: 0;
+  z-index: 100;
+  width: 100%;
+}
+
+.navbar .container{
+  border-bottom: 1px solid var(--highlight);
+}
+
 .navbar-brand{
-  color: orangered;
   font-weight: 700;
+  color: var(--highlight);
+}
+
+.navbar-toggle i{
+  color: var(--highlight);
 }
 
 .navbar .enquiry-btn{
-  border: 1px solid orangered;
-  background-color: orangered;
+  border: 1px solid var(--highlight);
+  background-color: var(--highlight);
   color: white;
   font-weight: 600;
 }
 
 .enquiry-btn:hover{
   background-color: transparent;
-  color: orangered;
+  color: var(--highlight);
 }
 
 .offcanvas{
-  opacity: 80%;
   height: 100vh !important;
+}
+
+.room-links{
+  margin-top: 180px;
 }
 
 .room{
@@ -44,7 +71,9 @@ body{
 .room-links a{
   text-decoration: none;
   color: black;
-  font-size: 18px;
+  font-size: 24px;
+  font-family: var(--title-font);
+  font-weight: 500;
 }
 
 .room-links a.active{
@@ -64,7 +93,18 @@ hr{
 }
 
 .room-title{
-  font-size: 32px;
+  font-size: 38px;
+  font-family: var(--title-font);
+  font-weight: 500;
+}
+
+.room-title span{
+  font-family: var(--title-font);
+  color: var(--highlight);
+}
+
+.room-para{
+  font-size: 18px;
 }
 
 .room .price{
@@ -72,10 +112,6 @@ hr{
 }
 
 .price span{
-  color: orangered;
-}
-
-.room-title span{
   color: orangered;
 }
 
@@ -123,7 +159,6 @@ form textarea{
   margin-top: 150px;
 }
 
-
 .amenities .container-fluid{
   height: 60vh;
   background-color: rgba(0, 0, 0, 0.5);
@@ -146,36 +181,32 @@ form textarea{
   color: orangered;
   font-size: 14px;
   letter-spacing: 5px;
+  font-family: var(--highlight-txt);
 }
 
 .facilities-heading h5{
-  font-size: 28px;
-  font-weight: normal;
+  font-size: 36px;
+  font-weight: 500;
+  font-family: var(--title-font);
+}
+
+.facilities-heading p{
+  font-size: 18px;
 }
 
 .contact{
-  margin-top: 150px;
+  margin-top: 120px;
 }
 
-.contact-heading{
-  position: relative;
-}
-
-.contact-heading h5{
+.contact-heading h5,
+.contact-heading span{
   letter-spacing: 5px;
-}
-
-.contact-heading h5::after{
-  content: "";
-  position: absolute;
-  border-bottom: 5px solid orangered;
-  width: 60px;
-  left: 0;
-  top: 40px;
+  font-weight: 600;
+  font-family: var(--title-font);
 }
 
 .contact-heading span{
-  color: orangered;
+  color: var(--highlight);
 }
 
 .contact-info{
@@ -192,8 +223,8 @@ form textarea{
 }
 
 .contact-btn button{ 
-  background-color: orangered;
-  border: 1px solid orangered;
+  background-color: var(--highlight);
+  border: 1px solid var(--highlight);
   letter-spacing: 2px;
   font-size: 14px;
   transition: 0.3s ease;
@@ -201,7 +232,7 @@ form textarea{
 
 .contact-btn button:hover{
   background-color: white;
-  color: orangered !important;
+  color: var(--highlight) !important;
 }
 
 .contact-btn button:active{
@@ -222,10 +253,18 @@ form textarea{
   height: 100%;
 }
 
+footer{
+  background: url(../images/footer-bg.png);
+  background-size: cover;
+  background-position: center;
+}
+
 .footer-heading{
-  color: orangered;
+  color: var(--highlight);
   font-size: 20px;
-  letter-spacing: 3px;
+  font-family: var(--title-font);
+  font-weight: 600;
+  letter-spacing: 2px;
 }
 
 .footer-links{
@@ -238,29 +277,33 @@ form textarea{
   line-height: 2;
 }
 
-.line{
-  height: 2px;
-  background-color: orangered;
-  margin-top: 50px;
-}
-
-.footer-logo{
-  position: relative;
+.footer-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   margin-top: 60px;
+  position: relative;
 }
 
-.footer-logo p{
-  position: absolute;
-  top: -15px;
-  right: 38%;
-  background-color: rgb(250, 242, 233);
+.line {
+  width: 100%;
+  height: 2px;
+  background-color: var(--highlight);
+  margin-top: 20px;
+}
+
+.footer-logo p {
+  background-color: white;
   font-size: 20px;
   letter-spacing: 5px;
+  text-align: center;
+  margin-top: -15px;
 }
 
 .social-links a{
   text-decoration: none;
-  color: orangered;
+  color: var(--highlight);
   font-size: 26px;
   letter-spacing: 35px;
 }
@@ -269,7 +312,85 @@ form textarea{
   font-size: 12px;
 }
 
+@media (max-width:1200px) {
+  .room-links .container{
+    width: 75% !important;
+  }
+
+  .room-links a{
+    font-size: 18px;
+  }
+
+  .room-title{
+    font-size: 32px;
+  }
+
+  .room-para{
+    font-size: 16px;
+  }
+
+  .facilities-heading p{
+    font-size: 16px;
+  }
+}
+
+@media (max-width:767px) {
+  .navbar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #fcfcfc;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.4);
+    transition: top .3s ease;
+  }
+  
+  .navbar .container{
+    border: none;
+  }
+
+  .navbar-hidden {
+    top: -86px; /* Adjust based on your navbar height */
+  }
+
+  .navbar-brand{
+    color: var(--highlight) !important;
+  }
+
+  header .navbar-toggle i{
+    color: var(--highlight) !important;
+  }
+
+  .room-links .container{
+    width: 100% !important;
+  }
+
+  .room-links{
+    margin-top: 140px;
+  }
+}
+
 @media (max-width:576px) {
+  .room-links{
+    margin-top: 110px;
+  }
+
+  .room{
+    margin-top: 60px;
+  }
+
+  .amenities{
+    margin-top: 60px;
+  }
+
+  .facilities{
+    margin-top: 60px;
+  }
+
+  .contact{
+    margin-top: 60px;
+  }
+
   .enquiry-txt{
     display: none;
   }
@@ -278,12 +399,8 @@ form textarea{
     padding: 0 6px;
   }
 
-  .room-links a{
-    font-size: 14px;
-  }
-
   .room-title{
-    font-size: 24px;
+    font-size: 28px;
   }
 
   .room-details .price{
@@ -295,7 +412,7 @@ form textarea{
   }
 
   .amenities p{
-    font-size: 16px;
+    font-size: 14px;
   }
 
   .amenities img{
@@ -303,16 +420,58 @@ form textarea{
   }
 
   .facilities-heading h5{
-    font-size: 24px;
+    font-size: 28px;
   }
 
   .facilities-heading span{
     font-size: 12px;
   }
+
+  .facilities-heading p{
+    font-size: 14px;
+  }
+
+  .contact-heading h5{
+    font-size: 18px !important;
+    font-weight: 600;
+    letter-spacing: 3px;
+    }
+  
+    .contact-heading p{
+      font-size: 14px !important;
+    }
+  
+    .contact-info p{
+      font-size: 14px;
+    }
+  
+    .footer-heading{
+      margin-top: 24px;
+    }
 }
 
 @media (max-width:430px) {
   .room-links a{
-    font-size: 12px;
+    font-size: 13px;
+  }
+
+  .contact{
+    margin-top: 0;
+  }
+
+  .footer-heading{
+    font-size: 16px;
+  }
+
+  .footer-links a{
+    font-size: 14px;
+  }
+
+  .social-links a{
+    font-size: 20px;
+  }
+
+  .footer-logo p{
+    font-size: 16px;
   }
 }

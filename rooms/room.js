@@ -15,3 +15,20 @@ if (exampleModal) {
     modalBodyInput.value = recipient
   })
 }
+
+const navbar = document.getElementById('navbar');
+let lastScrollTop = 0;
+
+window.addEventListener('scroll', function() {
+  let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+  if (scrollTop > lastScrollTop && scrollTop > navbar.offsetHeight) {
+    // Downscroll and past navbar height
+    navbar.classList.add('navbar-hidden'); // Apply hidden class to hide navbar
+  } else {
+    // Upscroll or at the top
+    navbar.classList.remove('navbar-hidden'); // Remove hidden class to show navbar
+  }
+
+  lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
+});
