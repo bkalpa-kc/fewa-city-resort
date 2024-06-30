@@ -54,7 +54,63 @@ body{
 }
 
 .offcanvas{
-  height: 100vh !important;
+  background: url(images/footer-bg.png);
+  background-size: cover;
+}
+
+.offcanvas-logo span{
+  color: var(--highlight);
+}
+
+.accordion-button{
+  font-size: 20px;
+  color: black;
+  line-height: 2;
+}
+
+.accordion-button::after{
+  margin-left: 5%;
+}
+
+.accordion-button:not(.collapsed)::after {
+  background-image: var(--bs-accordion-btn-icon);
+}
+
+.accordion-button:not(.collapsed) {
+  color: black;
+  background-color: transparent;
+  box-shadow: none;
+}
+
+.accordion-body a{
+  font-size: 16px !important;
+}
+
+.navbar-nav a{
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+  line-height: 2;
+}
+
+.nav-social{
+  position: absolute;
+  bottom: 2%;
+  left: 0;
+  width: 100%;
+}
+
+.nav-social i{
+  color: var(--highlight);
+  padding: 5px 10px;
+}
+
+.nav-contact-number{
+  font-size: 16px;
+}
+
+.nav-contact-number p{
+  letter-spacing: 2px;
 }
 
 /* reservation */
@@ -145,16 +201,6 @@ body{
   transform: scale(1.1);
 }
 
-.carousel-caption::before{
-  content: "";
-  position: absolute;
-  left: -20px;
-  top: 8px;
-  right: 80%;
-  bottom: 40%;
-  background: linear-gradient(to left, transparent 0%, black 300%);
-}
-
 .carousel-caption h1::before{
   content: "";
   position: absolute;
@@ -165,7 +211,6 @@ body{
   left: -20px;
   top: -12px;
 }
-
 
 /* welcome */
 
@@ -199,15 +244,6 @@ body{
 
 .welcome-heading{
   position: relative;
-}
-
-.welcome-title::after{
-  content: "";
-  position: absolute;
-  border: 3px solid var(--highlight);
-  width: 100px;
-  left: 35%;
-  bottom: 0px;
 }
 
 hr{
@@ -257,15 +293,6 @@ hr{
 
 .splide__slide{
   position: relative;
-}
-
-.room-title::after{
-  content: "";
-  position: absolute;
-  border-bottom: 5px solid var(--highlight);
-  width: 120px;
-  left: 6%;
-  bottom: 0;
 }
 
 .splide__caption{
@@ -328,15 +355,6 @@ hr{
 .why-us-heading{
   letter-spacing: 1px;
   position: relative;
-}
-
-.why-us-title::after{
-  content: "";
-  position: absolute;
-  border: 3px solid var(--highlight);
-  left: 41.5%;
-  bottom: -5px;
-  width: 80px;
 }
 
 .why-us .container-lg span{
@@ -420,15 +438,6 @@ hr{
   position: relative;
 }
 
-.services-title::after{
-  content: "";
-  position: absolute;
-  border: 3px solid var(--highlight);
-  left: 40.5%;
-  bottom: -5px;
-  width: 80px;
-}
-
 .services .container-lg span{
   color: var(--highlight);
 }
@@ -490,34 +499,11 @@ hr{
   width: 140px;
 }
 
-/* filler-img */
-
-/* .filler-img{
-  background-image: url(images/c1-min.jpg);
-  background-attachment: fixed;
-  width: 100%;
-  height: 100vh;
-  background-size: cover;
-  font-family: "Ultra", serif;
-  font-size: 100px;
-  -webkit-text-stroke: 5px var(--highlight);
-	-webkit-text-fill-color: transparent;
-} */
-
 /* testimonial */
 
 .testimonial-heading{
   position: relative;
   letter-spacing: 1px;
-}
-
-.testimonial-title::after{
-  content: '';
-  position: absolute;
-  border: 3px solid var(--highlight);
-  width: 90px;
-  left: 32.5%;
-  bottom: -10px;
 }
 
 .shadow-effect {
@@ -618,15 +604,6 @@ display: inline-block;
   letter-spacing: 5px;
   font-weight: 600;
   font-family: var(--title-font);
-}
-
-.contact-heading h5::after{
-  content: "";
-  position: absolute;
-  border-bottom: 5px solid var(--highlight);
-  width: 60px;
-  left: 0;
-  top: 40px;
 }
 
 .contact-heading span{
@@ -851,10 +828,6 @@ footer{
     letter-spacing: 1px;
   }
 
-  .room-title::after{
-    left: 6%;
-  }
-
   .splide__caption{
     left: 24%;
   }
@@ -870,10 +843,6 @@ footer{
     left: -320px;
   }
 
-  .carousel-caption::before{
-    bottom: 48%;
-  }
-
   .reservation .txt{
     font-size: 14px;
   }
@@ -885,35 +854,6 @@ footer{
   .reservation .btn-group button{
     padding: 8px 40px;
     font-size: 12px;
-  }
-
-  .welcome-title::after{
-    left: 33%;
-  }
-
-  .room-title::after{
-    bottom: 40%;
-    left: 7.5%;
-  }
-
-  .why-us-title::after{
-    left: 40%;
-  }
-
-  .services-title::after{
-    left: 39%;
-  }
-
-  .services-more a::after{
-    left: 42%;
-  }
-
-  .testimonial-title::after{
-    left: 29.5%;
-  }
-
-  .contact-heading h5::after{
-    top: 35%;
   }
 
   .splide__caption{
@@ -932,36 +872,9 @@ footer{
 }
 
 @media (max-width: 1024px) {
-  .carousel-caption::before{
-    bottom: 35%;
-  }
-
-  .welcome-title::after{
-    left: 31.5%;
-  }
-
-  .room-title::after{
-    left: 3.5%;
-  }
 
   .splide__caption{
     left: 14%;
-  }
-
-  .why-us-title::after{
-    left: 39%;
-  }
-
-  .services-title::after{
-    left: 37.5%;
-  }
-
-  .testimonial-title::after{
-    left: 27.5%;
-  }
-
-  .contact-heading h5::after{
-    top: 30%;
   }
 
   .hmmm-caption,
@@ -990,15 +903,6 @@ footer{
 
 
 @media (max-width:991px) {
-
-  .carousel-caption::before{
-    bottom: 38%;
-  }
-
-  .reservation .txt{
-    font-size: 10px;
-  }
-
   .reservation .check-btn button{
     font-size: 10px;
   }
@@ -1008,28 +912,8 @@ footer{
     font-size: 12px;
   }
 
-  .welcome-title::after{
-    left: 25%;
-  }
-
-  .room-title::after{
-    left: 3.5%;
-  }
-
-  .why-us-title::after{
-    left: 36%;
-  }
-
-  .services-title::after{
-    left: 34%;
-  }
-
   .services-more a::after{
     left: 37%;
-  }
-
-  .testimonial-title::after{
-    left: 20%;
   }
 
   .splide__caption{
@@ -1067,37 +951,17 @@ footer{
 }
 
 @media (max-width:576px) {
-  .carousel-caption::before{
-    bottom: 14%;
+  .navbar-nav a,
+  .accordion-button{
+    font-size: 18px;
   }
 
-  .welcome-title::after{
-    left: 23%;
-    width: 70px;
-  }
-
-  .room-title::after{
-    left: .6% ;
-    width: 70px;
-  }
-
-  .why-us-title::after{
-    left: 34%;
-    width: 70px;
-  }
-
-  .services-title::after{
-    left: 32.5%;
-    width: 50px;
+  .nav-contact-number{
+    font-size: 14px;
   }
 
   .services-more a::after{
     left: 32% ;
-  }
-
-  .testimonial-title::after{
-    left: 18%;
-    width: 70px;
   }
 
   .reservation,
@@ -1143,6 +1007,12 @@ footer{
   }
 }
 
+@media (max-width:575px) {
+  .accordion{
+    margin-left: 90px;
+  }
+}
+
 @media (max-width:430px) {
 
   .carousel-caption h1{
@@ -1159,50 +1029,12 @@ footer{
     border-top: 3px solid var(--highlight);
   }
 
-  .carousel-caption::before{
-    bottom: 56%;
-  }
-
-  .welcome-title::after{
-    left: 21% ;
-    bottom: -10%;
-    border: 2px solid var(--highlight);
-  }
-
-  .room-title::after{
-    left: 3.8%;
-    bottom: 35%;
-    border: 2px solid var(--highlight);
-  }
-
-  .why-us-title::after{
-    left: 33% ;
-    border: 2px solid var(--highlight);
-    bottom: -5% ;
-    width: 60px;
-  }
-
-  .services-title::after{
-    left: 31% ;
-    border: 2px solid var(--highlight);
-  }
-
   .services-more a{
     font-size: 12px;
   }
 
   .services-more a::after{
     left: 31%;
-  }
-
-  .testimonial-title::after{
-    left: 15%;
-    border: 2px solid var(--highlight);
-  }
-
-  .contact-heading h5::after{
-    top: 34% ;
-    border: 2px solid var(--highlight);
   }
 
   .splide__caption{
@@ -1235,10 +1067,6 @@ footer{
     font-size: 14px !important;
   }
 
-  .carousel-caption::before{
-    bottom: 43% !important;
-  }
-
   .footer-links a{
     font-size: 14px;
   }
@@ -1262,32 +1090,6 @@ footer{
 }
 
 @media (max-width:394px) {
-
-  .carousel-caption::before{
-    bottom: 43% !important; 
-  }
-
-  .welcome-title::after{
-    left: 18%;
-  }
-
-  .room-title::after{
-    bottom: 52.5%;
-    left: 15.5%;
-  }
-
-  .why-us-title::after{
-    left: 31%;
-  }
-
-  .services-title::after{
-    left: 28.5%;
-  }
-
-  .testimonial-title::after{
-    left: 12%;
-  }
-
   .splide__caption{
     left: 19.65%;
   }

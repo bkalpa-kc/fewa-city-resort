@@ -22,41 +22,62 @@
           <span class="fs-4"><i class="bi bi-envelope d-lg-none"></i></span>
           <span class="enquiry-txt fw-bold d-none d-lg-block">Enquiry Now</span>
         </button>
-        <div class="offcanvas offcanvas-top text-center" data-bs-scroll="true" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas offcanvas-start text-center text-sm-start" data-bs-scroll="true" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
           <div class="offcanvas-header d-flex justify-content-center position-relative">
-            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
             <button type="button" class="btn-close position-absolute end-0 me-3" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-        </div>        
+          </div>        
           <div class="offcanvas-body">
-            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-              <li class="nav-item">
-                <a class="nav-link" href="about-us.html">About us</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="restaurant.html">Bar & Restaurant</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Blog</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="gallery.html">Media Gallery</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Dropdown
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li>
-                    <hr class="dropdown-divider">
-                  </li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
-                </ul>
-              </li>
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3 text-capitalize">
+              <div class="offcanvas-logo fs-2 py-4 text-uppercase fw-bold text-center text-sm-start">Fewa city <span>resort</span></div>
+              <div class="nav-links d-flex flex-column">
+                <a href="../index.html">Home</a>
+                <a href="../about-us.html">About Hotel</a>
+                <div class="accordion accordion-flush" id="accordionFlushExample">
+                  <div class="accordion-item border-bottom-0">
+                    <h2 class="accordion-header">
+                      <button class="accordion-button collapsed text-capitalize p-0" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                        rooms & suites
+                      </button>
+                    </h2>
+                    <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                      <div class="accordion-body text-start text-capitalize p-2">
+                       <li>
+                         <a href="deluxe-room.html">Deluxe Room</a>
+                       </li>
+                       <li>
+                         <a href="standard-room.html">standard room</a>
+                       </li>
+                       <li>
+                         <a href="double-room.html">double room</a>
+                       </li>
+                       <li>
+                         <a href="deluxe-suite.html">deluxe suite</a>
+                       </li>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <a href="../restaurant.html">restaurant & bar</a>
+                <a href="../activities.html">Activities</a>
+                <a href="../gallery.html">Media gallery</a>
+                <a href="../meeting.html">meetings & special events</a>
+                <a href="../contact.html">Contact us</a>
+                <a href="">blog</a>
+              </div>
+              <div class="nav-social text-center">
+                <a href=""><i class="bi bi-instagram"></i></a>
+                <a href=""><i class="bi bi-facebook"></i></a>
+                <a href=""><i class="bi bi-twitter-x"></i></a>
+                <a href=""><i class="bi bi-youtube"></i></a>
+                <hr class="my-1">
+                <div class="nav-contact d-flex align-items-center justify-content-center">
+                  <i class="bi bi-telephone fs-2 me-1"></i>
+                  <div class="nav-contact-number text-start">
+                    <p class="mb-0">info & bookings</p>
+                    98-01-000001/02
+                  </div>
+                </div>
+              </div>
             </ul>
           </div>
         </div>

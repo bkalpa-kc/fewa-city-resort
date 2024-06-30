@@ -61,7 +61,63 @@ body{
 }
 
 .offcanvas{
-  height: 100vh !important;
+  background: url(../images/footer-bg.png);
+  background-size: cover;
+}
+
+.offcanvas-logo span{
+  color: var(--highlight);
+}
+
+.accordion-button{
+  font-size: 20px;
+  color: black;
+  line-height: 2;
+}
+
+.accordion-button::after{
+  margin-left: 5%;
+}
+
+.accordion-button:not(.collapsed)::after {
+  background-image: var(--bs-accordion-btn-icon);
+}
+
+.accordion-button:not(.collapsed) {
+  color: black;
+  background-color: transparent;
+  box-shadow: none;
+}
+
+.accordion-body a{
+  font-size: 16px !important;
+}
+
+.navbar-nav a{
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+  line-height: 2;
+}
+
+.nav-social{
+  position: absolute;
+  bottom: 2%;
+  left: 0;
+  width: 100%;
+}
+
+.nav-social i{
+  color: var(--highlight);
+  padding: 5px 10px;
+}
+
+.nav-contact-number{
+  font-size: 16px;
+}
+
+.nav-contact-number p{
+  letter-spacing: 2px;
 }
 
 .room-links{
@@ -375,6 +431,15 @@ footer{
 }
 
 @media (max-width:576px) {
+  .navbar-nav a,
+  .accordion-button{
+    font-size: 18px;
+  }
+
+  .nav-contact-number{
+    font-size: 14px;
+  }
+
   .room-links{
     margin-top: 110px;
   }
@@ -452,6 +517,12 @@ footer{
     .footer-heading{
       margin-top: 24px;
     }
+}
+
+@media (max-width:575px) {
+  .accordion{
+    margin-left: 90px;
+  }
 }
 
 @media (max-width:430px) {
