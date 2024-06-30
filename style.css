@@ -515,7 +515,7 @@ hr{
 
 #customers-testimonials .shadow-effect p {
   font-family: inherit;
-  font-size: 17px;
+  font-size: 18px;
   line-height: 1.5;
   margin: 0 0 17px 0;
   font-weight: 300;
@@ -857,6 +857,10 @@ footer{
   .splide__caption{
     left: 19.8%;
   }
+
+  #customers-testimonials .shadow-effect p {
+    font-size: 16px;
+  }
 }
 
 @media (max-width:1025px) {
@@ -985,6 +989,20 @@ footer{
   .local-excursion,
   .yoga-meditation{
     margin-top: 1.5rem;
+  }
+
+  #customers-testimonials .shadow-effect p {
+    font-size: 14px;
+  }
+
+  .testimonial-name {
+    letter-spacing: 1px;
+    font-size: 14px;
+  }
+
+  #customers-testimonials .item {
+    padding: 20px 50px;
+    margin-bottom: 40px;
   }
 
   .contact-heading h5{
