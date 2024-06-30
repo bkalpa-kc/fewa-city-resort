@@ -377,7 +377,6 @@ hr{
   bottom: 50px;
   right: 50px;
   border: 10px solid white;
-  /* border-radius: 15px; */
   transition: right 0.5s;
   z-index: 2;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
@@ -388,12 +387,11 @@ hr{
 }
 
 .hmmm-caption2{
-  width: 45%;
+  width: 600px;
   position: absolute;
   bottom: 50px;
   left: 50px;
   border: 10px solid white;
-  /* border-radius: 15px; */
   transition: left 0.5s;
   z-index: 2;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
@@ -964,10 +962,7 @@ footer{
     left: 32% ;
   }
 
-  .reservation,
-  .hmmm-caption,
-  .hmmm-caption2,
-  .enquiry-txt{
+  .reservation{
     display: none;
   }
 

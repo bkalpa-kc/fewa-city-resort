@@ -43,19 +43,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
 // hmmmm
 
-// $(document).ready(function () {
-//   $(".hmmm-img img, .hmmm-img .con1-btn").hover(
-//     function () {
-//       $(".hmmm-caption").addClass("hidden");
-//       $(".con1-btn").removeClass("d-none");
-//     },
-//     function () {
-//       $(".hmmm-caption").removeClass("hidden");
-//       $(".con1-btn").addClass("d-none");
-//     }
-//   );
-// });
-
 $(document).ready(function () {
   function applyHoverEffect() {
     if ($(window).width() > 1024) {
@@ -86,60 +73,37 @@ $(document).ready(function () {
   });
 });
 
+//hmmm2
 
 $(document).ready(function () {
-  // Check if the screen size is large enough
-  if (window.matchMedia("(min-width: 1024px)").matches) {
-    // Apply hover effect only on large screens and above
-    $(".hmmm-img2 img, .hmmm-img2 .con2-btn").hover(
-      function () {
-        $(".hmmm-caption2").addClass("hidden-left");
-        $(".con2-btn").removeClass("d-none");
-      },
-      function () {
-        $(".hmmm-caption2").removeClass("hidden-left");
-        $(".con2-btn").addClass("d-none");
-      }
-    );
+  function applyHoverEffect() {
+    if ($(window).width() > 1024) {
+      $(".hmmm-img2 img, .hmmm-img2 .con2-btn").hover(
+        function () {
+          $(".hmmm-caption2").addClass("hidden-left");
+          $(".con2-btn").removeClass("d-none");
+        },
+        function () {
+          $(".hmmm-caption2").removeClass("hidden-left");
+          $(".con2-btn").addClass("d-none");
+        }
+      );
+    } else {
+      // Remove hover event if screen width is 1024px or below
+      $(".hmmm-img2 img, .hmmm-img2 .con2-btn").off('mouseenter mouseleave');
+      $(".hmmm-caption2").removeClass("hidden-left");
+      $(".con2-btn").addClass("d-none");
+    }
   }
+
+  // Initial check
+  applyHoverEffect();
+
+  // Reapply on window resize
+  $(window).resize(function () {
+    applyHoverEffect();
+  });
 });
-
-
-
-
-
-
-
-// Function to add class on hover for medium screens and below
-// function addClassOnHoverForMediumAndBelow() {
-//   // Check if viewport width is medium screen or below
-//   if (window.matchMedia("(max-width: 992px)").matches) {
-//     // Add event listener for mouseenter
-//     document.querySelector('.hmmm-caption2').addEventListener('mouseenter', function() {
-//       // Add your class on hover
-//       this.classList.add('hidd');
-//     });
-
-//     // Remove class when mouse leaves
-//     document.querySelector('.hmmm-caption2').addEventListener('mouseleave', function() {
-//       // Remove your class when mouse leaves
-//       this.classList.remove('hidd');
-//     });
-//   }
-// }
-
-// // Call the function on page load
-// addClassOnHoverForMediumAndBelow();
-
-// // Call the function whenever the window is resized
-// window.addEventListener('resize', addClassOnHoverForMediumAndBelow);
-
-
-
-
-
-
-
 
 //reservation
 
@@ -161,10 +125,6 @@ window.addEventListener("scroll", () => {
     isNavbarVisible = false;
   }
 });
-
-
-
-
 
 //testimonial
 
