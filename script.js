@@ -48,18 +48,18 @@ $(document).ready(function () {
     if ($(window).width() > 1024) {
       $(".meeting-img img, .meeting-img .meeting-btn").hover(
         function () {
-          $(".meeting-caption").addClass("hidden");
+          $(".meeting-caption").addClass("meeting-hidden");
           $(".meeting-btn").removeClass("d-none");
         },
         function () {
-          $(".meeting-caption").removeClass("hidden");
+          $(".meeting-caption").removeClass("meeting-hidden");
           $(".meeting-btn").addClass("d-none");
         }
       );
     } else {
       // Remove hover event if screen width is 1024px or below
       $(".meeting-img img, .meeting-img .con1-btn").off('mouseenter mouseleave');
-      $(".meeting-caption").removeClass("hidden");
+      $(".meeting-caption").removeClass("meeting-hidden");
       $(".meeting-btn").addClass("d-none");
     }
   }
@@ -80,18 +80,18 @@ $(document).ready(function () {
     if ($(window).width() > 1024) {
       $(".restaurant-img img, .restaurant-img .restaurant-btn").hover(
         function () {
-          $(".restaurant-caption").addClass("hidden-left");
+          $(".restaurant-caption").addClass("restaurant-hidden");
           $(".restaurant-btn").removeClass("d-none");
         },
         function () {
-          $(".restaurant-caption").removeClass("hidden-left");
+          $(".restaurant-caption").removeClass("restaurant-hidden");
           $(".restaurant-btn").addClass("d-none");
         }
       );
     } else {
       // Remove hover event if screen width is 1024px or below
       $(".restaurant-img img, .restaurant-img .restaurant-btn").off('mouseenter mouseleave');
-      $(".restaurant-caption").removeClass("hidden-left");
+      $(".restaurant-caption").removeClass("restaurant-hidden");
       $(".restaurant-btn").addClass("d-none");
     }
   }

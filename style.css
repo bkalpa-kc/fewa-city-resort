@@ -403,16 +403,12 @@ hr{
   color: var(--highlight);
 }
 
-.hidden-left{
-  left: -120px;
-}
-
-.hidden {
+.meeting-hidden {
   right: -120px;
 }
 
-.see{
-  display: none;
+.restaurant-hidden{
+  left: -120px;
 }
 
 .meeting-btn button i,
