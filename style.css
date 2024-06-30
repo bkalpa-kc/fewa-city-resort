@@ -225,7 +225,7 @@ body{
 
 .welcome-txt,
 .room-txt,
-.why-us-txt,
+.experience-txt,
 .services-txt,
 .testimonial-txt{
   letter-spacing: 5px;
@@ -235,7 +235,7 @@ body{
 
 .welcome-title,
 .room-title,
-.why-us-title,
+.experience-title,
 .services-title,
 .testimonial-title{
   font-family: var(--title-font);
@@ -352,29 +352,30 @@ hr{
 
 /* facilities */
 
-.why-us-heading{
+.experience-heading{
   letter-spacing: 1px;
   position: relative;
 }
 
-.why-us .container-lg span{
+.experience .container-lg span{
   color: var(--highlight);
 }
 
-/* hmmm */
-.hmmm .con1 {
+/* experience */
+
+.experience .meeting-con {
   position: relative;
 }
 
-.hmmm-img,
-.hmmm-img2{
+.meeting-img,
+.restaurant-img{
  width: 800px;
 }
 
-.hmmm-caption {
+.meeting-caption {
   width: 600px;
   position: absolute;
-  bottom: 50px;
+  bottom: 30px;
   right: 50px;
   border: 10px solid white;
   transition: right 0.5s;
@@ -382,14 +383,14 @@ hr{
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
 }
 
-.hmmm .con2{
+.experience .restaurant-con{
   position: relative;
 }
 
-.hmmm-caption2{
+.restaurant-caption{
   width: 600px;
   position: absolute;
-  bottom: 50px;
+  bottom: 30px;
   left: 50px;
   border: 10px solid white;
   transition: left 0.5s;
@@ -397,8 +398,8 @@ hr{
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
 }
 
-.hmmm-caption span,
-.hmmm-caption2 span{
+.meeting-caption span,
+.restaurant-caption span{
   color: var(--highlight);
 }
 
@@ -414,14 +415,14 @@ hr{
   display: none;
 }
 
-.con1-btn button i,
-.con2-btn button i{
+.meeting-btn button i,
+.restaurant-btn button i{
   background-color: var(--highlight);
   border-radius: 10%;
 }
 
-.con1-btn button,
-.con2-btn button{
+.meeting-btn button,
+.restaurant-btn button{
   z-index: 1;
 }
 
@@ -879,8 +880,8 @@ footer{
     left: 14%;
   }
 
-  .hmmm-caption,
-  .hmmm-caption2 {
+  .meeting-caption,
+  .restaurant-caption{
     display: block !important;
     position: relative;
     left: 0;
@@ -889,8 +890,8 @@ footer{
     border: none;
   }
 
-  .hmmm-img,
-  .hmmm-img2{
+  .meeting-img,
+  .restaurant-img{
     width: 100%;
   }
   .con1-btn,
@@ -1056,7 +1057,7 @@ footer{
 
   .welcome-txt,
   .room-txt,
-  .why-us-txt,
+  .experience-txt,
   .services-txt,
   .testimonial-txt{
     font-size: 14px;
@@ -1065,7 +1066,7 @@ footer{
 
   .welcome-title,
   .room-title,
-  .why-us-title,
+  .experience-title,
   .services-title,
   .testimonial-title{
     font-size: 28px;

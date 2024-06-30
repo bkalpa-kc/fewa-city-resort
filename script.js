@@ -46,21 +46,21 @@ document.addEventListener("DOMContentLoaded", function () {
 $(document).ready(function () {
   function applyHoverEffect() {
     if ($(window).width() > 1024) {
-      $(".hmmm-img img, .hmmm-img .con1-btn").hover(
+      $(".meeting-img img, .meeting-img .meeting-btn").hover(
         function () {
-          $(".hmmm-caption").addClass("hidden");
-          $(".con1-btn").removeClass("d-none");
+          $(".meeting-caption").addClass("hidden");
+          $(".meeting-btn").removeClass("d-none");
         },
         function () {
-          $(".hmmm-caption").removeClass("hidden");
-          $(".con1-btn").addClass("d-none");
+          $(".meeting-caption").removeClass("hidden");
+          $(".meeting-btn").addClass("d-none");
         }
       );
     } else {
       // Remove hover event if screen width is 1024px or below
-      $(".hmmm-img img, .hmmm-img .con1-btn").off('mouseenter mouseleave');
-      $(".hmmm-caption").removeClass("hidden");
-      $(".con1-btn").addClass("d-none");
+      $(".meeting-img img, .meeting-img .con1-btn").off('mouseenter mouseleave');
+      $(".meeting-caption").removeClass("hidden");
+      $(".meeting-btn").addClass("d-none");
     }
   }
 
@@ -78,21 +78,21 @@ $(document).ready(function () {
 $(document).ready(function () {
   function applyHoverEffect() {
     if ($(window).width() > 1024) {
-      $(".hmmm-img2 img, .hmmm-img2 .con2-btn").hover(
+      $(".restaurant-img img, .restaurant-img .restaurant-btn").hover(
         function () {
-          $(".hmmm-caption2").addClass("hidden-left");
-          $(".con2-btn").removeClass("d-none");
+          $(".restaurant-caption").addClass("hidden-left");
+          $(".restaurant-btn").removeClass("d-none");
         },
         function () {
-          $(".hmmm-caption2").removeClass("hidden-left");
-          $(".con2-btn").addClass("d-none");
+          $(".restaurant-caption").removeClass("hidden-left");
+          $(".restaurant-btn").addClass("d-none");
         }
       );
     } else {
       // Remove hover event if screen width is 1024px or below
-      $(".hmmm-img2 img, .hmmm-img2 .con2-btn").off('mouseenter mouseleave');
-      $(".hmmm-caption2").removeClass("hidden-left");
-      $(".con2-btn").addClass("d-none");
+      $(".restaurant-img img, .restaurant-img .restaurant-btn").off('mouseenter mouseleave');
+      $(".restaurant-caption").removeClass("hidden-left");
+      $(".restaurant-btn").addClass("d-none");
     }
   }
 
