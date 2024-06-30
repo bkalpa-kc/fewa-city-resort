@@ -4,50 +4,84 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-  <link rel="stylesheet" href="gallery.css">
-  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <link
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
   />
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="gallery.css">
   <title>Media Gallery</title>
 </head>
 <body>
-  
+
   <header>
     <nav class="navbar py-0" id="navbar">
       <div class="container px-lg-0 py-3">
         <button class="navbar-toggle bg-transparent fs-3" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
           <i class="bi bi-list text-white"></i>
         </button>
-        <a class="navbar-brand text-uppercase fs-4 text-white" href="index.html">fewa city resort</a>
-        <div class="offcanvas offcanvas-top text-center" data-bs-scroll="true" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <a class="navbar-brand text-uppercase fs-4 text-white mx-0" href="index.html">fewa city resort</a>
+        <button onclick="window.location.href = 'contact.html';" class="enquiry-btn px-lg-4 px-2 py-lg-2 text-uppercase">
+          <span class="fs-4"><i class="bi bi-envelope d-lg-none"></i></span>
+          <span class="enquiry-txt fw-bold d-none d-lg-block">Enquiry Now</span>
+        </button>
+        <div class="offcanvas offcanvas-start text-center text-sm-start" data-bs-scroll="true" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
           <div class="offcanvas-header d-flex justify-content-center position-relative">
-            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
             <button type="button" class="btn-close position-absolute end-0 me-3" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-        </div>        
+          </div>        
           <div class="offcanvas-body">
-            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Dropdown
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li>
-                    <hr class="dropdown-divider">
-                  </li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
-                </ul>
-              </li>
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3 text-capitalize">
+              <div class="offcanvas-logo fs-2 py-4 text-uppercase fw-bold text-center text-sm-start">Fewa city <span>resort</span></div>
+              <div class="nav-links d-flex flex-column">
+                <a href="index.html">Home</a>
+                <a href="about-us.html">About Hotel</a>
+                <div class="accordion accordion-flush" id="accordionFlushExample">
+                  <div class="accordion-item border-bottom-0">
+                    <h2 class="accordion-header">
+                      <button class="accordion-button collapsed text-capitalize p-0" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                        rooms & suites
+                      </button>
+                    </h2>
+                    <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                      <div class="accordion-body text-start text-capitalize p-2">
+                       <li>
+                         <a href="rooms/deluxe-room.html">Deluxe Room</a>
+                       </li>
+                       <li>
+                         <a href="rooms/standard-room.html">standard room</a>
+                       </li>
+                       <li>
+                         <a href="rooms/double-room.html">double room</a>
+                       </li>
+                       <li>
+                         <a href="rooms/deluxe-suite.html">deluxe suite</a>
+                       </li>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <a href="restaurant.html">restaurant & bar</a>
+                <a href="activities.html">Activities</a>
+                <a href="gallery.html">Media gallery</a>
+                <a href="meeting.html">meetings & special events</a>
+                <a href="contact.html">Contact us</a>
+                <a href="">blog</a>
+              </div>
+              <div class="nav-social text-center">
+                <a href=""><i class="bi bi-instagram"></i></a>
+                <a href=""><i class="bi bi-facebook"></i></a>
+                <a href=""><i class="bi bi-twitter-x"></i></a>
+                <a href=""><i class="bi bi-youtube"></i></a>
+                <hr class="my-1">
+                <div class="nav-contact d-flex align-items-center justify-content-center">
+                  <i class="bi bi-telephone fs-2 me-1"></i>
+                  <div class="nav-contact-number text-start">
+                    <p class="mb-0">info & bookings</p>
+                    98-01-000001/02
+                  </div>
+                </div>
+              </div>
             </ul>
           </div>
         </div>
@@ -55,103 +89,43 @@
     </nav>
   </header>
 
-  <section class="hero">
-    <div class="container-fluid">
-      <img class="f-img" src="images/gh2.jpg" alt="">
-      <img src="images/gh1.jpg" alt="" class="s-img d-none">
-      <img src="images/gh3.jpg" alt="" class="t-img d-none">
-      <img src="images/gh4.jpg" alt="" class="f-img2 d-none">
-      <div class="row mt-0">
-        <div class="col first-col text-white d-flex align-items-center justify-content-center">
-          <span class="f-plus"><i class="bi bi-plus fs-1"></i></span>
-          <div class="f-content d-none">
-            <p class="content-heading text-center fs-3 mb-0 text-uppercase">Lorem <span>ipsum</span></p>
-            <div class="line-break mb-3"></div>
-            <p class="fs-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos odio animi perspiciatis. Quas excepturi provident maiores asperiores nulla? Cum voluptas, iusto fuga labore saepe nemo alias quisquam aliquam tempora blanditiis.</p>
-            <p class="fs-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident a voluptates, rem hic et vitae nulla vero consectetur magnam facere unde corrupti tenetur nemo laboriosam pariatur asperiores cupiditate accusamus dolorem?</p>
-            <button class="py-1 border-bottom border-2 bg-transparent text-uppercase fs-5">
-              read more
-              <i class="bi bi-arrow-right text-white"></i>
-            </button>
-          </div>
-          <button class="shrink-btn bg-transparent text-white">
-            <i class="bi bi-x fs-1"></i>
-          </button>
-        </div>
-        <div class="col second-col text-white border-end border-start d-flex align-items-center justify-content-center">
-          <span class="s-plus"><i class="bi bi-plus fs-1"></i></span>
-          <div class="s-content d-none">
-            <p class="content-heading text-center fs-3 mb-0 text-uppercase">Lorem <span>ipsum</span></p>
-            <div class="line-break mb-3"></div>
-            <p class="fs-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos odio animi perspiciatis. Quas excepturi provident maiores asperiores nulla? Cum voluptas, iusto fuga labore saepe nemo alias quisquam aliquam tempora blanditiis.</p>
-            <p class="fs-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident a voluptates, rem hic et vitae nulla vero consectetur magnam facere unde corrupti tenetur nemo laboriosam pariatur asperiores cupiditate accusamus dolorem?</p>
-            <button class="py-1 border-bottom border-2 bg-transparent text-uppercase fs-5">
-              read more
-              <i class="bi bi-arrow-right text-white"></i>
-            </button>
-          </div>
-          <button class="shrink-btn bg-transparent text-white ">
-            <i class="bi bi-x fs-1"></i>
-          </button>
-        </div>
-        <div class="col third-col text-white d-flex align-items-center justify-content-center">
-          <span class="t-plus"><i class="bi bi-plus fs-1"></i></span>
-          <div class="t-content d-none">
-            <p class="content-heading text-center fs-3 mb-0 text-uppercase">Lorem <span>ipsum</span></p>
-            <div class="line-break mb-3"></div>
-            <p class="fs-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos odio animi perspiciatis. Quas excepturi provident maiores asperiores nulla? Cum voluptas, iusto fuga labore saepe nemo alias quisquam aliquam tempora blanditiis.</p>
-            <p class="fs-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident a voluptates, rem hic et vitae nulla vero consectetur magnam facere unde corrupti tenetur nemo laboriosam pariatur asperiores cupiditate accusamus dolorem?</p>
-            <button class="py-1 border-bottom border-2 bg-transparent text-uppercase fs-5">
-              read more
-              <i class="bi bi-arrow-right text-white"></i>
-            </button>
-          </div>
-          <button class="shrink-btn bg-transparent text-white">
-            <i class="bi bi-x fs-1"></i>
-          </button>
-        </div>
+  <section class="hero d-flex align-items-center justify-content-center text-center text-white flex-column">
+    <div class="hero-filter"></div>
+    <p class="hero-txt text-uppercase mb-0 animate__animated animate__fadeInUp">EXPERIENCE TIMELESS ELEGANCE AND UNFORGETTABLE MOMENTS</p>
+    <p class="hero-title display-1 text-capitalize animate__animated animate__fadeIn animate__delay-1s">Gallery</p>
+  </section>
+
+  <section class="intro">
+    <div class="container text-center w-50">
+      <div class="intro-title text-uppercase">
+        our resort in <span>frames</span>
       </div>
-    </div>
-    <div class="scroll-txt animate__animated animate__fadeOutDown animate__repeat-3 animate__slow">
-      <p class="fs-5 fw-bold text-white text-uppercase d-flex align-items-center">
-        <i class="bi bi-chevron-double-down px-2 fs-3"></i>
-        Scroll for more
-      </p>
+      <div class="intro-para">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia ullam omnis dolor fugiat nisi! Nulla accusantium optio aspernatur quo est dignissimos eveniet mollitia nesciunt maxime! Harum magnam ullam neque sunt.
+      </div>
     </div>
   </section>
 
-  <section class="gallery mt-5">
-    <div class="gallery-heading text-center">
-    <span class="gallery-txt text-uppercase">fewa city resort</span> 
-    <h5 class="display-1 text-capitalize">Media Gallery</h5>
-    </div>
-    <div class="row gx-0 mt-5">
-      <div class="col-sm-12 col-md-6 col-lg-3">
-        <div class="row" data-aos="zoom-in" data-aos-once="true" data-aos-duration="1000"><img src="images/gallery/g1.jpg" alt=""></div>
-        <div class="row" data-aos="zoom-in" data-aos-once="true" data-aos-duration="1000"><img src="images/gallery/g2.jpg" alt=""></div>
-        <div class="row" data-aos="zoom-in" data-aos-once="true" data-aos-duration="1000"><img src="images/gallery/g3.jpg" alt=""></div>
-        <div class="row" data-aos="zoom-in" data-aos-once="true" data-aos-duration="1000"> <img src="images/gallery/g4.jpg" alt=""></div>
-        <div class="row" data-aos="zoom-in" data-aos-once="true" data-aos-duration="1000"><img src="images/gallery/g5.jpg" alt=""></div>
-        <div class="row" data-aos="zoom-in" data-aos-once="true" data-aos-duration="1000"><img src="images/gallery/g6.jpg" alt=""></div>
-        <span class="d-none">
+  <section class="gallery">
+    <div class="container">
+      <div class="row gx-0 mt-5">
+        <div class="col-sm-12 col-md-6 col-lg-4">
           <div class="row" data-aos="zoom-in" data-aos-once="true" data-aos-duration="1000"><img src="images/gallery/g1.jpg" alt=""></div>
           <div class="row" data-aos="zoom-in" data-aos-once="true" data-aos-duration="1000"><img src="images/gallery/g2.jpg" alt=""></div>
           <div class="row" data-aos="zoom-in" data-aos-once="true" data-aos-duration="1000"><img src="images/gallery/g3.jpg" alt=""></div>
           <div class="row" data-aos="zoom-in" data-aos-once="true" data-aos-duration="1000"> <img src="images/gallery/g4.jpg" alt=""></div>
           <div class="row" data-aos="zoom-in" data-aos-once="true" data-aos-duration="1000"><img src="images/gallery/g5.jpg" alt=""></div>
           <div class="row" data-aos="zoom-in" data-aos-once="true" data-aos-duration="1000"><img src="images/gallery/g6.jpg" alt=""></div>
-        </span>
-      </div>
-      <div class="col-sm-12 col-md-6 col-lg-3">
-        <div class="row" data-aos="zoom-in" data-aos-once="true" data-aos-duration="1000"><img src="images/gallery/g9.jpg" alt=""></div>
-        <div class="row" data-aos="zoom-in" data-aos-once="true" data-aos-duration="1000"><img src="images/gallery/g10.jpg" alt=""></div>
-        <div class="row" data-aos="zoom-in" data-aos-once="true" data-aos-duration="1000"><img src="images/gallery/g11.jpg" alt=""></div>
-        <div class="row" data-aos="zoom-in" data-aos-once="true" data-aos-duration="1000"> <img src="images/gallery/g12.jpg" alt=""></div>
-        <div class="row" data-aos="zoom-in" data-aos-once="true" data-aos-duration="1000"><img src="images/gallery/g13.jpg" alt=""></div>
-        <div class="row" data-aos="zoom-in" data-aos-once="true" data-aos-duration="1000"><img src="images/gallery/g14.jpg" alt=""></div>
-        <div class="row" data-aos="zoom-in" data-aos-once="true" data-aos-duration="1000"><img src="images/gallery/g15.jpg" alt=""></div>
-        <div class="row" data-aos="zoom-in" data-aos-once="true" data-aos-duration="1000"> <img src="images/gallery/g16.jpg" alt=""></div>
-        <span class="d-none">
+          <span class="d-none">
+            <div class="row" data-aos="zoom-in" data-aos-once="true" data-aos-duration="1000"><img src="images/gallery/g1.jpg" alt=""></div>
+            <div class="row" data-aos="zoom-in" data-aos-once="true" data-aos-duration="1000"><img src="images/gallery/g2.jpg" alt=""></div>
+            <div class="row" data-aos="zoom-in" data-aos-once="true" data-aos-duration="1000"><img src="images/gallery/g3.jpg" alt=""></div>
+            <div class="row" data-aos="zoom-in" data-aos-once="true" data-aos-duration="1000"> <img src="images/gallery/g4.jpg" alt=""></div>
+            <div class="row" data-aos="zoom-in" data-aos-once="true" data-aos-duration="1000"><img src="images/gallery/g5.jpg" alt=""></div>
+            <div class="row" data-aos="zoom-in" data-aos-once="true" data-aos-duration="1000"><img src="images/gallery/g6.jpg" alt=""></div>
+          </span>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-4">
           <div class="row" data-aos="zoom-in" data-aos-once="true" data-aos-duration="1000"><img src="images/gallery/g9.jpg" alt=""></div>
           <div class="row" data-aos="zoom-in" data-aos-once="true" data-aos-duration="1000"><img src="images/gallery/g10.jpg" alt=""></div>
           <div class="row" data-aos="zoom-in" data-aos-once="true" data-aos-duration="1000"><img src="images/gallery/g11.jpg" alt=""></div>
@@ -160,61 +134,140 @@
           <div class="row" data-aos="zoom-in" data-aos-once="true" data-aos-duration="1000"><img src="images/gallery/g14.jpg" alt=""></div>
           <div class="row" data-aos="zoom-in" data-aos-once="true" data-aos-duration="1000"><img src="images/gallery/g15.jpg" alt=""></div>
           <div class="row" data-aos="zoom-in" data-aos-once="true" data-aos-duration="1000"> <img src="images/gallery/g16.jpg" alt=""></div>
-        </span>
-      </div>
-      <div class="col-sm-12 col-md-6 col-lg-3">
-        <div class="row" data-aos="zoom-in" data-aos-once="true" data-aos-duration="1000"><img src="images/gallery/g17.jpg" alt=""></div>
-        <div class="row" data-aos="zoom-in" data-aos-once="true" data-aos-duration="1000"><img src="images/gallery/g18.jpg" alt=""></div>
-        <div class="row" data-aos="zoom-in" data-aos-once="true" data-aos-duration="1000"><img src="images/gallery/g19.jpg" alt=""></div>
-        <div class="row" data-aos="zoom-in" data-aos-once="true" data-aos-duration="1000"> <img src="images/gallery/g20.jpg" alt=""></div>
-        <div class="row" data-aos="zoom-in" data-aos-once="true" data-aos-duration="1000"><img src="images/gallery/g21.jpg" alt=""></div>
-        <div class="row" data-aos="zoom-in" data-aos-once="true" data-aos-duration="1000"><img src="images/gallery/g22.jpg" alt=""></div>
-        <div class="row" data-aos="zoom-in" data-aos-once="true" data-aos-duration="1000"> <img src="images/gallery/g23.jpg" alt=""></div>
-        <div class="row" data-aos="zoom-in" data-aos-once="true" data-aos-duration="1000"><img src="images/gallery/g24.jpg" alt=""></div>
-        <span class="d-none">
+          <span class="d-none">
+            <div class="row" data-aos="zoom-in" data-aos-once="true" data-aos-duration="1000"><img src="images/gallery/g9.jpg" alt=""></div>
+            <div class="row" data-aos="zoom-in" data-aos-once="true" data-aos-duration="1000"><img src="images/gallery/g10.jpg" alt=""></div>
+            <div class="row" data-aos="zoom-in" data-aos-once="true" data-aos-duration="1000"><img src="images/gallery/g11.jpg" alt=""></div>
+            <div class="row" data-aos="zoom-in" data-aos-once="true" data-aos-duration="1000"> <img src="images/gallery/g12.jpg" alt=""></div>
+            <div class="row" data-aos="zoom-in" data-aos-once="true" data-aos-duration="1000"><img src="images/gallery/g13.jpg" alt=""></div>
+            <div class="row" data-aos="zoom-in" data-aos-once="true" data-aos-duration="1000"><img src="images/gallery/g14.jpg" alt=""></div>
+            <div class="row" data-aos="zoom-in" data-aos-once="true" data-aos-duration="1000"><img src="images/gallery/g15.jpg" alt=""></div>
+            <div class="row" data-aos="zoom-in" data-aos-once="true" data-aos-duration="1000"> <img src="images/gallery/g16.jpg" alt=""></div>
+          </span>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-4">
           <div class="row" data-aos="zoom-in" data-aos-once="true" data-aos-duration="1000"><img src="images/gallery/g17.jpg" alt=""></div>
           <div class="row" data-aos="zoom-in" data-aos-once="true" data-aos-duration="1000"><img src="images/gallery/g18.jpg" alt=""></div>
           <div class="row" data-aos="zoom-in" data-aos-once="true" data-aos-duration="1000"><img src="images/gallery/g19.jpg" alt=""></div>
           <div class="row" data-aos="zoom-in" data-aos-once="true" data-aos-duration="1000"> <img src="images/gallery/g20.jpg" alt=""></div>
           <div class="row" data-aos="zoom-in" data-aos-once="true" data-aos-duration="1000"><img src="images/gallery/g21.jpg" alt=""></div>
-          <div class="row" data-aos="zoom-in" data-aos-once="true" data-aos-duration="1000"><img src="images/gallery/g22.jpg" alt=""></div>
           <div class="row" data-aos="zoom-in" data-aos-once="true" data-aos-duration="1000"> <img src="images/gallery/g23.jpg" alt=""></div>
           <div class="row" data-aos="zoom-in" data-aos-once="true" data-aos-duration="1000"><img src="images/gallery/g24.jpg" alt=""></div>
-        </span>
-      </div>
-      <div class="col-sm-12 col-md-6 col-lg-3">
-        <div class="row" data-aos="zoom-in" data-aos-once="true" data-aos-duration="1000"><img src="images/gallery/g25.jpg" alt=""></div>
-        <div class="row" data-aos="zoom-in" data-aos-once="true" data-aos-duration="1000"><img src="images/gallery/g26.jpg" alt=""></div>
-        <div class="row" data-aos="zoom-in" data-aos-once="true" data-aos-duration="1000"> <img src="images/gallery/g27.jpg" alt=""></div>
-        <div class="row" data-aos="zoom-in" data-aos-once="true" data-aos-duration="1000"><img src="images/gallery/g28.jpg" alt=""></div>
-        <div class="row" data-aos="zoom-in" data-aos-once="true" data-aos-duration="1000"><img src="images/gallery/g29.jpg" alt=""></div>
-        <div class="row" data-aos="zoom-in" data-aos-once="true" data-aos-duration="1000"><img src="images/gallery/g30.jpg" alt=""></div>
-        <div class="row" data-aos="zoom-in" data-aos-once="true" data-aos-duration="1000"> <img src="images/gallery/g31.jpg" alt=""></div>
-        <span class="d-none">
-          <div class="row" data-aos="zoom-in" data-aos-once="true" data-aos-duration="1000"><img src="images/gallery/g25.jpg" alt=""></div>
-          <div class="row" data-aos="zoom-in" data-aos-once="true" data-aos-duration="1000"><img src="images/gallery/g26.jpg" alt=""></div>
-          <div class="row" data-aos="zoom-in" data-aos-once="true" data-aos-duration="1000"> <img src="images/gallery/g27.jpg" alt=""></div>
-          <div class="row" data-aos="zoom-in" data-aos-once="true" data-aos-duration="1000"><img src="images/gallery/g28.jpg" alt=""></div>
-          <div class="row" data-aos="zoom-in" data-aos-once="true" data-aos-duration="1000"><img src="images/gallery/g29.jpg" alt=""></div>
-          <div class="row" data-aos="zoom-in" data-aos-once="true" data-aos-duration="1000"><img src="images/gallery/g30.jpg" alt=""></div>
-          <div class="row" data-aos="zoom-in" data-aos-once="true" data-aos-duration="1000"> <img src="images/gallery/g31.jpg" alt=""></div>
-        </span>
+          <span class="d-none">
+            <div class="row" data-aos="zoom-in" data-aos-once="true" data-aos-duration="1000"><img src="images/gallery/g17.jpg" alt=""></div>
+            <div class="row" data-aos="zoom-in" data-aos-once="true" data-aos-duration="1000"><img src="images/gallery/g18.jpg" alt=""></div>
+            <div class="row" data-aos="zoom-in" data-aos-once="true" data-aos-duration="1000"><img src="images/gallery/g19.jpg" alt=""></div>
+            <div class="row" data-aos="zoom-in" data-aos-once="true" data-aos-duration="1000"> <img src="images/gallery/g20.jpg" alt=""></div>
+            <div class="row" data-aos="zoom-in" data-aos-once="true" data-aos-duration="1000"><img src="images/gallery/g21.jpg" alt=""></div>
+            <div class="row" data-aos="zoom-in" data-aos-once="true" data-aos-duration="1000"> <img src="images/gallery/g23.jpg" alt=""></div>
+            <div class="row" data-aos="zoom-in" data-aos-once="true" data-aos-duration="1000"><img src="images/gallery/g24.jpg" alt=""></div>
+          </span>
+        </div>
       </div>
     </div>
   </section>
 
-  <footer id="footer" class="pt-5">
-    <div class="container py-sm-5">
+  <!-- Book Now  -->
+
+  <section class="book-btn">
+    <button type="button" class="book-now-btn text-uppercase" data-bs-toggle="modal" data-bs-target="#bookModal">
+      <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="svgIcon" viewBox="0 0 16 16">
+        <path d="M4 .5a.5.5 0 0 0-1 0V1H2a2 2 0 0 0-2 2v1h16V3a2 2 0 0 0-2-2h-1V.5a.5.5 0 0 0-1 0V1H4zM16 14V5H0v9a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2m-5.146-5.146-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 0 1 .708-.708L7.5 10.793l2.646-2.647a.5.5 0 0 1 .708.708"/>
+      </svg>
+    </button>
+    <div class="modal fade" id="bookModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-xl">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5 text-uppercase" id="exampleModalLabel">Fewa city <span>resort</span></h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="row">
+                <div class="col-12 col-sm-6">
+                  <div class="mb-0 mb-sm-3">
+                    <label for="customer-name" class="col-form-label">Your Name <span>*</span></label>
+                    <input type="text" class="form-control" name="" id="customer-name" required>
+                  </div>
+                </div>
+                <div class="col-12 col-sm-6">
+                  <div class="mb-0 mb-sm-3">
+                    <label for="email-address" class="col-form-label">Email Address <span>*</span></label>
+                    <input type="email" class="form-control" name="" id="email-address" required>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-12 col-sm-6">
+                  <div class="mb-0 mb-sm-3">
+                    <label for="check-in" class="col-form-label">Check in <span>*</span></label>
+                    <input type="date" class="form-control" name="" id="check-in" required>
+                  </div>
+                </div>
+                <div class="col-12 col-sm-6">
+                  <div class="mb-0 mb-sm-3">
+                    <label for="check-out" class="col-form-label">Check out <span>*</span></label>
+                    <input type="date" class="form-control" name="" id="check-out" required>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-12 col-sm-6">
+                  <div class="mb-0 mb-sm-3">
+                    <label for="guest-num" class="col-form-label">No. of Guests <span>*</span></label>
+                    <input type="number" class="form-control" name="" id="guest-num" required>
+                  </div>
+                </div>
+                <div class="col-12 col-sm-6">
+                  <div class="mb-0 mb-sm-3">
+                    <label for="room-name" class="col-form-label">Room <span>*</span></label>
+                    <input type="text" class="form-control" id="room-name" required>
+                  </div>
+                </div>
+              </div>
+              <div class="mb-0 mb-sm-3">
+                <label for="message-text" class="col-form-label">Message <span class="text-secondary">(optional)</span></label>
+                <textarea class="form-control" id="message-text"></textarea>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="book-btn2 text-uppercase text-white px-3 py-2 rounded" data-bs-dismiss="modal">Book now</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<!-- Whatsapp -->
+
+  <section class="whatsapp">
+    <a href="#">
+      <i class="bi bi-whatsapp"></i>
+    </a>
+  </section>
+
+  <section class="view-more text-center">
+    <button id="viewMoreBtn" class="border-0 text-white text-uppercase px-3 py-2 rounded" onclick="toggleGallerySpans()">
+      <i class="bi bi-chevron-double-down"></i>
+      View More
+    </button>
+  </section>
+
+  <footer>
+    <div class="container py-3 py-md-5">
       <div class="row text-capitalize">
         <div class="col-lg-3 col-md-6 col-sm-12">
           <div class="footer-heading text-uppercase">
             fewa city resort
           </div>
           <div class="footer-links">
-            <li><a href="#">Comfort</a></li>
-            <li><a href="#">Taste</a></li>
-            <li><a href="#">Rejuvinate</a></li>
-            <li><a href="#">Resort</a></li>
+            <li><a href="about-us.html">About Us</a></li>
+            <li><a href="restaurant.html">Bar & restaurant</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="gallery.html">Media Gallery</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
           </div>
         </div>
         <div class="col-lg-3 col-md-6 col-sm-12 mt-lg-0 mt-md-0 mt-sm-3">
@@ -222,22 +275,21 @@
             rooms & suites
           </div>
           <div class="footer-links">
-            <li><a href="#">Deluxe room</a></li>
-            <li><a href="#">standard room</a></li>
-            <li><a href="#">double room</a></li>
-            <li><a href="#">deluxe suite</a></li>
+            <li><a href="rooms/deluxe-room.html">Deluxe room</a></li>
+            <li><a href="rooms/standard-room.html">standard room</a></li>
+            <li><a href="rooms/double-room.html">double room</a></li>
+            <li><a href="rooms/deluxe-suite.html">deluxe suite</a></li>
           </div>
         </div>
         <div class="col-lg-3 col-md-6 col-sm-12 mt-lg-0 mt-md-3 mt-sm-3">
           <div class="footer-heading text-uppercase">
-            quick links
+            activities
           </div>
           <div class="footer-links">
-            <li><a href="#">fewa city</a></li>
-            <li><a href="#">sustainablity</a></li>
-            <li><a href="#">media gallery</a></li>
-            <li><a href="#">contact</a></li>
-            <li><a href="#">blogs</a></li>
+            <li><a href="local-excursion.html">local excursion</a></li>
+            <li><a href="swimming-pool.html">swimming pool & gym</a></li>
+            <li><a href="yoga.html">yoga & meditation</a></li>
+            <li><a href="cycling.html">cycling</a></li>
           </div>
         </div>
         <div class="col-lg-3 col-md-6 col-sm-12 mt-lg-0 mt-md-3 mt-sm-3">
@@ -245,9 +297,8 @@
             meeting & events
           </div>
           <div class="footer-links">
-            <li><a href="#">meeting& special events </a></li>
-            <li><a href="#">corporate retreat & team building</a></li>
-            <li><a href="#">venues and floor plan</a></li>
+            <li><a href="conference.html">conferences</a></li>
+            <li><a href="wedding.html">wedding & special events </a></li>
           </div>
         </div>
       </div>
@@ -255,43 +306,38 @@
       <div class="footer-logo">
         <div class="line">
         </div>
-        <p class="px-5">FEWA CITY RESORT</p>
+        <p class="px-5 mb-0">FEWA CITY RESORT</p>
       </div>
 
-      <div class="social-links text-center mt-5">
+      <div class="social-links text-center mt-3 mt-lg-4">
         <a href="#"><i class="bi bi-instagram"></i></a>
         <a href="#"><i class="bi bi-facebook"></i></a>
         <a href="#"><i class="bi bi-twitter-x"></i></a>
         <a href="#"><i class="bi bi-youtube"></i></a>
         <p class="copyright mt-2">© 2024 Fewa City Resort. All rights reserved.</p>
       </div>
-
-    </div>
-    <div class="view-more text-center">
-      <button id="viewMoreBtn" class="border-0 text-white text-uppercase px-3 py-2 rounded" onclick="toggleGallerySpans()">
-        <i class="bi bi-chevron-double-down"></i>
-        View More
-      </button>
     </div>
   </footer>
 
-  <section class="view-more text-center">
-    
-  </section>
-
-  <section class="hh mt-5 pt-5"></section>
-
-  <script src="gallery.js"></script>
-
-  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script>
-    AOS.init({
-      disable: 'phone',
+    const navbar = document.getElementById('navbar');
+    let lastScrollTop = 0;
+
+    window.addEventListener('scroll', function() {
+      let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+      if (scrollTop > lastScrollTop && scrollTop > navbar.offsetHeight) {
+        // Downscroll and past navbar height
+        navbar.classList.add('navbar-hidden'); // Apply hidden class to hide navbar
+      } else {
+        // Upscroll or at the top
+        navbar.classList.remove('navbar-hidden'); // Remove hidden class to show navbar
+      }
+
+      lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
     });
-  </script>
 
-  <script>
-     function toggleGallerySpans() {
+    function toggleGallerySpans() {
       const gallerySpans = document.querySelectorAll('.gallery span.d-none');
       gallerySpans.forEach(function(span) {
         span.classList.toggle('d-block');
@@ -304,9 +350,15 @@
       const footer = document.getElementById('footer');
       footer.style.boxShadow = 'none';
     }
-    
   </script>
-  
+
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      disable: 'phone',
+    });
+  </script>
+
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
 </body>
