@@ -156,6 +156,11 @@
   font-size: 18px;
 }
 
+.gallery{
+  background: url(images/p3.jpg);
+  background-size: contain;
+}
+
 .gallery .col-sm-12 .row{
   margin: 5px;
   overflow: hidden;
