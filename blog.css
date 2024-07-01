@@ -109,7 +109,7 @@
 .hero{
   position: relative;
   height: 100vh;
-  background: url(images/w1.jpg);
+  background: url(images/gallery/g2.jpg);
   background-size: cover;
   background-attachment: fixed;
 }
