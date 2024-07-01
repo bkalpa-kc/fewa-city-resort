@@ -155,6 +155,19 @@
   color: var(--highlight);
 }
 
+.card-img{
+  overflow: hidden;
+  border-radius: 0;
+}
+
+.card-img img{
+  transition: .3s ease;
+}
+
+.card img:hover{
+  transform: scale(1.1);
+}
+
 .card-title{
   font-size: 22px;
   font-weight: 500;
