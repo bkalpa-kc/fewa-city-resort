@@ -371,6 +371,20 @@ footer{
   font-size: 12px;
 }
 
+@media (max-width:1200px) {
+  .card-title{
+    font-size: 20px;
+  }
+
+  .card-text{
+    font-size: 16px;
+  }
+
+  .blogs{
+    padding: 60px 0;
+  }
+}
+
 @media (max-width:1024px) {
   .hero-txt{
     font-size: 12px;
@@ -378,6 +392,14 @@ footer{
 
   .hero-title{
     font-size: 54px;
+  }
+
+  .blogs img{
+    height: 200px;
+  }
+
+  .card-title{
+    font-size: 18px;
   }
 }
 
@@ -411,6 +433,10 @@ footer{
   .hero-title{
     font-size: 44px ;
   }
+
+  .blogs img{
+    height: 320px;
+  }
 }
 
 @media (max-width:576px) {
@@ -425,6 +451,23 @@ footer{
 
   .hero-txt{
     font-size: 8px;
+  }
+
+  .blogs{
+    padding-top: 20px;
+    padding-bottom: 0;
+  }
+
+  .blogs img{
+    height: 260px;
+  }
+
+  .card-title{
+    font-size: 16px;
+  }
+
+  .card-text{
+    font-size: 14px;
   }
 
   .contact-heading h5{

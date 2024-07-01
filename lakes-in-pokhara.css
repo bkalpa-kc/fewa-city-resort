@@ -35,6 +35,10 @@
   font-weight: 700;
 }
 
+.navbar-brand:hover{
+  color: var(--highlight);
+}
+
 .navbar-toggle i{
   color: var(--highlight);
 }
