@@ -1,0 +1,480 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Playwrite+NG+Modern:wght@100..400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Permanent+Marker&family=Playwrite+NG+Modern:wght@100..400&family=Saira+Condensed:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Serif+Text:ital@0;1&display=swap');
+
+
+:root{
+  --highlight: #ff4500;
+  --highlight-txt: "Caveat", cursive;
+  --hero-font: "DM Serif Text", serif;
+  --title-font: "Saira Condensed", sans-serif;
+}
+
+*{
+  padding: 0;
+  margin: 0;
+  border: none;
+  outline: none;
+  font-family: 'Poppins', sans-serif;
+  list-style: none;
+}
+
+.navbar {
+  position: absolute;
+  z-index: 100;
+  width: 100%;
+}
+
+.navbar .container{
+  border-bottom: 1px solid white;
+}
+
+.navbar-brand{
+  font-weight: 700;
+}
+
+.navbar .enquiry-btn{
+  border: 1px solid var(--highlight);
+  background-color: var(--highlight);
+  color: white;
+  font-weight: 600;
+}
+
+.enquiry-btn:hover{
+  background-color: transparent;
+  color: var(--highlight);
+}
+
+.offcanvas{
+  background: url(images/footer-bg.png);
+  background-size: cover;
+}
+
+.offcanvas-logo span{
+  color: var(--highlight);
+}
+
+.accordion-button{
+  font-size: 20px;
+  color: black;
+  line-height: 2;
+}
+
+.accordion-button::after{
+  margin-left: 5%;
+}
+
+.accordion-button:not(.collapsed)::after {
+  background-image: var(--bs-accordion-btn-icon);
+}
+
+.accordion-button:not(.collapsed) {
+  color: black;
+  background-color: transparent;
+  box-shadow: none;
+}
+
+.accordion-body a{
+  font-size: 16px !important;
+}
+
+.navbar-nav a{
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+  line-height: 2;
+}
+
+.nav-social{
+  position: absolute;
+  bottom: 2%;
+  left: 0;
+  width: 100%;
+}
+
+.nav-social i{
+  color: var(--highlight);
+  padding: 5px 10px;
+}
+
+.nav-contact-number{
+  font-size: 16px;
+}
+
+.nav-contact-number p{
+  letter-spacing: 2px;
+}
+
+.hero{
+  position: relative;
+  height: 100vh;
+  background: url(images/w1.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.hero-filter{
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.hero-txt{
+  letter-spacing: 5px;
+  font-size: 14px;
+  color: orangered;
+  font-family: var(--hero-font);
+}
+
+.hero-title{
+  letter-spacing: 2px;
+  font-size: 64px;
+  font-weight: 900;
+  font-family: var(--hero-font);
+}
+
+.blogs{
+  padding: 120px 0;
+}
+
+.blogs img{
+  height: 280px;
+  object-fit: cover;
+}
+
+.blogs a{
+  text-decoration: none;
+  color: black;
+}
+
+.blogs hr{
+  color: var(--highlight);
+}
+
+.card-title{
+  font-size: 22px;
+  font-weight: 500;
+  color: var(--highlight);
+}
+
+.card-text{
+  font-size: 18px;
+}
+
+.contact-heading h5,
+.contact-heading span{
+  letter-spacing: 5px;
+  font-weight: 600;
+  font-family: var(--title-font);
+}
+
+.contact-heading span{
+  color: var(--highlight);
+}
+
+.contact-info{
+  line-height: 5px;
+}
+
+.contact-info a{
+  text-decoration: none;
+  color: black;
+}
+
+.contact-info a:hover{
+  color: gray;
+}
+
+.contact-btn button{ 
+  background-color: var(--highlight);
+  border: 1px solid var(--highlight);
+  letter-spacing: 2px;
+  font-size: 14px;
+  transition: 0.3s ease;
+}
+
+.contact-btn button:hover{
+  background-color: white;
+  color: var(--highlight) !important;
+}
+
+.contact-btn button:active{
+  scale: 0.9;
+}
+
+.map-container {
+  position: relative;
+  overflow: hidden;
+  padding-top: 56.25%;
+}
+
+.map-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.book-btn .book-now-btn {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: var(--highlight);
+  border: none;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.164);
+  cursor: pointer;
+  transition-duration: .3s;
+  overflow: hidden;
+  position: fixed;
+  z-index: 5;
+  bottom: 2%;
+  right: 2%;
+}
+
+.modal-footer button{
+  background-color: var(--highlight);
+}
+
+.modal-body span{
+  color: red;
+}
+
+.modal-header span{
+  color: var(--highlight);
+}
+
+.book-btn form textarea{
+  resize: none;
+  height: 120px !important;
+}
+
+.svgIcon {
+  transition-duration: .3s;
+}
+
+.svgIcon path {
+  fill: white;
+}
+
+.book-btn .book-now-btn:hover {
+  width: 140px;
+  border-radius: 50px;
+  transition-duration: .3s;
+  background-color: var(--highlight);
+  align-items: center;
+}
+
+.book-btn .book-now-btn:hover .svgIcon {
+  width: 50px;
+  transition-duration: .3s;
+  transform: translateY(100%)
+}
+
+.book-btn .book-now-btn::before {
+  position: absolute;
+  top: -20px;
+  content: "Book now";
+  color: white;
+  transition-duration: .3s;
+  font-size: 2px;
+}
+
+.book-btn .book-now-btn:hover::before {
+  font-size: 16px;
+  opacity: 1;
+  transform: translateY(30px);
+  transition-duration: .3s;
+}
+
+.whatsapp a{
+  position: fixed;
+  z-index: 5;
+  bottom: 2%;
+  left: 2%;
+  font-size: 30px;
+  color: white;
+  background-color: #25d366;
+  border-radius: 50%;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.164);
+  height: 50px;
+  width: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+footer{
+  background: url(images/footer-bg.png);
+  background-size: cover;
+  background-position: center;
+}
+
+.footer-heading{
+  color: var(--highlight);
+  font-size: 20px;
+  font-family: var(--title-font);
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+
+.footer-links{
+  margin-top: 10px;
+}
+
+.footer-links a{
+  text-decoration: none;
+  color: rgb(65, 65, 65);
+  line-height: 2;
+}
+
+.footer-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 60px;
+  position: relative;
+}
+
+.line {
+  width: 100%;
+  height: 2px;
+  background-color: var(--highlight);
+  margin-top: 20px;
+}
+
+.footer-logo p {
+  background-color: white;
+  font-size: 20px;
+  letter-spacing: 5px;
+  text-align: center;
+  margin-top: -15px;
+}
+
+.social-links a{
+  text-decoration: none;
+  color: var(--highlight);
+  font-size: 26px;
+  letter-spacing: 35px;
+}
+
+.copyright{
+  font-size: 12px;
+}
+
+@media (max-width:1024px) {
+  .hero-txt{
+    font-size: 12px;
+  }
+
+  .hero-title{
+    font-size: 54px;
+  }
+}
+
+@media (max-width:767px) {
+  .navbar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #fcfcfc;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.4);
+    transition: top .3s ease;
+  } 
+
+  .navbar-hidden {
+    top: -86px; /* Adjust based on your navbar height */
+  }
+
+  .navbar-brand{
+    color: var(--highlight) !important;
+  }
+
+  header .navbar-toggle i{
+    color: var(--highlight) !important;
+  }
+
+  .hero-txt{
+    font-size: 10px;
+  }
+
+  .hero-title{
+    font-size: 44px ;
+  }
+}
+
+@media (max-width:576px) {
+  .navbar-nav a,
+  .accordion-button{
+    font-size: 18px;
+  }
+
+  .nav-contact-number{
+    font-size: 14px;
+  }
+
+  .hero-txt{
+    font-size: 8px;
+  }
+
+  .contact-heading h5{
+    font-size: 18px !important;
+    font-weight: 600;
+    letter-spacing: 3px;
+  }
+  
+  .contact-heading p{
+    font-size: 14px !important;
+  }
+  
+  .contact-info p{
+    font-size: 14px;
+  }
+  
+  .footer-heading{
+    margin-top: 24px;
+  }
+}
+
+@media (max-width:575px) {
+  .accordion{
+    margin-left: 90px;
+  }
+}
+
+@media (max-width:430px) {
+  .book-now-btn{
+    font-size: 18px !important;
+  }
+
+  .whatsapp a{
+    font-size: 24px;
+    padding: 5px 12px;
+  }
+
+  .footer-heading{
+    font-size: 16px;
+  }
+
+  .footer-links a{
+    font-size: 14px;
+  }
+
+  .social-links a{
+    font-size: 20px;
+  }
+
+  .footer-logo p{
+    font-size: 16px;
+  }
+}
