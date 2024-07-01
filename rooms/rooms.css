@@ -552,15 +552,7 @@ footer{
   .contact{
     margin-top: 60px;
   }
-
-  .enquiry-txt{
-    display: none;
-  }
-
-  .enquiry-btn i{
-    padding: 0 6px;
-  }
-
+  
   .room-title{
     font-size: 28px;
   }
