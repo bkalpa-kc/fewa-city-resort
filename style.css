@@ -350,7 +350,11 @@ hr{
   transform: scale(0.95);
 }
 
-/* facilities */
+/* experience */
+
+.experience{
+  overflow-x: hidden;
+}
 
 .experience-heading{
   letter-spacing: 1px;
@@ -422,7 +426,7 @@ hr{
   z-index: 1;
 }
 
-/* services */
+/* activities */
 
 .services{
   background-color: #90e0ef;
@@ -743,7 +747,7 @@ display: inline-block;
   justify-content: center;
 }
 
-.scrolltop {
+/* .scrolltop {
 	display:none;
 	width:100%;
 	margin:0 auto;
@@ -785,6 +789,45 @@ display: inline-block;
   font-size: 30px;
   transition: 0.5s;
   color: var(--highlight);
+} */
+
+#progress {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  position: fixed;
+  bottom: 9%;
+  right: 2%;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+  background: conic-gradient(orangered 0%, white 0%);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s, visibility 0.3s;
+  z-index: 5;
+}
+
+#progress.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+#progress-value {
+  display: block;
+  height: calc(100% - 5px);
+  width: calc(100% - 5px);
+  background-color: #ffffff;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  font-weight: 500;
+  font-size: 30px;
+}
+
+#progress-value i {
+  color: orangered;
 }
 
 /* footer */
@@ -869,18 +912,17 @@ footer{
   .splide__caption{
     left: 24%;
   }
+
+  .meeting-hidden{
+    right: -300px;
+  }
+
+  .restaurant-hidden{
+    left: -300px;
+  }
 }
 
 @media (max-width:1200px) {
-
-  .hidden{
-    right: -320px;
-  }
-
-  .hidden-left{
-    left: -320px;
-  }
-
   .reservation .txt{
     font-size: 14px;
   }
@@ -902,6 +944,17 @@ footer{
     font-size: 16px;
   }
 }
+
+@media (max-width: 1199px) {
+  .meeting-hidden{
+    right: -480px;
+  }
+
+  .restaurant-hidden{
+    left: -480px;
+  }
+}
+
 
 @media (max-width:1025px) {
  .hidden{
@@ -952,6 +1005,10 @@ footer{
   .reservation .btn-group button{
     padding: 8px 16px;
     font-size: 12px;
+  }
+
+  .reservation .txt{
+    font-size: 11px;
   }
 
   .services-more a::after{
@@ -1138,6 +1195,19 @@ footer{
     font-size: 24px;
   }
 
+  .scrolltop{
+    bottom: 7.5%;
+  }
+  
+  #progress{
+    height: 40px;
+    width: 40px;
+  }
+
+  #progress i{
+    font-size: 24px;
+  }
+
   .book-btn .book-now-btn{
     height: 40px;
     width: 40px;
@@ -1150,15 +1220,6 @@ footer{
   .book-now-btn svg{
     height: 20px;
     width: 20px;
-  }
-
-  .scrolltop{
-    bottom: 7.5%;
-  }
-
-  .scroll{
-    height: 40px;
-    width: 40px;
   }
 
   .footer-logo p{

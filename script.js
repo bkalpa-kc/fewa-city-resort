@@ -41,7 +41,7 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
-// hmmmm
+// meeting
 
 $(document).ready(function () {
   function applyHoverEffect() {
@@ -73,7 +73,7 @@ $(document).ready(function () {
   });
 });
 
-//hmmm2
+//restaurant
 
 $(document).ready(function () {
   function applyHoverEffect() {
@@ -156,11 +156,27 @@ jQuery(document).ready(function($) {
 
 // scroll to top
 
+let scrollPercentage = () => {
+  let scrollProgress = document.getElementById("progress");
+  let pos = document.documentElement.scrollTop;
+  let calcHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+  let scrollValue = Math.round(pos * 100 / calcHeight);
+
+  scrollProgress.style.background = `conic-gradient(orangered ${scrollValue}%, gray ${scrollValue}%)`;
+}
+
+window.onscroll = scrollPercentage;
+window.onload = scrollPercentage;
+
 $(window).scroll(function() {
-  if ($(this).scrollTop() > 500 ) {
-      $('.scrolltop:hidden').stop(true, true).fadeIn();
+  if ($(this).scrollTop() > 500) {
+    $('#progress').addClass('show');
   } else {
-      $('.scrolltop').stop(true, true).fadeOut();
+    $('#progress').removeClass('show');
   }
 });
-$(function(){$(".scroll").click(function(){$("html,body").animate({scrollTop:$(".image-slider").offset().top},"1000");return false})})
+
+$("#progress").click(function() {
+  $("html, body").animate({ scrollTop: 0 }, "1000");
+  return false;
+});
