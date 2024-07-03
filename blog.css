@@ -20,6 +20,8 @@
   list-style: none;
 }
 
+/* navbar */
+
 .navbar {
   position: absolute;
   z-index: 100;
@@ -106,6 +108,8 @@
   letter-spacing: 2px;
 }
 
+/* hero */
+
 .hero{
   position: relative;
   height: 100vh;
@@ -136,6 +140,8 @@
   font-weight: 900;
   font-family: var(--hero-font);
 }
+
+/* blogs */
 
 .blogs{
   padding: 120px 0;
@@ -177,6 +183,8 @@
 .card-text{
   font-size: 18px;
 }
+
+/* contact */
 
 .contact-heading h5,
 .contact-heading span{
@@ -232,6 +240,8 @@
   width: 100%;
   height: 100%;
 }
+
+/* book now */
 
 .book-btn .book-now-btn {
   width: 50px;
@@ -308,6 +318,8 @@
   transition-duration: .3s;
 }
 
+/* whatsapp */
+
 .whatsapp a{
   position: fixed;
   z-index: 5;
@@ -324,6 +336,8 @@
   align-items: center;
   justify-content: center;
 }
+
+/* footer */
 
 footer{
   background: url(images/footer-bg.png);
@@ -383,6 +397,8 @@ footer{
 .copyright{
   font-size: 12px;
 }
+
+/* media */
 
 @media (max-width:1200px) {
   .card-title{

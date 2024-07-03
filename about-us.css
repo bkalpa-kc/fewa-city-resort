@@ -24,6 +24,8 @@ body{
   background-color: white;
 }
 
+/* navbar */
+
 .navbar {
   position: absolute;
   z-index: 100;
@@ -110,6 +112,8 @@ body{
   letter-spacing: 2px;
 }
 
+/* hero */
+
 .hero{
   position: relative;
   height: 100vh;
@@ -141,6 +145,8 @@ body{
   font-family: var(--hero-font);
 }
 
+/* intro */
+
 .intro{
   padding: 150px 0;
 }
@@ -157,6 +163,8 @@ body{
 .intro img{
   width: 100%;
 }
+
+/* history */
 
 .history{
   background-color: #caf0f8;
@@ -246,6 +254,7 @@ body{
   width: 100%;
 }
 
+/* rooms */
 
 .rooms{
   background-color: #caf0f8;
@@ -356,6 +365,8 @@ body{
   transform: scale(0.95);
 }
 
+/* contact */
+
 .contact-heading h5,
 .contact-heading span{
   letter-spacing: 5px;
@@ -410,6 +421,8 @@ body{
   width: 100%;
   height: 100%;
 }
+
+/* book now */
 
 .book-btn .book-now-btn {
   width: 50px;
@@ -486,6 +499,8 @@ body{
   transition-duration: .3s;
 }
 
+/* whatsapp */
+
 .whatsapp a{
   position: fixed;
   z-index: 5;
@@ -502,6 +517,8 @@ body{
   align-items: center;
   justify-content: center;
 }
+
+/* footer */
 
 footer{
   background: url(images/footer-bg.png);
@@ -561,6 +578,8 @@ footer{
 .copyright{
   font-size: 12px;
 }
+
+/* media */
 
 @media (max-width:1400px) {
   .splide__caption{

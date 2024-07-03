@@ -25,6 +25,8 @@ body{
   background-color: #fcfcfc;
 }
 
+/* navbar */
+
 .navbar {
   position: absolute;
   z-index: 100;
@@ -111,6 +113,8 @@ body{
   letter-spacing: 2px;
 } 
 
+/* hero */
+
 .hero{
   position: relative;
   height: 100vh;
@@ -142,6 +146,8 @@ body{
   font-weight: 900;
   font-family: var(--hero-font);
 }
+
+/* intro */
 
 .intro{
   height: auto;
@@ -192,6 +198,8 @@ body{
   border-top: 3px solid orangered;
 }
 
+/* restaurant */
+
 .restaurant{
   padding: 180px 0; 
   background-color: #caf0f8;
@@ -213,6 +221,8 @@ body{
   color: orangered;
   font-family: var(--title-font);
 }
+
+/* restaurant experience */
 
 .restaurant-experience{
   padding: 180px 0;
@@ -253,6 +263,8 @@ body{
   background-color: white;
 }
 
+/* bar */
+
 .bar{
   padding: 180px 0;
   background-color: #caf0f8;
@@ -270,6 +282,8 @@ body{
   font-family: var(--title-font);
 }
 
+/* bar experience */
+
 .bar-experience span{
   color: orangered;
 }
@@ -282,6 +296,7 @@ body{
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
 }
 
+/* contact */
 
 .contact-heading h5,
 .contact-heading span{
@@ -337,6 +352,8 @@ body{
   width: 100%;
   height: 100%;
 }
+
+/* book now */
 
 .book-btn .book-now-btn {
   width: 50px;
@@ -413,6 +430,8 @@ body{
   transition-duration: .3s;
 }
 
+/* whatsapp */
+
 .whatsapp a{
   position: fixed;
   z-index: 5;
@@ -429,6 +448,8 @@ body{
   align-items: center;
   justify-content: center;
 }
+
+/* footer */
 
 footer{
   background: url(images/footer-bg.png);
@@ -488,6 +509,8 @@ footer{
 .copyright{
   font-size: 12px;
 }
+
+/* media */
 
 @media (max-width:1200px) {
 

@@ -20,6 +20,8 @@
   list-style: none;
 }
 
+/* navbar */
+
 .navbar {
   position: absolute;
   z-index: 100;
@@ -106,6 +108,8 @@
   letter-spacing: 2px;
 }
 
+/* hero */
+
 .hero{
   position: relative;
   height: 100vh;
@@ -137,6 +141,8 @@
   font-family: var(--hero-font);
 }
 
+/* intro */
+
 .intro{
   padding: 60px 0;
 }
@@ -155,6 +161,8 @@
 .intro-para{
   font-size: 18px;
 }
+
+/* gallery */
 
 .gallery{
   background: url(images/p3.jpg);
@@ -175,6 +183,8 @@
 .gallery .col-sm-12 .row img:hover{
  transform: scale(1.2);
 }
+
+/* book now */
 
 .book-btn .book-now-btn {
   width: 50px;
@@ -251,6 +261,8 @@
   transition-duration: .3s;
 }
 
+/* whatsapp */
+
 .whatsapp a{
   position: fixed;
   z-index: 5;
@@ -268,6 +280,8 @@
   justify-content: center;
 }
 
+/* view more */
+
 .view-more {
   display: flex;
   justify-content: center;
@@ -278,6 +292,8 @@
   background-color: orangered;
   letter-spacing: 3px;
 }
+
+/* footer */
 
 footer{
   background: url(images/footer-bg.png);
@@ -337,6 +353,8 @@ footer{
 .copyright{
   font-size: 12px;
 }
+
+/* media */
 
 @media (max-width:1200px) {
   .intro .container{

@@ -20,6 +20,8 @@
   list-style: none;
 }
 
+/* navbar */
+
 .navbar {
   position: absolute;
   z-index: 100;
@@ -106,6 +108,8 @@
   letter-spacing: 2px;
 }
 
+/* hero */
+
 .hero{
   position: relative;
   height: 100vh;
@@ -137,6 +141,8 @@
   font-family: var(--hero-font);
 }
 
+/* intro */
+
 .intro{
   padding: 120px 0;
 }
@@ -159,6 +165,8 @@
 .intro-para p{
   font-size: 18px;
 }
+
+/* excursion */
 
 .excursion img,
 .swimming img,
@@ -257,9 +265,7 @@
   margin-top: 220px;
 }
 
-.contact-heading{
-  position: relative;
-}
+/* contact */
 
 .contact-heading h5,
 .contact-heading span{
@@ -320,6 +326,7 @@ hr{
   height: 100%;
 }
 
+/* book now */
 
 .book-btn .book-now-btn {
   width: 50px;
@@ -396,6 +403,8 @@ hr{
   transition-duration: .3s;
 }
 
+/* whatsapp */
+
 .whatsapp a{
   position: fixed;
   z-index: 5;
@@ -412,6 +421,8 @@ hr{
   align-items: center;
   justify-content: center;
 }
+
+/* footer */
 
 footer{
   background: url(images/footer-bg.png);
@@ -471,6 +482,8 @@ footer{
 .copyright{
   font-size: 12px;
 }
+
+/* media */
 
 @media (max-width:1200px) {
   .intro .container{

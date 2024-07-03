@@ -653,7 +653,7 @@ display: inline-block;
   height: 100%;
 }
 
-/* fixed buttons */
+/* book now */
 
 .book-btn .book-now-btn {
   width: 50px;
@@ -730,6 +730,8 @@ display: inline-block;
   transition-duration: .3s;
 }
 
+/* whatsapp */
+
 .whatsapp a{
   position: fixed;
   z-index: 5;
@@ -747,49 +749,7 @@ display: inline-block;
   justify-content: center;
 }
 
-/* .scrolltop {
-	display:none;
-	width:100%;
-	margin:0 auto;
-	position:fixed;
-	bottom: 9%;
-	right: 2%;
-  z-index: 5;
-}
-.scroll {
-	position:absolute;
-	right: 0;
-	bottom: 0;
-  background-color: rgba(255, 255, 255, 0.5);
-  border: 2px solid var(--highlight);
-  border-radius: 50%;
-  height: 50px;
-  width: 50px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-	margin: 0 0 0 0;
-	cursor:pointer;
-	transition: 0.5s;
-	-moz-transition: 0.5s;
-	-webkit-transition: 0.5s;
-	-o-transition: 0.5s; 		
-}
-
-.scroll:hover{
-  background-color: var(--highlight);
-  transition: 0.5s;
-}
-
-.scroll:hover i{
-  color: white;
-}
-
-.scroll i{
-  font-size: 30px;
-  transition: 0.5s;
-  color: var(--highlight);
-} */
+/* back to top */
 
 #progress {
   height: 50px;

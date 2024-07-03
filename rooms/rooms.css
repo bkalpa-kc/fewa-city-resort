@@ -24,6 +24,8 @@ body{
   background-color: rgb(250, 242, 233);
 }
 
+/* navbar */
+
 .navbar {
   position: absolute;
   top: 0;
@@ -120,12 +122,10 @@ body{
   letter-spacing: 2px;
 }
 
+/* .room links */
+
 .room-links{
   margin-top: 180px;
-}
-
-.room{
-  margin-top: 80px;
 }
 
 .room-links a{
@@ -138,6 +138,12 @@ body{
 
 .room-links a.active{
   color: orangered !important;
+}
+
+/* room */
+
+.room{
+  margin-top: 80px;
 }
 
 .room-details .col{
@@ -212,6 +218,8 @@ form textarea{
   color: red;
 }
 
+/* amenities */
+
 .amenities{
   background: url(images/standard-room2.jpg);
   background-size: cover;
@@ -227,6 +235,8 @@ form textarea{
 .amenities p{
   font-size: 22px;
 }
+
+/* facilities */
 
 .facilities{
   margin-top: 150px;
@@ -253,6 +263,8 @@ form textarea{
 .facilities-heading p{
   font-size: 18px;
 }
+
+/* contact */
 
 .contact{
   margin-top: 120px;
@@ -313,6 +325,7 @@ form textarea{
   height: 100%;
 }
 
+/* book now */
 
 .book-btn .book-now-btn {
   width: 50px;
@@ -389,6 +402,8 @@ form textarea{
   transition-duration: .3s;
 }
 
+/* whatsapp */
+
 .whatsapp a{
   position: fixed;
   z-index: 5;
@@ -405,6 +420,8 @@ form textarea{
   align-items: center;
   justify-content: center;
 }
+
+/* footer */
 
 footer{
   background: url(../images/footer-bg.png);
@@ -464,6 +481,8 @@ footer{
 .copyright{
   font-size: 12px;
 }
+
+/* media */
 
 @media (max-width:1200px) {
   .room-links .container{

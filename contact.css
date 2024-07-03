@@ -20,6 +20,8 @@
   list-style: none;
 }
 
+/* navbar */
+
 .navbar {
   position: absolute;
   z-index: 100;
@@ -106,6 +108,8 @@
   letter-spacing: 2px;
 }
 
+/* hero */
+
 .hero{
   position: relative;
   height: 100vh;
@@ -137,6 +141,9 @@
   font-weight: 900;
   font-family: var(--hero-font);
 }
+
+/* contact */
+
 
 .contact-info{
   background: url(images/m1.png);
@@ -195,6 +202,8 @@
   resize: none;
 }
 
+/* contact form */
+
 .contact-form p{
   letter-spacing: 5px;
   font-size: 32px;
@@ -219,6 +228,8 @@
 .contact-form button{
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4);
 }
+
+/* book now */
 
 .book-btn .book-now-btn {
   width: 50px;
@@ -295,6 +306,8 @@
   transition-duration: .3s;
 }
 
+/* whatsapp */
+
 .whatsapp a{
   position: fixed;
   z-index: 5;
@@ -313,7 +326,6 @@
 }
 
 /* footer */
-
 
 footer{
   background: url(images/footer-bg.png);
@@ -373,6 +385,8 @@ footer{
 .copyright{
   font-size: 12px;
 }
+
+/* media */
 
 @media (max-width:1200px) {
   .contact-form .container{

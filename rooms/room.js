@@ -1,3 +1,5 @@
+// book modal
+
 const exampleModal = document.getElementById('exampleModal')
 if (exampleModal) {
   exampleModal.addEventListener('show.bs.modal', event => {
@@ -15,6 +17,8 @@ if (exampleModal) {
     modalBodyInput.value = recipient
   })
 }
+
+// navbar
 
 const navbar = document.getElementById('navbar');
 let lastScrollTop = 0;
